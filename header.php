@@ -6,7 +6,7 @@
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span><i class="fa fa-bars"></i>
             </button>
-            <a class="navbar-brand" href="index-2.html">
+            <a class="navbar-brand" href="index.php">
                 <img src="assets/images/logo.png" class="img-resposive" alt="">
             </a>
         </div>

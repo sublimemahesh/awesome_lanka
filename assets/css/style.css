@@ -3077,7 +3077,7 @@ ul.list-ok li::before {
 .separator {
     height: 4px;
     width: 100%;
-    margin: 50px auto;
+    margin: 7px auto;
     background: #fec107;
 }
 
