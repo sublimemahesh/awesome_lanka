@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
-    <!-- Mirrored from travel.bdtask.com/travel_demo/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 30 May 2018 07:02:03 GMT -->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -376,7 +374,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                    <div class="col-xs-12 col-sm-4 col-md-12">
+                                <div class="col-xs-12 col-sm-4 col-md-12">
                                     <div class="package-wiget">
                                         <div class="grid">
                                             <figure class="effect-milo">
@@ -659,7 +657,7 @@
                 </div>
             </section>
             <!-- Testimonial section -->
-                <div class="reference home-ref">
+            <div class="reference home-ref">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 col-md-offset-3">
@@ -798,25 +796,6 @@
                                     </div>
                                 </section>
                                 <!-- Newsletter -->
-                                <section class="get-offer">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-sm-5">
-                                                <span>Subscribe to our Newsletter</span>
-                                                <h2>& Discover the best offers!</h2>
-                                            </div>
-                                            <div class="col-sm-7">
-                                                <div class="input-group">
-                                                    <input type="text" class="form-control" placeholder="Enter Your Email" name="q">
-                                                    <div class="input-group-btn">
-                                                        <button class="btn btn-default" type="submit"><i class="flaticon-paper-plane"></i> Subscribe</button>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>  </section>
-
 
                             </div>
                             <!-- Footer Section -->
@@ -845,5 +824,5 @@
                             <!-- custom -->
                             <script src="assets/js/custom.js" type="text/javascript"></script>
                             </body>
-                            <!-- Mirrored from travel.bdtask.com/travel_demo/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 30 May 2018 07:02:03 GMT -->
+
                             </html>

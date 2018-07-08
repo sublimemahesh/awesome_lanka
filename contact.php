@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
-    <!-- Mirrored from travel.bdtask.com/travel_demo/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 30 May 2018 07:10:06 GMT -->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -155,24 +153,7 @@
                 </div>
             </section>
             <!-- Newsletter -->
-            <section class="get-offer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-5">
-                            <span>Subscribe to our Newsletter</span>
-                            <h2>& Discover the best offers!</h2>
-                        </div>
-                        <div class="col-sm-7">
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Enter Your Email" name="q">
-                                <div class="input-group-btn">
-                                    <button class="btn btn-default" type="submit"><i class="flaticon-paper-plane"></i> Subscribe</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+         
         </div>
         <!-- Footer Section -->
         <?php include './footer.php'; ?>
@@ -248,6 +229,4 @@
             }
         </script>
     </body>
-
-    <!-- Mirrored from travel.bdtask.com/travel_demo/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 30 May 2018 07:10:06 GMT -->
 </html>

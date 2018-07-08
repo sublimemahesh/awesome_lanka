@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <!-- Mirrored from travel.bdtask.com/travel_demo/tours.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 30 May 2018 07:03:21 GMT -->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -213,6 +212,4 @@
             });
         </script>
     </body>
-
-    <!-- Mirrored from travel.bdtask.com/travel_demo/tours.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 30 May 2018 07:04:32 GMT -->
 </html>
