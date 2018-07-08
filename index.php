@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<?php include './class/include.php';?>
+<?php include './class/include.php'; ?>
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -189,20 +189,13 @@
                     <div class="row">
                         <div class="col-md-5">
                             <div class="title">
-                                <h2> Welcome to Travel Company </h2>
+                                <?php $PAGES = new Page(1); ?>
+                                <h2> <?php echo $PAGES->title ?></h2>
                                 <p>This is Amazing Travel Agency !</p>
                             </div>
                             <div class="cws_divider mb-25 mt-5"></div>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                when an unknown printer took a galley of type and scrambled it to make a type
-                                specimen book. It has survived not only five centuries, but also the leap into 
-                                electronic typesetting, remaining essentially unchanged.</p> 
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                when an unknown printer took a galley of type and scrambled it to make a type
-                                specimen book. It has survived not only five centuries, but also the leap into 
-                                electronic typesetting, remaining essentially unchanged.</p>
+                            <p><?php echo $PAGES->description ?></p> 
+
                         </div>
                         <div class="col-md-7">
                             <div class="container" style="padding-left: 95px;">
@@ -619,40 +612,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <!--                            <a href="attraction.php" class="thm-btn view-all" style="margin-left: 500px;">View All</a>-->
-                            <!--                            <div class="hotel-item">
-                                                                                      hotel Image 
-                                                                                     <div class="hotel-image">
-                                                                                         <a href="#">
-                                                                                             <div class="img"><img src="assets/images/hotel-1.jpg"  alt="" class="img-responsive"></div>
-                                                                                         </a>
-                                                                                     </div>
-                                                                                      hotel body 
-                                                                                     <div class="hotel-body">
-                                                                                         <div class="ratting">
-                                                                                             <i class="fa fa-star"></i>
-                                                                                             <i class="fa fa-star"></i>
-                                                                                             <i class="fa fa-star"></i>
-                                                                                             <i class="fa fa-star-half-o"></i>
-                                                                                             <i class="fa fa-star-o"></i>
-                                                                                         </div>
-                                                                                          title 
-                                                                                         <h3>Tours in Greece</h3>
-                                                                                          Text Intro 
-                                                                                         <p>Etiam maximus molestie accumsan. Sed metus sapien, fermentum nec lorem ac.</p>
-                                                                                         <div class="free-service">
-                                                                                             <i class="flaticon-television" data-toggle="tooltip" data-placement="top" title="" data-original-title="Plasma TV with cable chanels"></i>
-                                                                                             <i class="flaticon-swimmer" data-toggle="tooltip" data-placement="top" title="" data-original-title="Swimming pool"></i>
-                                                                                             <i class="flaticon-wifi" data-toggle="tooltip" data-placement="top" title="" data-original-title="Free wifi"></i>
-                                                                                             <i class="flaticon-weightlifting" data-toggle="tooltip" data-placement="top" title="" data-original-title="Fitness center"></i>
-                                                                                             <i class="flaticon-lemonade" data-toggle="tooltip" data-placement="top" title="" data-original-title="Restaurant"></i>
-                                                                                         </div>
-                                                                                     </div>
-                                                                                     <div class="hotel-right"> 
-                                                                                         <div class="hotel-person">from <span class="color-blue">$273</span> person</div>
-                                                                                         <a class="thm-btn" href="#">Details</a>
-                                                                                     </div>
-                                                                                 </div>-->
                         </div>
                     </div>
                 </div>
