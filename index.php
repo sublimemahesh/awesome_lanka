@@ -452,17 +452,21 @@
                     </div>
                     <div class="row thm-margin" style="padding-bottom: 50px;">
                         <div class="tour-container">
+                            <?php 
+                            foreach (Attraction::all() as $key=>$attraction){
+                                if ($key <8){
+                            ?>
                             <div class="col-md-3 col-sm-4 thm-padding">
                                 <div class="destination-grid">
-                                    <a href="#"><img src="assets/images/destination-370x370-1.jpg" class="img-responsive" alt=""></a>
+                                    <a href="#"><img src="upload/attraction/<?php echo $attraction['image_name']?>" class="img-responsive" alt=""></a>
                                     <div class="mask">
-                                        <h2>Sydney</h2>
-                                        <p>It is a long established fact that a reader will be distracted by the readable content</p>
+                                        <h2><?php echo $attraction['title']?></h2>
+                                        <p><?php echo $attraction['short_description']?></p>
                                         <a href="view-attraction.php" class="thm-btn">Read More</a>
                                     </div>
                                     <div class="dest-name">
-                                        <h5>Sydney Opera House</h5>
-                                        <h4>Sydney</h4>
+                                       
+                                        <h4><?php echo $attraction['title']?></h4>
                                     </div>
                                     <div class="dest-icon">
                                         <i class="flaticon-earth-globe" data-toggle="tooltip" data-placement="top" title="15 Tours"></i>
@@ -472,146 +476,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 col-sm-4 thm-padding">
-                                <div class="destination-grid">
-                                    <a href="#"><img src="assets/images/destination-370x370-1.jpg" class="img-responsive" alt=""></a>
-                                    <div class="mask">
-                                        <h2>Sydney</h2>
-                                        <p>It is a long established fact that a reader will be distracted by the readable content</p>
-                                        <a href="#" class="thm-btn">Read More</a>
-                                    </div>
-                                    <div class="dest-name">
-                                        <h5>Sydney Opera House</h5>
-                                        <h4>Sydney</h4>
-                                    </div>
-                                    <div class="dest-icon">
-                                        <i class="flaticon-earth-globe" data-toggle="tooltip" data-placement="top" title="15 Tours"></i>
-                                        <i class="flaticon-ship" data-toggle="tooltip" data-placement="top" title="9 Criuses"></i>
-                                        <i class="flaticon-transport" data-toggle="tooltip" data-placement="top" title="31 Flights"></i>
-                                        <i class="flaticon-front" data-toggle="tooltip" data-placement="top" title="83 Hotels"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-4 thm-padding">
-                                <div class="destination-grid">
-                                    <a href="#"><img src="assets/images/destination-370x370-1.jpg" class="img-responsive" alt=""></a>
-                                    <div class="mask">
-                                        <h2>Sydney</h2>
-                                        <p>It is a long established fact that a reader will be distracted by the readable content</p>
-                                        <a href="#" class="thm-btn">Read More</a>
-                                    </div>
-                                    <div class="dest-name">
-                                        <h5>Sydney Opera House</h5>
-                                        <h4>Sydney</h4>
-                                    </div>
-                                    <div class="dest-icon">
-                                        <i class="flaticon-earth-globe" data-toggle="tooltip" data-placement="top" title="15 Tours"></i>
-                                        <i class="flaticon-ship" data-toggle="tooltip" data-placement="top" title="9 Criuses"></i>
-                                        <i class="flaticon-transport" data-toggle="tooltip" data-placement="top" title="31 Flights"></i>
-                                        <i class="flaticon-front" data-toggle="tooltip" data-placement="top" title="83 Hotels"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-4 thm-padding">
-                                <div class="destination-grid">
-                                    <a href="#"><img src="assets/images/destination-370x370-1.jpg" class="img-responsive" alt=""></a>
-                                    <div class="mask">
-                                        <h2>Sydney</h2>
-                                        <p>It is a long established fact that a reader will be distracted by the readable content</p>
-                                        <a href="#" class="thm-btn">Read More</a>
-                                    </div>
-                                    <div class="dest-name">
-                                        <h5>Sydney Opera House</h5>
-                                        <h4>Sydney</h4>
-                                    </div>
-                                    <div class="dest-icon">
-                                        <i class="flaticon-earth-globe" data-toggle="tooltip" data-placement="top" title="15 Tours"></i>
-                                        <i class="flaticon-ship" data-toggle="tooltip" data-placement="top" title="9 Criuses"></i>
-                                        <i class="flaticon-transport" data-toggle="tooltip" data-placement="top" title="31 Flights"></i>
-                                        <i class="flaticon-front" data-toggle="tooltip" data-placement="top" title="83 Hotels"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-4 thm-padding">
-                                <div class="destination-grid">
-                                    <a href="#"><img src="assets/images/destination-370x370-1.jpg" class="img-responsive" alt=""></a>
-                                    <div class="mask">
-                                        <h2>Sydney</h2>
-                                        <p>It is a long established fact that a reader will be distracted by the readable content</p>
-                                        <a href="#" class="thm-btn">Read More</a>
-                                    </div>
-                                    <div class="dest-name">
-                                        <h5>Sydney Opera House</h5>
-                                        <h4>Sydney</h4>
-                                    </div>
-                                    <div class="dest-icon">
-                                        <i class="flaticon-earth-globe" data-toggle="tooltip" data-placement="top" title="15 Tours"></i>
-                                        <i class="flaticon-ship" data-toggle="tooltip" data-placement="top" title="9 Criuses"></i>
-                                        <i class="flaticon-transport" data-toggle="tooltip" data-placement="top" title="31 Flights"></i>
-                                        <i class="flaticon-front" data-toggle="tooltip" data-placement="top" title="83 Hotels"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-4 thm-padding">
-                                <div class="destination-grid">
-                                    <a href="#"><img src="assets/images/destination-370x370-1.jpg" class="img-responsive" alt=""></a>
-                                    <div class="mask">
-                                        <h2>Sydney</h2>
-                                        <p>It is a long established fact that a reader will be distracted by the readable content</p>
-                                        <a href="#" class="thm-btn">Read More</a>
-                                    </div>
-                                    <div class="dest-name">
-                                        <h5>Sydney Opera House</h5>
-                                        <h4>Sydney</h4>
-                                    </div>
-                                    <div class="dest-icon">
-                                        <i class="flaticon-earth-globe" data-toggle="tooltip" data-placement="top" title="15 Tours"></i>
-                                        <i class="flaticon-ship" data-toggle="tooltip" data-placement="top" title="9 Criuses"></i>
-                                        <i class="flaticon-transport" data-toggle="tooltip" data-placement="top" title="31 Flights"></i>
-                                        <i class="flaticon-front" data-toggle="tooltip" data-placement="top" title="83 Hotels"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-4 thm-padding">
-                                <div class="destination-grid">
-                                    <a href="#"><img src="assets/images/destination-370x370-1.jpg" class="img-responsive" alt=""></a>
-                                    <div class="mask">
-                                        <h2>Sydney</h2>
-                                        <p>It is a long established fact that a reader will be distracted by the readable content</p>
-                                        <a href="#" class="thm-btn">Read More</a>
-                                    </div>
-                                    <div class="dest-name">
-                                        <h5>Sydney Opera House</h5>
-                                        <h4>Sydney</h4>
-                                    </div>
-                                    <div class="dest-icon">
-                                        <i class="flaticon-earth-globe" data-toggle="tooltip" data-placement="top" title="15 Tours"></i>
-                                        <i class="flaticon-ship" data-toggle="tooltip" data-placement="top" title="9 Criuses"></i>
-                                        <i class="flaticon-transport" data-toggle="tooltip" data-placement="top" title="31 Flights"></i>
-                                        <i class="flaticon-front" data-toggle="tooltip" data-placement="top" title="83 Hotels"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-4 thm-padding">
-                                <div class="destination-grid">
-                                    <a href="#"><img src="assets/images/destination-370x370-1.jpg" class="img-responsive" alt=""></a>
-                                    <div class="mask">
-                                        <h2>Sydney</h2>
-                                        <p>It is a long established fact that a reader will be distracted by the readable content</p>
-                                        <a href="#" class="thm-btn">Read More</a>
-                                    </div>
-                                    <div class="dest-name">
-                                        <h5>Sydney Opera House</h5>
-                                        <h4>Sydney</h4>
-                                    </div>
-                                    <div class="dest-icon">
-                                        <i class="flaticon-earth-globe" data-toggle="tooltip" data-placement="top" title="15 Tours"></i>
-                                        <i class="flaticon-ship" data-toggle="tooltip" data-placement="top" title="9 Criuses"></i>
-                                        <i class="flaticon-transport" data-toggle="tooltip" data-placement="top" title="31 Flights"></i>
-                                        <i class="flaticon-front" data-toggle="tooltip" data-placement="top" title="83 Hotels"></i>
-                                    </div>
-                                </div>
-                            </div>
+                            <?php
+                                }
+                            }?>
+                            
                         </div>
                     </div>
                 </div>
