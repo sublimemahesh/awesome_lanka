@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <!-- Mirrored from travel.bdtask.com/travel_demo/tours.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 30 May 2018 07:03:21 GMT -->
+    <!-- Mirrored from travel.bdtask.com/travel_demo/gallery.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 30 May 2018 07:10:06 GMT -->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,16 +15,13 @@
         <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="assets/images/apple-touch-icon-114x114-precomposed.png">
         <!-- Base Css -->
         <link href="assets/css/base.css" rel="stylesheet" type="text/css"/>
-        <link href="assets/css/custom.css" rel="stylesheet" type="text/css"/>
-        <link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
-
     </head>
     <body>
         <!-- page loader -->
         <div class="se-pre-con"></div>
         <div id="page-content">
             <!-- navber -->
-            <?php include './header.php'; ?>
+          <?php include_once './header.php'; ?>
             <!-- /.nav end -->
             <!-- page header -->
             <section class="header" style="background-image: url(assets/images/header-1920x1135-10.jpg);margin-bottom: 60px;">
@@ -47,226 +44,246 @@
                     </div>
                 </div>
             </section>
-            <!-- hotel -->
-
-            <div id="detail-page">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-9 col-sm-12" style="margin-top: -60px;"">
-                            <div class="detail-info">
-                                <div class="detail-img">
-
-                                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-
-                                        <!-- Wrapper for slides -->
-                                        <div class="carousel-inner" style="margin-top: 59px;">
-
-                                            <div class="item active">
-                                                <img src="assets/images/gcydfgysb.jpg" alt="">
-                                                <div class="carousel-caption">
-                                                    <h3>Colombo</h3>
-                                                </div>
-                                            </div>
-
-                                            <div class="item">
-                                                <img src="assets/images/gcydfgysb.jpg" alt="">
-                                                <div class="carousel-caption">
-                                                    <h3>Sigiriya</h3>
-                                                </div>
-                                            </div>
-
+            <!-- gallety -->
+            <div class="gallery">
+                <div class="gallery-inner">
+                    <div class="container">
+                        <div class="row gallery-margin">
+                            <div>
+                                <h3>Day 1</h3>
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its 
+                                    layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
+                                    using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web 
+                                    page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web 
+                                    sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose
+                                    (injected humour and the like).
+                                </p>
+                            </div>
+                            <div class="portfolio-items list-unstyled zoom-gallery" id="grid">
+                                <div class="col-md-3 col-sm-3 col-xs-12 gallery-padding" data-groups='["family", "honeymoon"]'>
+                                    <div class="img-thumb">
+                                        <a href="assets/images/Package-800x500-6.jpg">
+                                            <img src="assets/images/Package-800x500-6.jpg" class="img-responsive" alt="">
+                                        </a>
+                                        <div class="gallery-hover">
+                                            
                                         </div>
-
-                                        <!-- Left and right controls -->
-                                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                                            <span class="glyphicon glyphicon-chevron-left"></span>
-                                            <span class="sr-only">Previous</span>
-                                        </a>
-                                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                                            <span class="glyphicon glyphicon-chevron-right"></span>
-                                            <span class="sr-only">Next</span>
-                                        </a>
-                                    </div><br><br>
-
-                                    <div class="col-sm-12" style="margin-left: -15px;">
-                                        <p style="padding-bottom: 50px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                            when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap 
-                                            into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum 
-                                            passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                                     </div>
                                 </div>
-                                <div class="detail-info-cont text-justify">
-                                    <h2></h2>
-                                    <div class="seperator-l"></div>
-                                </div>
-                                <div class="detail-sep-line hidden-md hidden-lg"></div>
-                            </div>
-                        </div>
-                        <section class="blog-wrapper">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-3 col-sm-12">
-                                        <div class="page-sidebar">
-                                            <div class="row">                                
-                                                <div class="col-md-12 col-sm-6">
-                                                    <div class="sidber-box cats-widget" style="padding-left: 14px; margin-top: -70px;">
-                                                        <h3>Other Tour Packages</h3>
-                                                        <div class="media side-news-media">
-                                                            <div class="media-left">
-                                                                <h5><b>Galle</b></h5>
-                                                                <img src="assets/images/Package-800x500-1.jpg" height="80" alt="Olive Ridley Turtles">
-                                                            </div>
-                                                            <h8>Lorem Ipsum is simply dummy text of the printing
-                                                                and typesetting industry. Lorem Ipsum has been the industry's 
-                                                                standard dummy text ever since the 1500s,</h8>
-                                                        </div>
-                                                        <div class="media side-news-media">
-                                                            <div class="media-left">
-                                                                <h5><b>Galle Fort</b></h5>
-                                                                <img src="assets/images/Package-800x500-2.jpg" height="80" alt="Green Turtle">
-                                                            </div>
-                                                            <h8>Lorem Ipsum is simply dummy text of the printing
-                                                                and typesetting industry. Lorem Ipsum has been the industry's 
-                                                                standard dummy text ever since the 1500s, </h8>
-                                                        </div>
-                                                        <div class="media side-news-media">
-                                                            <div class="media-left">
-                                                                <h5><b>Ambalangoda</b></h5>
-                                                                <img src="assets/images/Package-800x500-3.jpg" height="80" alt="Hawksbill Turtle">
-                                                            </div>
-                                                            <h8>Lorem Ipsum is simply dummy text of the printing
-                                                                and typesetting industry. Lorem Ipsum has been the industry's 
-                                                                standard dummy text ever since the 1500s, </h8>                                                    <div class="media-body">
-                                                            </div>
-                                                        </div>
-                                                        <div class="media side-news-media">
-                                                            <div class="media-left">
-                                                                <h5><b>Nuwara Eliya</b></h5>
-                                                                <img src="assets/images/Package-800x500-5.jpg" height="80" alt="Loggerhead Turtle">
-                                                            </div>
-                                                            <h8>Lorem Ipsum is simply dummy text of the printing
-                                                                and typesetting industry. Lorem Ipsum has been the industry's 
-                                                                standard dummy text ever since the 1500s, </h8>
-                                                        </div>
-
-                                                        <div class="media side-news-media" style="padding-bottom: 71px;">
-                                                            <div class="media-left">
-                                                                <h5><b>Galle</b></h5>
-                                                                <img src="assets/images/Package-800x500-3.jpg" height="80" alt="Leatherback sea Turtle">
-                                                            </div>
-                                                            <h8>Lorem Ipsum is simply dummy text of the printing
-                                                                and typesetting industry. Lorem Ipsum has been the industry's 
-                                                                standard dummy text ever since the 1500s, when an unknown printer
-                                                                took a galley of typ</h8>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                <div class="col-md-3 col-sm-3 col-xs-12 gallery-padding" data-groups='["romantic"]'>
+                                    <div class="img-thumb">
+                                         <a href="assets/images/gallery-1920x1280.jpg">
+                                             <img src="assets/images/gallery-1920x1280.jpg" class="img-responsive" alt="">
+                                        </a>
+                                        <div class="gallery-hover">
+                                           
                                         </div>
-                                    </div> 
+                                    </div>
                                 </div>
+                                <div class="col-md-3 col-sm-3 col-xs-12 gallery-padding" data-groups='["futurama"]'>
+                                    <div class="img-thumb">
+                                        <a href="assets/images/Package-800x500-4.jpg">
+                                            <img src="assets/images/Package-800x500-4.jpg" class="img-responsive" alt="">
+                                        </a>
+                                        <div class="gallery-hover">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-12 gallery-padding" data-groups='["family", "romantic", "honeymoon"]'>
+                                    <div class="img-thumb">
+                                        <a href="assets/images/Package-800x500-3.jpg" >
+                                            <img src="assets/images/Package-800x500-3.jpg" class="img-responsive" alt="">
+                                        </a>
+                                        <div class="gallery-hover">
+                                          
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- sizer -->
+                                <div class="col-md-3 col-sm-3 col-xs-12 shuffle_sizer"></div>
+                                
                             </div>
-                        </section>
-
-
-
-<!--                        <section class="blog-wrapper">
-    <div class="container">
-        <div class="row">
-             sideber 
-            <div class="col-md-12 col-sm-6">
-                <div class="sidber-box cats-widget">
-                    <div class="cats-title">
-                        All Categories
-                    </div>
-                    <ul>	
-                        <div class="sidebar-news">
-                            <h3>Other Tour Packages</h3>
-                            <div class="media side-news-media">
-                                <div class="media-left">
-                                    <h5><b>Galle</b></h5>
-                                    <img src="assets/images/Package-800x500-1.jpg" height="80" alt="Olive Ridley Turtles">
-                                </div>
-                                <h8>Lorem Ipsum is simply dummy text of the printing
-                                    and typesetting industry. Lorem Ipsum has been the industry's 
-                                    standard dummy text ever since the 1500s,</h8>
+                              <div class="separator"></div>
+                        </div>
+                    </div> 
+                </div>
+              
+            </div>
+               <div class="gallery">
+                <div class="gallery-inner">
+                    <div class="container">
+                        <div class="row gallery-margin">
+                            <div>
+                                <h3>Day 1</h3>
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its 
+                                    layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
+                                    using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web 
+                                    page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web 
+                                    sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose
+                                    (injected humour and the like).
+                                </p>
                             </div>
-                            <div class="media side-news-media">
-                                <div class="media-left">
-                                    <h5><b>Galle Fort</b></h5>
-                                    <img src="assets/images/Package-800x500-2.jpg" height="80" alt="Green Turtle">
+                            <div class="portfolio-items list-unstyled zoom-gallery" id="grid">
+                                <div class="col-md-3 col-sm-3 col-xs-12 gallery-padding" data-groups='["family", "honeymoon"]'>
+                                    <div class="img-thumb">
+                                        <a href="assets/images/Package-800x500-6.jpg">
+                                            <img src="assets/images/Package-800x500-6.jpg" class="img-responsive" alt="">
+                                        </a>
+                                        <div class="gallery-hover">
+                                            
+                                        </div>
+                                    </div>
                                 </div>
-                                <h8>Lorem Ipsum is simply dummy text of the printing
-                                    and typesetting industry. Lorem Ipsum has been the industry's 
-                                    standard dummy text ever since the 1500s, </h8>
+                                <div class="col-md-3 col-sm-3 col-xs-12 gallery-padding" data-groups='["romantic"]'>
+                                    <div class="img-thumb">
+                                         <a href="assets/images/gallery-1920x1280.jpg">
+                                             <img src="assets/images/gallery-1920x1280.jpg" class="img-responsive" alt="">
+                                        </a>
+                                        <div class="gallery-hover">
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-12 gallery-padding" data-groups='["futurama"]'>
+                                    <div class="img-thumb">
+                                        <a href="assets/images/Package-800x500-4.jpg">
+                                            <img src="assets/images/Package-800x500-4.jpg" class="img-responsive" alt="">
+                                        </a>
+                                        <div class="gallery-hover">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-12 gallery-padding" data-groups='["family", "romantic", "honeymoon"]'>
+                                    <div class="img-thumb">
+                                        <a href="assets/images/Package-800x500-3.jpg" >
+                                            <img src="assets/images/Package-800x500-3.jpg" class="img-responsive" alt="">
+                                        </a>
+                                        <div class="gallery-hover">
+                                          
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- sizer -->
+                                <div class="col-md-3 col-sm-3 col-xs-12 shuffle_sizer"></div>
+                               
                             </div>
-                            <div class="media side-news-media">
-                                <div class="media-left">
-                                    <h5><b>Ambalangoda</b></h5>
-                                    <img src="assets/images/Package-800x500-3.jpg" height="80" alt="Hawksbill Turtle">
-                                </div>
-                                <h8>Lorem Ipsum is simply dummy text of the printing
-                                    and typesetting industry. Lorem Ipsum has been the industry's 
-                                    standard dummy text ever since the 1500s, </h8>
+                             
+                        </div>
+                        <div class="separator" style="margin-bottom: 60px;"></div>
+                    </div> 
+                    
+                </div>
+              
+            </div>
+     
+            <!-- Newsletter -->
+        
+        </div>
+        <!-- Footer Section -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <!-- Address -->
+                    <div class="col-sm-4 col-md-3">
+                        <div class="footer-box address-inner">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                                been the.  </p>
+                            <div class="address">
+                                <i class="flaticon-placeholder"></i>
+                                <p>PO Box 16122 Collins Street<br>
+                                    West Victoria 8007 Australia</p>
                             </div>
-                            <div class="media side-news-media">
-                                <div class="media-left">
-                                    <h5><b>Nuwara Eliya</b></h5>
-                                    <img src="assets/images/Package-800x500-5.jpg" height="80" alt="Loggerhead Turtle">
-                                </div>
-                                <h8>Lorem Ipsum is simply dummy text of the printing
-                                    and typesetting industry. Lorem Ipsum has been the industry's 
-                                    standard dummy text ever since the 1500s, </h8>
+                            <div class="address">
+                                <i class="flaticon-customer-service"></i>
+                                <p> +880153625892</p>
                             </div>
-
-                            <div class="media side-news-media" style="padding-bottom: 71px;">
-                                <div class="media-left">
-                                    <h5><b>Galle</b></h5>
-                                    <img src="assets/images/Package-800x500-3.jpg" height="80" alt="Leatherback sea Turtle">
-                                </div>
-                                <h8>Lorem Ipsum is simply dummy text of the printing
-                                    and typesetting industry. Lorem Ipsum has been the industry's 
-                                    standard dummy text ever since the 1500s, when an unknown printer
-                                    took a galley of typ</h8>
+                            <div class="address">
+                                <i class="flaticon-mail"></i>
+                                <p> <a href="http://travel.bdtask.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a9c8cdc4c0c7e9cec4c8c0c587cac6c4">[email&#160;protected]</a></p>
                             </div>
                         </div>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</section>-->
-
+                    </div>
+                    <div class="col-sm-8 col-md-6">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4">
+                                <div class="footer-box">
+                                    <h4 class="footer-title">Information</h4>
+                                    <ul class="categoty">
+                                        <li><a href="#">Pygmy miles</a></li>
+                                        <li><a href="#">About us</a></li>
+                                        <li><a href="#">Online Enquiry</a></li>
+                                        <li><a href="#">Call us</a></li>
+                                        <li><a href="#">Terms and Conditions</a></li>
+                                        <li><a href="#">Privacy & Cookies Policy</a></li>
+                                        <li><a href="#">Become a partner</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4">
+                                <div class="footer-box">
+                                    <h4 class="footer-title">Experiences</h4>
+                                    <ul class="categoty">
+                                        <li><a href="#">Epic journeys</a></li>
+                                        <li><a href="#">Hidden tribes</a></li>
+                                        <li><a href="#">Eco lodges & tours</a></li>
+                                        <li><a href="#">Endangered Wildlife</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4">
+                                <div class="footer-box">
+                                    <h4 class="footer-title">Destinations</h4>
+                                    <ul class="categoty">
+                                        <li><a href="#">Europe</a></li>
+                                        <li><a href="#">Africa</a></li>
+                                        <li><a href="#">Asia</a></li>
+                                        <li><a href="#">Oceania</a></li>
+                                        <li><a href="#">North America</a></li>
+                                        <li><a href="#">South America</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 hidden-sm">
+                        <div class="footer-box">
+                            <h4 class="footer-title">Flickr Gallery</h4>
+                            <ul class="gallery-list">
+                                <li> <a href="#"><img src="assets/images/flickr-1.jpg" alt=""></a></li>
+                                <li> <a href="#"><img src="assets/images/flickr-2.jpg" alt=""></a></li>
+                                <li> <a href="#"><img src="assets/images/flickr-3.jpg" alt=""></a></li>
+                                <li> <a href="#"><img src="assets/images/flickr-4.jpg" alt=""></a></li>
+                                <li> <a href="#"><img src="assets/images/flickr-5.jpg" alt=""></a></li>
+                                <li> <a href="#"><img src="assets/images/flickr-6.jpg" alt=""></a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-
-
-
-            <!-- Newsletter -->
-            <section class="get-offer">
+            <div class="sub-footer">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-5">
-                            <span>Subscribe to our Newsletter</span>
-                            <h2>& Discover the best offers!</h2>
+                            <p>Copyright Â© 2016. All rights reserved</p>
                         </div>
                         <div class="col-sm-7">
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Enter Your Email" name="q">
-                                <div class="input-group-btn">
-                                    <button class="btn btn-default" type="submit"><i class="flaticon-paper-plane"></i> Subscribe</button>
-                                </div>
+                            <div class="footer-menu">
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Service</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Shop</a></li>
+                                    <li><a href="#">Forum</a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-        </div>
-
-        <!-- Footer Section -->
-        <?php include './footer.php'; ?>
+            </div>
+        </footer>
         <!-- jQuery -->
         <script data-cfasync="false" src="../cdn-cgi/scripts/f2bf09f8/cloudflare-static/email-decode.min.js"></script><script src="assets/js/jquery.min.js" type="text/javascript"></script>
         <!-- jquery ui js -->
@@ -290,11 +307,7 @@
         <script src="assets/js/jquery.easing.min.js" type="text/javascript"></script>
         <!-- custom -->
         <script src="assets/js/custom.js" type="text/javascript"></script>
-        <!-- google map -->
-        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=%20AIzaSyCQ4twFS87Ji-69gchik7Vak4lEsxOCA6M"></script>
-        <script src="assets/js/hotels.maps.js" type="text/javascript"></script>
-
     </body>
 
-    <!-- Mirrored from travel.bdtask.com/travel_demo/tours.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 30 May 2018 07:04:32 GMT -->
+    <!-- Mirrored from travel.bdtask.com/travel_demo/gallery.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 30 May 2018 07:10:06 GMT -->
 </html>

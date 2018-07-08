@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-   
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -76,7 +75,7 @@
                                         <i class="flaticon-wifi" data-toggle="tooltip" data-placement="top" title="" data-original-title="Free wifi"></i>
                                         <i class="flaticon-weightlifting" data-toggle="tooltip" data-placement="top" title="" data-original-title="Fitness center"></i>
                                         <i class="flaticon-lemonade" data-toggle="tooltip" data-placement="top" title="" data-original-title="Restaurant"></i>                                        
-                                        <a href="#" class="thm-btn" style="margin-bottom: -27px;">Read More</a>
+                                        <a href="view-tourpackage.php" class="thm-btn" style="margin-bottom: -27px;">Read More</a>
                                     </div>
 
 
@@ -109,7 +108,7 @@
                                         <i class="flaticon-wifi" data-toggle="tooltip" data-placement="top" title="" data-original-title="Free wifi"></i>
                                         <i class="flaticon-weightlifting" data-toggle="tooltip" data-placement="top" title="" data-original-title="Fitness center"></i>
                                         <i class="flaticon-lemonade" data-toggle="tooltip" data-placement="top" title="" data-original-title="Restaurant"></i>
-                                        <a href="#" class="thm-btn" style="margin-bottom: -27px;">Read More</a>
+                                        <a href="view-tourpackage.php" class="thm-btn" style="margin-bottom: -27px;">Read More</a>
                                     </div>
                                 </div>
 
@@ -140,7 +139,7 @@
                                         <i class="flaticon-wifi" data-toggle="tooltip" data-placement="top" title="" data-original-title="Free wifi"></i>
                                         <i class="flaticon-weightlifting" data-toggle="tooltip" data-placement="top" title="" data-original-title="Fitness center"></i>
                                         <i class="flaticon-lemonade" data-toggle="tooltip" data-placement="top" title="" data-original-title="Restaurant"></i>
-                                        <a href="#" class="thm-btn" style="margin-bottom: -27px;">Read More</a>
+                                        <a href="view-tourpackage.php" class="thm-btn" style="margin-bottom: -27px;">Read More</a>
                                     </div>
                                 </div>
 
@@ -171,7 +170,7 @@
                                         <i class="flaticon-wifi" data-toggle="tooltip" data-placement="top" title="" data-original-title="Free wifi"></i>
                                         <i class="flaticon-weightlifting" data-toggle="tooltip" data-placement="top" title="" data-original-title="Fitness center"></i>
                                         <i class="flaticon-lemonade" data-toggle="tooltip" data-placement="top" title="" data-original-title="Restaurant"></i>
-                                        <a href="#" class="thm-btn" style="margin-bottom: -27px;">Read More</a>
+                                        <a href="view-tourpackage.php" class="thm-btn" style="margin-bottom: -27px;">Read More</a>
                                     </div>
                                 </div>
 
@@ -202,7 +201,7 @@
                                         <i class="flaticon-wifi" data-toggle="tooltip" data-placement="top" title="" data-original-title="Free wifi"></i>
                                         <i class="flaticon-weightlifting" data-toggle="tooltip" data-placement="top" title="" data-original-title="Fitness center"></i>
                                         <i class="flaticon-lemonade" data-toggle="tooltip" data-placement="top" title="" data-original-title="Restaurant"></i>
-                                        <a href="#" class="thm-btn" style="margin-bottom: -27px;">Read More</a>
+                                        <a href="view-tourpackage.php" class="thm-btn" style="margin-bottom: -27px;">Read More</a>
                                     </div>
                                 </div>
 
@@ -233,7 +232,7 @@
                                         <i class="flaticon-wifi" data-toggle="tooltip" data-placement="top" title="" data-original-title="Free wifi"></i>
                                         <i class="flaticon-weightlifting" data-toggle="tooltip" data-placement="top" title="" data-original-title="Fitness center"></i>
                                         <i class="flaticon-lemonade" data-toggle="tooltip" data-placement="top" title="" data-original-title="Restaurant"></i>
-                                        <a href="#" class="thm-btn" style="margin-bottom: -27px;">Read More</a>
+                                        <a href="view-tourpackage.php" class="thm-btn" style="margin-bottom: -27px;">Read More</a>
                                     </div>
                                 </div>
 
@@ -267,7 +266,7 @@
                                         <i class="flaticon-wifi" data-toggle="tooltip" data-placement="top" title="" data-original-title="Free wifi"></i>
                                         <i class="flaticon-weightlifting" data-toggle="tooltip" data-placement="top" title="" data-original-title="Fitness center"></i>
                                         <i class="flaticon-lemonade" data-toggle="tooltip" data-placement="top" title="" data-original-title="Restaurant"></i>
-                                        <a href="#" class="thm-btn" style="margin-bottom: -27px;">Read More</a>
+                                        <a href="view-tourpackage.php" class="thm-btn" style="margin-bottom: -27px;">Read More</a>
                                     </div>
                                 </div>
 

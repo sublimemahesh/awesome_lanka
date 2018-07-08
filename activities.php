@@ -152,24 +152,7 @@
             </section>
                                      
             <!-- Newsletter -->
-            <section class="get-offer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-5">
-                            <span>Subscribe to our Newsletter</span>
-                            <h2>& Discover the best offers!</h2>
-                        </div>
-                        <div class="col-sm-7">
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Enter Your Email" name="q">
-                                <div class="input-group-btn">
-                                    <button class="btn btn-default" type="submit"><i class="flaticon-paper-plane"></i> Subscribe</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+        
         </div>
         <!-- Footer Section -->
         <?php include './footer.php'; ?>

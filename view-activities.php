@@ -59,7 +59,7 @@
                                     <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
                                         <!-- Wrapper for slides -->
-                                        <div class="carousel-inner" style="margin-top: 59px;">
+                                        <div class="carousel-inner" style="margin-top: -11px;">
 
                                             <div class="item active">
                                                 <img src="assets/images/gcydfgysb.jpg" alt="">
