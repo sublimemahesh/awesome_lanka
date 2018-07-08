@@ -67,10 +67,10 @@
                             <div class="col-sm-6">
                                 <div class="ac-items">
                                     <a class="image" href="#">
-                                        <img src="assets/images/accommodation-960x650-2.jpg" class="img-responsive" alt="">
+                                        <img src="assets/images/cart.png" class="img-responsive" alt="">
                                     </a>
                                     <div class="content">
-                                        <h4>Nice Hotel name</h4>
+                                        <h4>Fast Booking</h4>
                                         <div class="description">
                                             <p>Cute dogs come in a variety of shapes and sizes. Some cute dogs are cute for their adorable faces, others for their tiny stature, and even others for their massive size.</p>
                                         </div>
@@ -80,10 +80,10 @@
                             <div class="col-sm-6">
                                 <div class="ac-items">
                                     <a class="image" href="#">
-                                        <img src="assets/images/accommodation-960x650-3.jpg" class="img-responsive" alt="">
+                                        <img src="assets/images/credit-card.png" class="img-responsive" alt="">
                                     </a>
                                     <div class="content">
-                                        <h4>Nice Hotel name</h4>
+                                        <h4>Visa Card Accepted</h4>
                                         <div class="description">
                                             <p>Cute dogs come in a variety of shapes and sizes. Some cute dogs are cute for their adorable faces, others for their tiny stature, and even others for their massive size.</p>
                                         </div>
@@ -93,10 +93,10 @@
                             <div class="col-sm-6">
                                 <div class="ac-items">
                                     <a class="image" href="#">
-                                        <img src="assets/images/accommodation-960x650-4.jpg" class="img-responsive" alt="">
+                                        <img src="assets/images/airplane.png" class="img-responsive" alt="">
                                     </a>
                                     <div class="content">
-                                        <h4>Nice Hotel name</h4>
+                                        <h4>Airport Drop</h4>
                                         <div class="description">
                                             <p>Cute dogs come in a variety of shapes and sizes. Some cute dogs are cute for their adorable faces, others for their tiny stature, and even others for their massive size.</p>
                                         </div>
