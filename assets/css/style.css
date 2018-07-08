@@ -323,7 +323,7 @@ blockquote .author,
 .tour-details-inner,
 .hotel-inner,
 .tour-inner {
-/*    padding: 70px 0;*/
+    /*    padding: 70px 0;*/
 }
 
 
@@ -2026,7 +2026,7 @@ figure.effect-milo:hover .effect-block,
     -webkit-flex: 0 0 auto;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
-    width: 250px;
+    width: 165px;
     height: auto;
     max-width: 100%;
 }

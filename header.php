@@ -24,7 +24,7 @@
 
             </ul>
             <ul class="nav navbar-nav navbar-right hidden-sm">
-                <li><a class="nav-btn" href="booking.php"><div class="thm-btn">Booking</div></a></li>
+                <li><a class="nav-btn" href="booking.php" style="margin-top: -69px; margin-right: -20px;"><div class="thm-btn">Booking</div></a></li>
             </ul>
         </div> <!-- /.navbar-collapse --> 
     </div> <!-- /.container --> 
