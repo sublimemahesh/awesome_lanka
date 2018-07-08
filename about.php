@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php include './class/include.php'; ?>
 <html lang="en">
 
     <head>
@@ -51,16 +52,7 @@
                 <div class="about-inner">
                     <div class="container">
                         <div class="row">
-                            <!--                            <div class="col-md-offset-2 col-md-8">
-                                                            <div class="section-title text-center">
-                                                                <i class="flaticon-care-about-water"></i>
-                                                                <h2>About Us</h2>
-                                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-                                                            </div>
-                                                        </div>-->
-
                             <div class="col-sm-12">
-
                                 <div class="middle-content">
                                     <div class="row">
                                         <div class="col-sm-12 col-md-6">
@@ -72,32 +64,10 @@
                                                     <h2>Our Story</h2>
                                                     <h3> One day, one jump and two years of passion</h3>
                                                     <p class="mission-description">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit au <br>ctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit cons <br>equat ipsum, nec sagittis sem . </p>
-                                                    <!--                                                <div class="row">
-                                                                                                        <div class="col-sm-6">
-                                                                                                            <ul class="content-list">
-                                                                                                                <li>First Class Flights</li>
-                                                                                                                <li>5 Star Accommodations</li>
-                                                                                                                <li>Inclusive Packages</li>
-                                                                                                                <li>Latest Model Vehicles</li>
-                                                                                                                <li>10 Languages available</li>
-                                                                                                            </ul>
-                                                                                                        </div>
-                                                                                                        <div class="col-sm-6">
-                                                                                                            <ul class="content-list">
-                                                                                                                <li>Best Price Guarantee</li>
-                                                                                                                <li>World Class Service</li>
-                                                                                                                <li>Handpicked Hotels</li>
-                                                                                                                <li>Accessibility management</li>
-                                                                                                                <li>+120 Premium city tours</li>
-                                                                                                            </ul>
-                                                                                                        </div>
-                                                                                                    </div>-->
                                                     <div class="row">
                                                         <div class="col-sm-12">
-                                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                                                when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap 
-                                                                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum 
-                                                                passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                                            <?php $PAGES = new Page(2);?>
+                                                            <p class="text-justify"><?php echo $PAGES->description;?></p>
                                                         </div>
 
                                                     </div>
@@ -362,7 +332,7 @@
 
         </section>
         <!-- Newsletter -->
-     
+
     </div>
 
     <!-- Footer Section -->
