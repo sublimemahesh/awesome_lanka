@@ -53,7 +53,7 @@
                             <?php foreach (Attraction::all() as $key => $attraction) { ?>
                                 <div class="col-md-3 col-sm-4 thm-padding">
                                     <div class="destination-grid">
-                                        <a href="#"><img src="upload/attraction/<?php echo $attraction['image_name'] ?>" class="img-responsive" alt=""></a>
+                                        <a href="view-attraction.php?id=<?php echo $attraction['id']?>"><img src="upload/attraction/<?php echo $attraction['image_name'] ?>" class="img-responsive" alt=""></a>
                                         <div class="mask">
                                             <h2><?php echo $attraction['title'] ?></h2>
                                             <p><?php echo $attraction['short_description'] ?></p>

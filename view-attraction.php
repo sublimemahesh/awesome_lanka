@@ -66,24 +66,6 @@ $ATTRACTION_PHOTO = $ATTRACTIONPHOTEOS->getAttractionPhotosById($id);
 
                                     <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
-                                        <!-- Wrapper for slides -->
-
-                                        <div class="carousel-inner" style="margin-top: -11px;">
-
-                                            <div class="item active">
-                                                <img src="assets/images/gcydfgysb.jpg" alt="">
-                                                <div class="carousel-caption">
-                                                    <h3>Colombo</h3>
-                                                </div>
-                                            </div>
-
-                                            <div class="item">
-                                                <img src="assets/images/gcydfgysb.jpg" alt="">
-                                                <div class="carousel-caption">
-                                                    <h3>Sigiriya</h3>
-                                                </div>
-                                            </div>
-
                                         <div class="carousel-inner" style="margin-top: 59px;">
                                             <?php
                                             foreach ($ATTRACTION_PHOTO as $key => $actrationPhotos) {
@@ -149,8 +131,8 @@ $ATTRACTION_PHOTO = $ATTRACTIONPHOTEOS->getAttractionPhotosById($id);
                                                                 ?>
                                                                 <div class="media side-news-media">
                                                                     <div class="media-left">
-                                                                        <h5><b><?php echo $attration['title'] ?></b></h5>
-                                                                        <img src="upload/attraction/<?php echo $attration['image_name'] ?>" height="80" alt="Olive Ridley Turtles">
+                                                                        <a href="view-attraction.php?id=<?php echo $attration['id']?>"> <h5><b><?php echo $attration['title'] ?></b></h5></a>
+                                                                        <a href="view-attraction.php?id=<?php echo $attration['id']?>"> <img src="upload/attraction/<?php echo $attration['image_name'] ?>" height="80" alt="Olive Ridley Turtles"></a>
                                                                     </div>
                                                                     <h8><?php echo $attration['short_description'] ?></h8>
                                                                 </div>
