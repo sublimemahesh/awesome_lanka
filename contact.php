@@ -14,6 +14,8 @@
         <!-- Base Css -->
         <link href="assets/css/base.css" rel="stylesheet" type="text/css"/>
         <link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
+        <link href="contact-form/style.css" rel="stylesheet" type="text/css"/>
+        <script src="contact-form/scripts.js" type="text/javascript"></script>
     </head>
     <body>
         <!-- page loader -->
@@ -91,34 +93,61 @@
                                     <div class="row">
                                         <div class="col-sm-6">
                                             <div class="form-group">
-                                                <label>First Name</label>
-                                                <input type="text" class="form-control" id="f_name" name="f_name" placeholder="Enter your First Name">
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label>Last Name</label>
-                                                <input type="text" class="form-control" id="l_name" name="l_name" placeholder="Enter Your Last Name">
+                                                <label>Name</label>
+                                                <input type="text" class="form-control" id="txtFullName" name="txtFullName" placeholder="Enter your Name">
+                                                <span id="spanFullName"></span>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="form-group">
                                                 <label>Email</label>
-                                                <input type="text" class="form-control" id="email" name="email" placeholder="Enter Your Email">
+                                                <input type="text" class="form-control" id="txtEmail" name="txtEmail" placeholder="Enter Your Email">
+                                                <span id="spanEmail"></span>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="form-group">
                                                 <label>Phone</label>
-                                                <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone Number">
+                                                <input type="text" class="form-control" id="txtPhone" name="txtPhone" placeholder="Phone Number">
+                                                <span id="spanPhone"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label>Subject</label>
+                                                <input type="text" class="form-control" id="txtSubject" name="txtSubject" placeholder="Enter Your Subject">
+                                                <span id="spanSubject"></span>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label></label>
-                                        <textarea class="form-control" id="message" name="message" placeholder="Your Comment" rows="5"></textarea>
+                                        <textarea class="form-control" id="txtMessage" name="txtMessage" placeholder="Your Comment" rows="5"></textarea>
+                                        <span id="spanMessage"></span>
                                     </div>
-                                    <a href="#" class="thm-btn">Submit</a>
+                                    <div class="col-xs-12 col-sm-6 col-md-8">
+                                        <div class="col-sm-6 ">
+                                            <label for="comment">Security Code:</label>
+                                            <input style="margin-left: -30px;" type="text" name="captchacode" id="captchacode" class="form-control input-validater" placeholder="Enter the code ">
+                                            <span id="capspan" ></span>
+                                        </div>
+                                        <div style="margin-top: 12px; margin-left: -15px;" class="col-sm-6 col-md-4">
+                                            <?php include("./contact-form/captchacode-widget.php"); ?>
+                                        </div> 
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-4">
+                                        <div class="col-sm-4">
+                                            <div style="margin-top: 52px;" class="div-check" >
+                                                <img src="contact-form/img/checking.gif" id="checking"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <div class="col-sm-4">
+                                            <button type="submit" id="btnSubmit" name="btnSubmit" class="thm-btn" style="margin-bottom: 100px; margin-left: -30px;">Submit</button>
+                                        </div>
+                                    </div>
+                                    <div id="dismessage" align="center"></div>
                                 </form>
                             </div>
                         </div>
@@ -152,8 +181,8 @@
                     </div>
                 </div>
             </section>
-            <!-- Newsletter -->
-         
+
+
         </div>
         <!-- Footer Section -->
         <?php include './footer.php'; ?>
@@ -182,7 +211,11 @@
         <script src="assets/js/custom.js" type="text/javascript"></script>
         <!-- google map -->
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=%20AIzaSyDcMXKkIZSG1Ev3nNkDE5vZpfT_KG9zBT8"></script>
+        <script src="contact-form/scripts.js" type="text/javascript"></script>
+
         <script type="text/javascript">
+
+
             // When the window has finished loading create our google map below
             google.maps.event.addDomListener(window, 'load', init);
 
