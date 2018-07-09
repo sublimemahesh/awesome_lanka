@@ -540,6 +540,13 @@
                         <div class="row">
                             <div class="testimonials">
                                 <div class="carousel" data-ride="carousel" id="quote-carousel">
+                                    <?php
+                                    $li='';
+                                    foreach (Comments::activeComments() as $key=>$comment){
+                                        if($key === 0){
+                             $li .='<li data-target="#quote-carousel" data-slide-to="' . $key . '" class=""><img class="img-responsive " src="uploard/comment  alt=""></li>';
+                                    ?>
+?>
                                     <div class="carousel-inner">
                                         <!-- Quote 1 -->  
                                         <div class="item col-sm-10 col-sm-offset-1">
@@ -551,14 +558,7 @@
                                             </blockquote>
                                         </div>
                                         <!-- Quote 2 -->  
-                                        <div class="item col-sm-10 col-sm-offset-1">
-                                            <blockquote>
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium
-                                                aliquam architecto beatae doloremaliquam architecto beatae dolorem, enim error
-                                                eveniet harum iste molestias neque nisi placeat.
-                                                <span class="author">- Jhon Smith, Facebook Inc</span>
-                                            </blockquote>
-                                        </div>
+                                        
                                         <!-- Quote 3 -->
                                         <div class="item col-sm-10 col-sm-offset-1 active">
                                             <blockquote>
@@ -571,7 +571,7 @@
                                     </div>
                                     <!-- Bottom Carousel Indicators -->
                                     <ol class="carousel-indicators">
-                                        <li data-target="#quote-carousel" data-slide-to="0" class=""><img class="img-responsive " src="assets/images/avtar-1.jpg" alt=""></li>
+                                       
                                         <li data-target="#quote-carousel" data-slide-to="1" class=""><img class="img-responsive" src="assets/images/avtar-2.jpg" alt=""></li>
                                         <li data-target="#quote-carousel" data-slide-to="2" class="active"><img class="img-responsive" src="assets/images/avtar-3.jpg" alt=""></li>
                                     </ol>

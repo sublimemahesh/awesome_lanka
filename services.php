@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php
+include './class/include.php';
+?>
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -45,67 +48,32 @@
                 </div>
             </section>
             <!-- hotel -->
-                 <section id="accommodation">
-                    <div class="container">
-                        <div class="row">
-                            <!-- section title -->
+            <section id="accommodation">
+                <div class="container">
+                    <div class="row">
+                        <!-- section title -->
+                        <?php foreach (Service::all() as $key => $service) { ?>
                             <div class="col-sm-6">
                                 <div class="ac-items">
                                     <a class="image" href="#">
-                                        <img src="assets/images/car-key.png" class="img-responsive" alt="">
+                                        <img src="upload/service/<?php echo $service['image_name'];?>" class="img-responsive" alt="">
                                     </a>
                                     <div class="content">
-                                        <h4>Rent A Car</h4>
+                                        <h4><?php echo $service['title']?></h4>
                                         <div class="description">
-                                            <p>Cute dogs come in a variety of shapes and sizes. Some cute dogs are cute for their adorable faces, others for their tiny stature, and even others for their massive size.</p>
+                                            <p><?php echo $service['short_description']?></p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
-                                <div class="ac-items">
-                                    <a class="image" href="#">
-                                        <img src="assets/images/cart.png" class="img-responsive" alt="">
-                                    </a>
-                                    <div class="content">
-                                        <h4>Fast Booking</h4>
-                                        <div class="description">
-                                            <p>Cute dogs come in a variety of shapes and sizes. Some cute dogs are cute for their adorable faces, others for their tiny stature, and even others for their massive size.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="ac-items">
-                                    <a class="image" href="#">
-                                        <img src="assets/images/credit-card.png" class="img-responsive" alt="">
-                                    </a>
-                                    <div class="content">
-                                        <h4>Visa Card Accepted</h4>
-                                        <div class="description">
-                                            <p>Cute dogs come in a variety of shapes and sizes. Some cute dogs are cute for their adorable faces, others for their tiny stature, and even others for their massive size.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="ac-items">
-                                    <a class="image" href="#">
-                                        <img src="assets/images/airplane.png" class="img-responsive" alt="">
-                                    </a>
-                                    <div class="content">
-                                        <h4>Airport Drop</h4>
-                                        <div class="description">
-                                            <p>Cute dogs come in a variety of shapes and sizes. Some cute dogs are cute for their adorable faces, others for their tiny stature, and even others for their massive size.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                            <?php
+                        }
+                        ?>
                     </div>
-                </section>
+                </div>
+            </section>
             <!-- Newsletter -->
-          
+
         </div>
         <!-- Footer Section -->
         <?php include './footer.php'; ?>
