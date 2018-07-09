@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php include './class/include.php'; ?>
 <html lang="en">
 
     <head>
@@ -16,7 +17,7 @@
         <link href="assets/css/base.css" rel="stylesheet" type="text/css"/>
         <link href="assets/css/custom.css" rel="stylesheet" type="text/css"/>
         <link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
-        
+
     </head>
     <body>
         <!-- page loader -->
@@ -47,112 +48,39 @@
                 </div>
             </section>
             <!-- hotel -->
-         <section class="blog-wrapper">
+            <section class="blog-wrapper">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12 col-sm-8">
                             <div class="row">
-                                <div class="col-xs-12 col-sm-6 col-md-3">
-                                    <div class="blog-content">
-                                        <div class="blog-img image-hover">
-                                            <a href="#"><img src="assets/images/blog-800x250-1.jpg" class="img-responsive" alt=""></a>
-<!--                                            <span class="post-date">14 November 2016</span>-->
+                                <?php foreach (Activities::all() as $key => $activity) {
+                                    ?>
+                                <div class="col-xs-12 col-sm-6 col-md-3" style="margin-top: 10px; margin-bottom: 10px;">
+                                        <div class="blog-conitent">
+                                            <div class="blog-img image-hover">
+                                                <a href="view-activities.php?id=<?php echo $activity['id'];?>"><img src="upload/activity/<?php echo $activity['image_name'] ?>" class="img-responsive" alt=""></a>
+                                            </div>
+                                            <h4><a href="view-activities.php?id=<?php echo $activity['id'];?>"><?php echo $activity['title'] ?></a></h4>
+                                            <p><?php echo $activity['short_description'] ?></p>
+                                            <a class="thm-btn btn-act" href="view-activities.php?id=<?php echo $activity['id'];?>">Details</a>
                                         </div>
-                                        <h4><a href="#">It is a long established fact that</a></h4>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                        <a class="thm-btn btn-act" href="view-activities.php">Details</a>
                                     </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-6 col-md-3">
-                                    <div class="blog-content">
-                                        <div class="blog-img image-hover">
-                                            <a href="#"><img src="assets/images/blog-800x250-2.jpg" class="img-responsive" alt=""></a>
-<!--                                            <span class="post-date">14 November 2016</span>-->
-                                        </div>
-                                        <h4><a href="#">It is a long established fact that</a></h4>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                        <a class="thm-btn btn-act" href="view-activities.php">Details</a>
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-6 col-md-3">
-                                    <div class="blog-content">
-                                        <div class="blog-img image-hover">
-                                            <a href="#"><img src="assets/images/blog-800x250-3.jpg" class="img-responsive" alt=""></a>
-<!--                                            <span class="post-date">14 November 2016</span>-->
-                                        </div>
-                                        <h4><a href="#">It is a long established fact that</a></h4>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                        <a class="thm-btn btn-act" href="#">Details</a>
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-6 col-md-3">
-                                    <div class="blog-content">
-                                        <div class="blog-img image-hover">
-                                            <a href="#"><img src="assets/images/blog-800x250-4.jpg" class="img-responsive" alt=""></a>
-<!--                                            <span class="post-date">14 November 2016</span>-->
-                                        </div>
-                                        <h4><a href="#">It is a long established fact that</a></h4>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                        <a class="thm-btn btn-act" href="#">Details</a>
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-6 col-md-3">
-                                    <div class="blog-content">
-                                        <div class="blog-img image-hover">
-                                            <a href="#"><img src="assets/images/blog-800x250-5.jpg" class="img-responsive" alt=""></a>
-<!--                                            <span class="post-date">14 November 2016</span>-->
-                                        </div>
-                                        <h4><a href="#">It is a long established fact that</a></h4>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                        <a class="thm-btn btn-act" href="#">Details</a>
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-6 col-md-3">
-                                    <div class="blog-content">
-                                        <div class="blog-img image-hover">
-                                            <a href="#"><img src="assets/images/blog-800x250-6.jpg" class="img-responsive" alt=""></a>
-<!--                                            <span class="post-date">14 November 2016</span>-->
-                                        </div>
-                                        <h4><a href="#">It is a long established fact that</a></h4>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                        <a class="thm-btn btn-act" href="#">Details</a>
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-6 col-md-3">
-                                    <div class="blog-content">
-                                        <div class="blog-img image-hover">
-                                            <a href="#"><img src="assets/images/blog-800x250-1.jpg" class="img-responsive" alt=""></a>
-<!--                                            <span class="post-date">14 November 2016</span>-->
-                                        </div>
-                                        <h4><a href="#">It is a long established fact that</a></h4>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                        <a class="thm-btn btn-act" href="#">Details</a>
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-6 col-md-3">
-                                    <div class="blog-content">
-                                        <div class="blog-img image-hover">
-                                            <a href="#"><img src="assets/images/blog-800x250-2.jpg" class="img-responsive" alt=""></a>
-<!--                                            <span class="post-date">14 November 2016</span>-->
-                                        </div>
-                                        <h4><a href="#">It is a long established fact that</a></h4>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                        <a class="thm-btn btn-act" href="#">Details</a>
-                                    </div>
-                                </div>
-                            
+                                    <?php
+                                }
+                                ?>
+
                             </div>
                             <!-- pagination -->
-                          
+
                         </div>
                         <!-- sideber -->
-                       
+
                     </div>
                 </div>
             </section>
-                                     
+
             <!-- Newsletter -->
-        
+
         </div>
         <!-- Footer Section -->
         <?php include './footer.php'; ?>
