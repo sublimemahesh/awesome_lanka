@@ -57,7 +57,7 @@
                                         <div class="mask">
                                             <h2><?php echo $attraction['title'] ?></h2>
                                             <p><?php echo $attraction['short_description'] ?></p>
-                                            <a href="view-attraction.php" class="thm-btn">Read More</a>
+                                            <a href="view-attraction.php?id=<?php echo $attraction['id']?>" class="thm-btn">Read More</a>
                                         </div>
                                         <div class="dest-name">
 

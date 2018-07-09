@@ -1,4 +1,13 @@
 <!DOCTYPE html>
+<?php
+include './class/include.php';
+$id = '';
+$id = $_GET["id"];
+$ATTRACTION = new Attraction($id);
+$ATTRACTIONPHOTEOS = new AttractionPhoto($id);
+$ATTRACTION_PHOTO = $ATTRACTIONPHOTEOS->getAttractionPhotosById($id);
+?>
+
 <html lang="en">
 
     <head>
@@ -58,6 +67,7 @@
                                     <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
                                         <!-- Wrapper for slides -->
+
                                         <div class="carousel-inner" style="margin-top: -11px;">
 
                                             <div class="item active">
@@ -74,6 +84,32 @@
                                                 </div>
                                             </div>
 
+                                        <div class="carousel-inner" style="margin-top: 59px;">
+                                            <?php
+                                            foreach ($ATTRACTION_PHOTO as $key => $actrationPhotos) {
+                                                if ($key === 0) {
+                                                    ?>
+                                                    <div class="item active">
+                                                        <img src="upload/attraction/gallery/<?php echo $actrationPhotos['image_name'] ?>" alt="">
+                                                        <div class="carousel-caption">
+                                                            <h3><?php echo $actrationPhotos['caption'] ?></h3>
+                                                        </div>
+                                                    </div>
+                                                    <?php
+                                                } else {
+                                                    ?>
+                                                    <div class="item">
+                                                        <img src="upload/attraction/gallery/<?php echo $actrationPhotos['image_name'] ?>" alt="">
+                                                        <div class="carousel-caption">
+                                                            <h3><?php echo $actrationPhotos['caption'] ?></h3>
+                                                        </div>
+                                                    </div>
+                                                    <?php
+                                                }
+                                            }
+                                            ?>
+
+
                                         </div>
 
                                         <!-- Left and right controls -->
@@ -88,10 +124,7 @@
                                     </div><br><br>
 
                                     <div class="col-sm-12" style="margin-left: -15px;">
-                                        <p style="padding-bottom: 50px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                            when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap 
-                                            into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum 
-                                            passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                        <p class="text-justify"><?php echo $ATTRACTION->description ?></p>
                                     </div>
                                 </div>
                                 <div class="detail-info-cont text-justify">
@@ -109,55 +142,22 @@
                                             <div class="row">                                
                                                 <div class="col-md-12 col-sm-6">
                                                     <div class="sidber-box cats-widget" style="padding-left: 14px; margin-top: -11px;">
-                                                        <h3>Other Tour Packages</h3>
-                                                        <div class="media side-news-media">
-                                                            <div class="media-left">
-                                                                <h5><b>Galle</b></h5>
-                                                                <img src="assets/images/Package-800x500-1.jpg" height="80" alt="Olive Ridley Turtles">
-                                                            </div>
-                                                            <h8>Lorem Ipsum is simply dummy text of the printing
-                                                                and typesetting industry. Lorem Ipsum has been the industry's 
-                                                                standard dummy text ever since the 1500s,</h8>
-                                                        </div>
-                                                        <div class="media side-news-media">
-                                                            <div class="media-left">
-                                                                <h5><b>Galle Fort</b></h5>
-                                                                <img src="assets/images/Package-800x500-2.jpg" height="80" alt="Green Turtle">
-                                                            </div>
-                                                            <h8>Lorem Ipsum is simply dummy text of the printing
-                                                                and typesetting industry. Lorem Ipsum has been the industry's 
-                                                                standard dummy text ever since the 1500s, </h8>
-                                                        </div>
-                                                        <div class="media side-news-media">
-                                                            <div class="media-left">
-                                                                <h5><b>Ambalangoda</b></h5>
-                                                                <img src="assets/images/Package-800x500-3.jpg" height="80" alt="Hawksbill Turtle">
-                                                            </div>
-                                                            <h8>Lorem Ipsum is simply dummy text of the printing
-                                                                and typesetting industry. Lorem Ipsum has been the industry's 
-                                                                standard dummy text ever since the 1500s, </h8>                                                    <div class="media-body">
-                                                            </div>
-                                                        </div>
-                                                        <div class="media side-news-media">
-                                                            <div class="media-left">
-                                                                <h5><b>Nuwara Eliya</b></h5>
-                                                                <img src="assets/images/Package-800x500-5.jpg" height="80" alt="Loggerhead Turtle">
-                                                            </div>
-                                                            <h8>Lorem Ipsum is simply dummy text of the printing
-                                                                and typesetting industry. Lorem Ipsum has been the industry's 
-                                                                standard dummy text ever since the 1500s, </h8>
-                                                        </div>
-
-                                                        <div class="media side-news-media" style="padding-bottom: 71px;">
-                                                            <div class="media-left">
-                                                                <h5><b>Galle</b></h5>
-                                                                <img src="assets/images/Package-800x500-3.jpg" height="80" alt="Leatherback sea Turtle">
-                                                            </div>
-                                                            <h8>Lorem Ipsum is simply dummy text of the printing
-                                                                and typesetting industry. Lorem Ipsum has been the industry's 
-                                                                standard dummy text ever since the 1500s, when an unknown printer
-                                                                took a galley of typ</h8>
-                                                        </div>
+                                                        <h3>Other Attraction</h3>
+                                                        <?php
+                                                        foreach (Attraction::all() as $key => $attration) {
+                                                            if ($key < 4) {
+                                                                ?>
+                                                                <div class="media side-news-media">
+                                                                    <div class="media-left">
+                                                                        <h5><b><?php echo $attration['title'] ?></b></h5>
+                                                                        <img src="upload/attraction/<?php echo $attration['image_name'] ?>" height="80" alt="Olive Ridley Turtles">
+                                                                    </div>
+                                                                    <h8><?php echo $attration['short_description'] ?></h8>
+                                                                </div>
+                                                            <?php
+                                                            }
+                                                        }
+                                                        ?>                                                       
                                                     </div>
                                                 </div>
                                             </div>
@@ -166,74 +166,6 @@
                                 </div>
                             </div>
                         </section>
-<!--                        <section class="blog-wrapper">
-    <div class="container">
-        <div class="row">
-             sideber 
-            <div class="col-md-12 col-sm-6">
-                <div class="sidber-box cats-widget">
-                    <div class="cats-title">
-                        All Categories
-                    </div>
-                    <ul>	
-                        <div class="sidebar-news">
-                            <h3>Other Tour Packages</h3>
-                            <div class="media side-news-media">
-                                <div class="media-left">
-                                    <h5><b>Galle</b></h5>
-                                    <img src="assets/images/Package-800x500-1.jpg" height="80" alt="Olive Ridley Turtles">
-                                </div>
-                                <h8>Lorem Ipsum is simply dummy text of the printing
-                                    and typesetting industry. Lorem Ipsum has been the industry's 
-                                    standard dummy text ever since the 1500s,</h8>
-                            </div>
-                            <div class="media side-news-media">
-                                <div class="media-left">
-                                    <h5><b>Galle Fort</b></h5>
-                                    <img src="assets/images/Package-800x500-2.jpg" height="80" alt="Green Turtle">
-                                </div>
-                                <h8>Lorem Ipsum is simply dummy text of the printing
-                                    and typesetting industry. Lorem Ipsum has been the industry's 
-                                    standard dummy text ever since the 1500s, </h8>
-                            </div>
-                            <div class="media side-news-media">
-                                <div class="media-left">
-                                    <h5><b>Ambalangoda</b></h5>
-                                    <img src="assets/images/Package-800x500-3.jpg" height="80" alt="Hawksbill Turtle">
-                                </div>
-                                <h8>Lorem Ipsum is simply dummy text of the printing
-                                    and typesetting industry. Lorem Ipsum has been the industry's 
-                                    standard dummy text ever since the 1500s, </h8>
-                            </div>
-                            <div class="media side-news-media">
-                                <div class="media-left">
-                                    <h5><b>Nuwara Eliya</b></h5>
-                                    <img src="assets/images/Package-800x500-5.jpg" height="80" alt="Loggerhead Turtle">
-                                </div>
-                                <h8>Lorem Ipsum is simply dummy text of the printing
-                                    and typesetting industry. Lorem Ipsum has been the industry's 
-                                    standard dummy text ever since the 1500s, </h8>
-                            </div>
-
-                            <div class="media side-news-media" style="padding-bottom: 71px;">
-                                <div class="media-left">
-                                    <h5><b>Galle</b></h5>
-                                    <img src="assets/images/Package-800x500-3.jpg" height="80" alt="Leatherback sea Turtle">
-                                </div>
-                                <h8>Lorem Ipsum is simply dummy text of the printing
-                                    and typesetting industry. Lorem Ipsum has been the industry's 
-                                    standard dummy text ever since the 1500s, when an unknown printer
-                                    took a galley of typ</h8>
-                            </div>
-                        </div>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</section>-->
-
                     </div>
                 </div>
             </div>
@@ -241,11 +173,11 @@
 
 
             <!-- Newsletter -->
-    
+
         </div>
 
         <!-- Footer Section -->
-        <?php include './footer.php'; ?>
+<?php include './footer.php'; ?>
         <!-- jQuery -->
         <script data-cfasync="false" src="../cdn-cgi/scripts/f2bf09f8/cloudflare-static/email-decode.min.js"></script><script src="assets/js/jquery.min.js" type="text/javascript"></script>
         <!-- jquery ui js -->
