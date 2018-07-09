@@ -454,7 +454,7 @@
                     </a>
                     <ul class="ml-menu">
                         <li>
-                            <a href="create-photo-album.php">
+                            <a href="view-album-photos.php?id=1">
                                 <i class="material-icons">add</i>
                                 <span>Add New</span>
                             </a>
