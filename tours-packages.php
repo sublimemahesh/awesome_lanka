@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php
+include './class/include.php';
+?>
 <html lang="en">
 
     <head>
@@ -48,390 +51,46 @@
             <section class="hotel-inner">
                 <div class="container">
                     <div class="row" style="margin-top: 60px;">
+                        <?php foreach (TourPackage::all() as $key => $tourse){ ?>
                         <div class="col-sm-12 col-md-6">
+
+
                             <div class="hotel-item">
                                 <!-- hotel Image -->
                                 <div class="hotel-image">
-                                    <a href="view-tourpackage.php">
-                                        <div class="img"><img src="assets/images/hotel-1.jpg"  alt="" class="img-responsive"></div>
+                                    <a href="view-tourpackage.php?id=<?php echo $tourse['id']?>">
+                                        <div class="img"><img src="upload/tour-package/<?php echo $tourse['image_name']?>"  alt="" class="img-responsive"></div>
                                     </a>
                                 </div>
                                 <!-- hotel body -->
                                 <div class="hotel-body">
-                                    <div class="ratting">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star-half-o"></i>
-                                        <i class="fa fa-star-o"></i>
-                                    </div>
+                                  
                                     <!-- title -->
-                                    <h3>Tours in Greece</h3>
+                                    <a href="view-tourpackage.php?id=<?php echo $tourse['id']?>"> <h3><?php echo $tourse['title']?></h3></a>
                                     <!-- Text Intro -->
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Etiam maximus molestie accumsan. Sed metus sapien, fermentum nec lorem ac.</p>
-                                    <div class="free-service">
-                                        <i class="flaticon-television" data-toggle="tooltip" data-placement="top" title="" data-original-title="Plasma TV with cable chanels"></i>
-                                        <i class="flaticon-swimmer" data-toggle="tooltip" data-placement="top" title="" data-original-title="Swimming pool"></i>
-                                        <i class="flaticon-wifi" data-toggle="tooltip" data-placement="top" title="" data-original-title="Free wifi"></i>
-                                        <i class="flaticon-weightlifting" data-toggle="tooltip" data-placement="top" title="" data-original-title="Fitness center"></i>
-                                        <i class="flaticon-lemonade" data-toggle="tooltip" data-placement="top" title="" data-original-title="Restaurant"></i>                                        
-                                        <a href="view-tourpackage.php" class="thm-btn" style="margin-bottom: -27px;">Read More</a>
-                                    </div>
-
-
-                                </div>
-
-                            </div>
-                            <div class="hotel-item">
-                                <!-- hotel Image -->
-                                <div class="hotel-image">
-                                    <a href="#">
-                                        <div class="img"><img src="assets/images/hotel-2.jpg"  alt="" class="img-responsive"></div>
-                                    </a>
-                                </div>
-                                <!-- hotel body -->
-                                <div class="hotel-body">
-                                    <div class="ratting">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star-half-o"></i>
-                                        <i class="fa fa-star-o"></i>
-                                    </div>
-                                    <!-- title -->
-                                    <h3>Tours in Greece</h3>
-                                    <!-- Text Intro -->
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Etiam maximus molestie accumsan. Sed metus sapien, fermentum nec lorem ac.</p>
+                                    <p><?php echo $tourse['short_description']?></p>
                                     <div class="free-service">
                                         <i class="flaticon-television" data-toggle="tooltip" data-placement="top" title="" data-original-title="Plasma TV with cable chanels"></i>
                                         <i class="flaticon-swimmer" data-toggle="tooltip" data-placement="top" title="" data-original-title="Swimming pool"></i>
                                         <i class="flaticon-wifi" data-toggle="tooltip" data-placement="top" title="" data-original-title="Free wifi"></i>
                                         <i class="flaticon-weightlifting" data-toggle="tooltip" data-placement="top" title="" data-original-title="Fitness center"></i>
                                         <i class="flaticon-lemonade" data-toggle="tooltip" data-placement="top" title="" data-original-title="Restaurant"></i>
-                                        <a href="view-tourpackage.php" class="thm-btn" style="margin-bottom: -27px;">Read More</a>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="hotel-item">
-                                <!-- hotel Image -->
-                                <div class="hotel-image">
-                                    <a href="#">
-                                        <div class="img"><img src="assets/images/hotel-2.jpg"  alt="" class="img-responsive"></div>
-                                    </a>
-                                </div>
-                                <!-- hotel body -->
-                                <div class="hotel-body">
-                                    <div class="ratting">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star-half-o"></i>
-                                        <i class="fa fa-star-o"></i>
-                                    </div>
-                                    <!-- title -->
-                                    <h3>Tours in Greece</h3>
-                                    <!-- Text Intro -->
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Etiam maximus molestie accumsan. Sed metus sapien, fermentum nec lorem ac.</p>
-                                    <div class="free-service">
-                                        <i class="flaticon-television" data-toggle="tooltip" data-placement="top" title="" data-original-title="Plasma TV with cable chanels"></i>
-                                        <i class="flaticon-swimmer" data-toggle="tooltip" data-placement="top" title="" data-original-title="Swimming pool"></i>
-                                        <i class="flaticon-wifi" data-toggle="tooltip" data-placement="top" title="" data-original-title="Free wifi"></i>
-                                        <i class="flaticon-weightlifting" data-toggle="tooltip" data-placement="top" title="" data-original-title="Fitness center"></i>
-                                        <i class="flaticon-lemonade" data-toggle="tooltip" data-placement="top" title="" data-original-title="Restaurant"></i>
-                                        <a href="view-tourpackage.php" class="thm-btn" style="margin-bottom: -27px;">Read More</a>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="hotel-item">
-                                <!-- hotel Image -->
-                                <div class="hotel-image">
-                                    <a href="#">
-                                        <div class="img"><img src="assets/images/hotel-2.jpg"  alt="" class="img-responsive"></div>
-                                    </a>
-                                </div>
-                                <!-- hotel body -->
-                                <div class="hotel-body">
-                                    <div class="ratting">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star-half-o"></i>
-                                        <i class="fa fa-star-o"></i>
-                                    </div>
-                                    <!-- title -->
-                                    <h3>Tours in Greece</h3>
-                                    <!-- Text Intro -->
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Etiam maximus molestie accumsan. Sed metus sapien, fermentum nec lorem ac.</p>
-                                    <div class="free-service">
-                                        <i class="flaticon-television" data-toggle="tooltip" data-placement="top" title="" data-original-title="Plasma TV with cable chanels"></i>
-                                        <i class="flaticon-swimmer" data-toggle="tooltip" data-placement="top" title="" data-original-title="Swimming pool"></i>
-                                        <i class="flaticon-wifi" data-toggle="tooltip" data-placement="top" title="" data-original-title="Free wifi"></i>
-                                        <i class="flaticon-weightlifting" data-toggle="tooltip" data-placement="top" title="" data-original-title="Fitness center"></i>
-                                        <i class="flaticon-lemonade" data-toggle="tooltip" data-placement="top" title="" data-original-title="Restaurant"></i>
-                                        <a href="view-tourpackage.php" class="thm-btn" style="margin-bottom: -27px;">Read More</a>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="hotel-item">
-                                <!-- hotel Image -->
-                                <div class="hotel-image">
-                                    <a href="#">
-                                        <div class="img"><img src="assets/images/hotel-2.jpg"  alt="" class="img-responsive"></div>
-                                    </a>
-                                </div>
-                                <!-- hotel body -->
-                                <div class="hotel-body">
-                                    <div class="ratting">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star-half-o"></i>
-                                        <i class="fa fa-star-o"></i>
-                                    </div>
-                                    <!-- title -->
-                                    <h3>Tours in Greece</h3>
-                                    <!-- Text Intro -->
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Etiam maximus molestie accumsan. Sed metus sapien, fermentum nec lorem ac.</p>
-                                    <div class="free-service">
-                                        <i class="flaticon-television" data-toggle="tooltip" data-placement="top" title="" data-original-title="Plasma TV with cable chanels"></i>
-                                        <i class="flaticon-swimmer" data-toggle="tooltip" data-placement="top" title="" data-original-title="Swimming pool"></i>
-                                        <i class="flaticon-wifi" data-toggle="tooltip" data-placement="top" title="" data-original-title="Free wifi"></i>
-                                        <i class="flaticon-weightlifting" data-toggle="tooltip" data-placement="top" title="" data-original-title="Fitness center"></i>
-                                        <i class="flaticon-lemonade" data-toggle="tooltip" data-placement="top" title="" data-original-title="Restaurant"></i>
-                                        <a href="view-tourpackage.php" class="thm-btn" style="margin-bottom: -27px;">Read More</a>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="hotel-item">
-                                <!-- hotel Image -->
-                                <div class="hotel-image">
-                                    <a href="#">
-                                        <div class="img"><img src="assets/images/hotel-2.jpg"  alt="" class="img-responsive"></div>
-                                    </a>
-                                </div>
-                                <!-- hotel body -->
-                                <div class="hotel-body">
-                                    <div class="ratting">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star-half-o"></i>
-                                        <i class="fa fa-star-o"></i>
-                                    </div>
-                                    <!-- title -->
-                                    <h3>Tours in Greece</h3>
-                                    <!-- Text Intro -->
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Etiam maximus molestie accumsan. Sed metus sapien, fermentum nec lorem ac.</p>
-                                    <div class="free-service">
-                                        <i class="flaticon-television" data-toggle="tooltip" data-placement="top" title="" data-original-title="Plasma TV with cable chanels"></i>
-                                        <i class="flaticon-swimmer" data-toggle="tooltip" data-placement="top" title="" data-original-title="Swimming pool"></i>
-                                        <i class="flaticon-wifi" data-toggle="tooltip" data-placement="top" title="" data-original-title="Free wifi"></i>
-                                        <i class="flaticon-weightlifting" data-toggle="tooltip" data-placement="top" title="" data-original-title="Fitness center"></i>
-                                        <i class="flaticon-lemonade" data-toggle="tooltip" data-placement="top" title="" data-original-title="Restaurant"></i>
-                                        <a href="view-tourpackage.php" class="thm-btn" style="margin-bottom: -27px;">Read More</a>
+                                        <a href="view-tourpackage.php?id=<?php echo $tourse['id']?>" class="thm-btn" style="margin-bottom: -27px;">Read More</a>
                                     </div>
                                 </div>
 
                             </div>
 
                         </div>
-                        <div class="col-sm-12 col-md-6">
-                            <div class="hotel-item">
-                                <!-- hotel Image -->
-                                <div class="hotel-image">
-                                    <a href="#">
-                                        <div class="img"><img src="assets/images/hotel-4.jpg"  alt="" class="img-responsive"></div>
-                                    </a>
-                                </div>
-                                <!-- hotel body -->
-                                <div class="hotel-body">
-                                    <div class="ratting">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star-half-o"></i>
-                                        <i class="fa fa-star-o"></i>
-                                    </div>
-                                    <!-- title -->
-                                    <h3>Tours in Greece</h3>
-                                    <!-- Text Intro -->
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Etiam maximus molestie accumsan. Sed metus sapien, fermentum nec lorem ac.</p>
-                                    <div class="free-service">
-                                        <i class="flaticon-television" data-toggle="tooltip" data-placement="top" title="" data-original-title="Plasma TV with cable chanels"></i>
-                                        <i class="flaticon-swimmer" data-toggle="tooltip" data-placement="top" title="" data-original-title="Swimming pool"></i>
-                                        <i class="flaticon-wifi" data-toggle="tooltip" data-placement="top" title="" data-original-title="Free wifi"></i>
-                                        <i class="flaticon-weightlifting" data-toggle="tooltip" data-placement="top" title="" data-original-title="Fitness center"></i>
-                                        <i class="flaticon-lemonade" data-toggle="tooltip" data-placement="top" title="" data-original-title="Restaurant"></i>
-                                        <a href="view-tourpackage.php" class="thm-btn" style="margin-bottom: -27px;">Read More</a>
-                                    </div>
-                                </div>
+                        <?php
+                        }
+                        ?>
 
-                            </div>
-                            <div class="hotel-item">
-                                <!-- hotel Image -->
-                                <div class="hotel-image">
-                                    <a href="#">
-                                        <div class="img"><img src="assets/images/hotel-4.jpg"  alt="" class="img-responsive"></div>
-                                    </a>
-                                </div>
-                                <!-- hotel body -->
-                                <div class="hotel-body">
-                                    <div class="ratting">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star-half-o"></i>
-                                        <i class="fa fa-star-o"></i>
-                                    </div>
-                                    <!-- title -->
-                                    <h3>Tours in Greece</h3>
-                                    <!-- Text Intro -->
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Etiam maximus molestie accumsan. Sed metus sapien, fermentum nec lorem ac.</p>
-                                    <div class="free-service">
-                                        <i class="flaticon-television" data-toggle="tooltip" data-placement="top" title="" data-original-title="Plasma TV with cable chanels"></i>
-                                        <i class="flaticon-swimmer" data-toggle="tooltip" data-placement="top" title="" data-original-title="Swimming pool"></i>
-                                        <i class="flaticon-wifi" data-toggle="tooltip" data-placement="top" title="" data-original-title="Free wifi"></i>
-                                        <i class="flaticon-weightlifting" data-toggle="tooltip" data-placement="top" title="" data-original-title="Fitness center"></i>
-                                        <i class="flaticon-lemonade" data-toggle="tooltip" data-placement="top" title="" data-original-title="Restaurant"></i>
-                                        <a href="#" class="thm-btn" style="margin-bottom: -27px;">Read More</a>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="hotel-item">
-                                <!-- hotel Image -->
-                                <div class="hotel-image">
-                                    <a href="#">
-                                        <div class="img"><img src="assets/images/hotel-4.jpg"  alt="" class="img-responsive"></div>
-                                    </a>
-                                </div>
-                                <!-- hotel body -->
-                                <div class="hotel-body">
-                                    <div class="ratting">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star-half-o"></i>
-                                        <i class="fa fa-star-o"></i>
-                                    </div>
-                                    <!-- title -->
-                                    <h3>Tours in Greece</h3>
-                                    <!-- Text Intro -->
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Etiam maximus molestie accumsan. Sed metus sapien, fermentum nec lorem ac.</p>
-                                    <div class="free-service">
-                                        <i class="flaticon-television" data-toggle="tooltip" data-placement="top" title="" data-original-title="Plasma TV with cable chanels"></i>
-                                        <i class="flaticon-swimmer" data-toggle="tooltip" data-placement="top" title="" data-original-title="Swimming pool"></i>
-                                        <i class="flaticon-wifi" data-toggle="tooltip" data-placement="top" title="" data-original-title="Free wifi"></i>
-                                        <i class="flaticon-weightlifting" data-toggle="tooltip" data-placement="top" title="" data-original-title="Fitness center"></i>
-                                        <i class="flaticon-lemonade" data-toggle="tooltip" data-placement="top" title="" data-original-title="Restaurant"></i>
-                                        <a href="#" class="thm-btn" style="margin-bottom: -27px;">Read More</a>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="hotel-item">
-                                <!-- hotel Image -->
-                                <div class="hotel-image">
-                                    <a href="#">
-                                        <div class="img"><img src="assets/images/hotel-4.jpg"  alt="" class="img-responsive"></div>
-                                    </a>
-                                </div>
-                                <!-- hotel body -->
-                                <div class="hotel-body">
-                                    <div class="ratting">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star-half-o"></i>
-                                        <i class="fa fa-star-o"></i>
-                                    </div>
-                                    <!-- title -->
-                                    <h3>Tours in Greece</h3>
-                                    <!-- Text Intro -->
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Etiam maximus molestie accumsan. Sed metus sapien, fermentum nec lorem ac.</p>
-                                    <div class="free-service">
-                                        <i class="flaticon-television" data-toggle="tooltip" data-placement="top" title="" data-original-title="Plasma TV with cable chanels"></i>
-                                        <i class="flaticon-swimmer" data-toggle="tooltip" data-placement="top" title="" data-original-title="Swimming pool"></i>
-                                        <i class="flaticon-wifi" data-toggle="tooltip" data-placement="top" title="" data-original-title="Free wifi"></i>
-                                        <i class="flaticon-weightlifting" data-toggle="tooltip" data-placement="top" title="" data-original-title="Fitness center"></i>
-                                        <i class="flaticon-lemonade" data-toggle="tooltip" data-placement="top" title="" data-original-title="Restaurant"></i>
-                                        <a href="#" class="thm-btn" style="margin-bottom: -27px;">Read More</a>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="hotel-item">
-                                <!-- hotel Image -->
-                                <div class="hotel-image">
-                                    <a href="#">
-                                        <div class="img"><img src="assets/images/hotel-4.jpg"  alt="" class="img-responsive"></div>
-                                    </a>
-                                </div>
-                                <!-- hotel body -->
-                                <div class="hotel-body">
-                                    <div class="ratting">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star-half-o"></i>
-                                        <i class="fa fa-star-o"></i>
-                                    </div>
-                                    <!-- title -->
-                                    <h3>Tours in Greece</h3>
-                                    <!-- Text Intro -->
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Etiam maximus molestie accumsan. Sed metus sapien, fermentum nec lorem ac.</p>
-                                    <div class="free-service">
-                                        <i class="flaticon-television" data-toggle="tooltip" data-placement="top" title="" data-original-title="Plasma TV with cable chanels"></i>
-                                        <i class="flaticon-swimmer" data-toggle="tooltip" data-placement="top" title="" data-original-title="Swimming pool"></i>
-                                        <i class="flaticon-wifi" data-toggle="tooltip" data-placement="top" title="" data-original-title="Free wifi"></i>
-                                        <i class="flaticon-weightlifting" data-toggle="tooltip" data-placement="top" title="" data-original-title="Fitness center"></i>
-                                        <i class="flaticon-lemonade" data-toggle="tooltip" data-placement="top" title="" data-original-title="Restaurant"></i>
-                                        <a href="#" class="thm-btn" style="margin-bottom: -27px;">Read More</a>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="hotel-item">
-                                <!-- hotel Image -->
-                                <div class="hotel-image">
-                                    <a href="view-tourpackage.php">
-                                        <div class="img"><img src="assets/images/hotel-4.jpg"  alt="" class="img-responsive"></div>
-                                    </a>
-                                </div>
-                                <!-- hotel body -->
-                                <div class="hotel-body">
-                                    <div class="ratting">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star-half-o"></i>
-                                        <i class="fa fa-star-o"></i>
-                                    </div>
-                                    <!-- title -->
-                                    <h3>Tours in Greece</h3>
-                                    <!-- Text Intro -->
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Etiam maximus molestie accumsan. Sed metus sapien, fermentum nec lorem ac.</p>
-                                    <div class="free-service">
-                                        <i class="flaticon-television" data-toggle="tooltip" data-placement="top" title="" data-original-title="Plasma TV with cable chanels"></i>
-                                        <i class="flaticon-swimmer" data-toggle="tooltip" data-placement="top" title="" data-original-title="Swimming pool"></i>
-                                        <i class="flaticon-wifi" data-toggle="tooltip" data-placement="top" title="" data-original-title="Free wifi"></i>
-                                        <i class="flaticon-weightlifting" data-toggle="tooltip" data-placement="top" title="" data-original-title="Fitness center"></i>
-                                        <i class="flaticon-lemonade" data-toggle="tooltip" data-placement="top" title="" data-original-title="Restaurant"></i>
-                                        <a href="#" class="thm-btn" style="margin-bottom: -27px;">Read More</a>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
                     </div>
                 </div>
             </section>
             <!-- Newsletter -->
-       
+
         </div>
         <!-- Footer Section -->
         <?php include './footer.php'; ?>
