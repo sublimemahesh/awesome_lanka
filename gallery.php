@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php include_once './class/include.php'; ?>
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -49,340 +50,40 @@
             <div id="tour-gallery">
                 <div class="container">
                     <div class="row">
-                        <!-- section title -->
-                        <!--                            <div class="col-md-offset-2 col-md-8">
-                                                        <div class="section-title text-center">
-                                                            <i class="flaticon-sidebar"></i>
-                                                            <h2>GALLERY</h2>
-                                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-                                                        </div>
-                                                    </div>-->
-                    </div>
-                    <div class="row gallery-margin">
-                        <div class="portfolio-items list-unstyled zoom-gallery" id="grid">
-                            <!--                                <div class="col-md-6 col-sm-6 col-xs-12 gallery-padding">
-                                                                <div class="img-thumb">
-                                                                    <a href="assets/images/gallery-1920x1280.jpg" data-source="assets/images/destination-2.html">
-                                                                        <img src="assets/images/gallery-560x250-1.jpg" class="img-responsive" alt="">
-                                                                    </a>
-                                                                    <div class="gallery-hover">
-                                                                        <a class="plus-link dfd-top-right" href="#">
-                                                                            <span class="plus-link-container">
-                                                                                <span class="plus-link-out"></span>
-                                                                                <span class="plus-link-come"></span>
-                                                                            </span>
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>-->
-                            <!--                                <div class="col-md-3 col-sm-3 col-xs-12 gallery-padding">
-                                                                <div class="img-thumb">
-                                                                    <a href="assets/images/gallery-1920x1280.jpg" data-source="assets/images/destination-2.html">
-                                                                        <img src="assets/images/gallery-276x255-2.jpg" class="img-responsive" alt="">
-                                                                    </a>
-                                                                    <div class="gallery-hover">
-                                                                        <a class="plus-link dfd-top-right" href="#">
-                                                                            <span class="plus-link-container">
-                                                                                <span class="plus-link-out"></span>
-                                                                                <span class="plus-link-come"></span>
-                                                                            </span>
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>-->
-                            <!--                                <div class="col-md-3 col-sm-3 col-xs-12 gallery-padding">
-                                                                <div class="img-thumb">
-                                                                    <a href="assets/images/gallery-1920x1280.jpg" data-source="assets/images/destination-2.html">
-                                                                        <img src="assets/images/gallery-276x525-3.jpg" class="img-responsive" alt="">
-                                                                    </a>
-                                                                    <div class="gallery-hover">
-                                                                        <a class="plus-link dfd-top-right" href="#">
-                                                                            <span class="plus-link-container">
-                                                                                <span class="plus-link-out"></span>
-                                                                                <span class="plus-link-come"></span>
-                                                                            </span>
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>-->
-                            <!--                                <div class="col-md-3 col-sm-3 col-xs-12 gallery-padding">
-                                                                <div class="img-thumb">
-                                                                    <a href="assets/images/gallery-1920x1280.jpg" data-source="assets/images/destination-2.html">
-                                                                        <img src="assets/images/gallery-276x255-4.jpg" class="img-responsive" alt="">
-                                                                    </a>
-                                                                    <div class="gallery-hover">
-                                                                        <a class="plus-link dfd-top-right" href="#">
-                                                                            <span class="plus-link-container">
-                                                                                <span class="plus-link-out"></span>
-                                                                                <span class="plus-link-come"></span>
-                                                                            </span>
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>-->
-                            <!--                                <div class="col-md-6 col-sm-6 col-xs-12 gallery-padding">
-                                                                <div class="img-thumb">
-                                                                    <a href="assets/images/gallery-1920x1280.jpg" data-source="assets/images/destination-2.html">
-                                                                        <img src="assets/images/gallery-560x250-5.jpg" class="img-responsive" alt="">
-                                                                    </a>
-                                                                    <div class="gallery-hover">
-                                                                        <a class="plus-link dfd-top-right" href="#">
-                                                                            <span class="plus-link-container">
-                                                                                <span class="plus-link-out"></span>
-                                                                                <span class="plus-link-come"></span>
-                                                                            </span>
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>--><div class="col-md-3 col-sm-3 col-xs-12 gallery-padding">
-                                <div class="img-thumb">
-                                    <a href="assets/images/gallery-1920x1280.jpg" data-source="assets/images/destination-2.html">
-                                        <img src="assets/images/gallery-276x255-6.jpg" class="img-responsive" alt="">
-                                    </a>
-                                    <div class="gallery-hover">
-                                        <a class="plus-link dfd-top-right" href="#">
-                                            <span class="plus-link-container">
-                                                <span class="plus-link-out"></span>
-                                                <span class="plus-link-come"></span>
-                                            </span>
-                                        </a>
+                        <div class="row gallery-margin">
+                            <div class="portfolio-items list-unstyled zoom-gallery" id="grid">
+                                <?php
+                                $ALBUMPHOTO = new AlbumPhoto(NULL);
+                                $IMAGES = $ALBUMPHOTO->getAlbumPhotosById(1);
+
+                                foreach ($IMAGES as $image) {
+                                    ?>
+                                    <div class="col-md-3 col-sm-3 col-xs-12 gallery-padding" data-groups='["family", "honeymoon"]'>
+                                        <div class="img-thumb">
+                                            <a href="upload/photo-album/gallery/<?php echo $image['image_name']; ?>">
+                                                <img src="upload/photo-album/gallery/thumb/<?php echo $image['image_name']; ?>" class="img-responsive" alt="">
+                                            </a>
+                                            <div class="gallery-hover">
+
+                                            </div>
+                                        </div>
+
                                     </div>
-                                </div>
+                                <?php }
+                                ?>
+                            
+                                <div class="col-md-3 col-sm-3 col-xs-12 shuffle_sizer"></div>
+
                             </div>
-                            <div class="col-md-3 col-sm-3 col-xs-12 gallery-padding">
-                                <div class="img-thumb">
-                                    <a href="assets/images/gallery-1920x1280.jpg" data-source="assets/images/destination-2.html">
-                                        <img src="assets/images/gallery-276x255-7.jpg" class="img-responsive" alt="">
-                                    </a>
-                                    <div class="gallery-hover">
-                                        <a class="plus-link dfd-top-right" href="#">
-                                            <span class="plus-link-container">
-                                                <span class="plus-link-out"></span>
-                                                <span class="plus-link-come"></span>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-3 col-xs-12 gallery-padding">
-                                <div class="img-thumb">
-                                    <a href="assets/images/gallery-1920x1280.jpg" data-source="assets/images/destination-2.html">
-                                        <img src="assets/images/gallery-276x255-8.jpg" class="img-responsive" alt="">
-                                    </a>
-                                    <div class="gallery-hover">
-                                        <a class="plus-link dfd-top-right" href="#">
-                                            <span class="plus-link-container">
-                                                <span class="plus-link-out"></span>
-                                                <span class="plus-link-come"></span>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-3 col-xs-12 gallery-padding">
-                                <div class="img-thumb">
-                                    <a href="assets/images/gallery-1920x1280.jpg" data-source="assets/images/destination-2.html">
-                                        <img src="assets/images/gallery-276x255-9.jpg" class="img-responsive" alt="">
-                                    </a>
-                                    <div class="gallery-hover">
-                                        <a class="plus-link dfd-top-right" href="#">
-                                            <span class="plus-link-container">
-                                                <span class="plus-link-out"></span>
-                                                <span class="plus-link-come"></span>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-3 col-xs-12 gallery-padding">
-                                <div class="img-thumb">
-                                    <a href="assets/images/gallery-1920x1280.jpg" data-source="assets/images/destination-2.html">
-                                        <img src="assets/images/gallery-276x255-6.jpg" class="img-responsive" alt="">
-                                    </a>
-                                    <div class="gallery-hover">
-                                        <a class="plus-link dfd-top-right" href="#">
-                                            <span class="plus-link-container">
-                                                <span class="plus-link-out"></span>
-                                                <span class="plus-link-come"></span>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-3 col-xs-12 gallery-padding">
-                                <div class="img-thumb">
-                                    <a href="assets/images/gallery-1920x1280.jpg" data-source="assets/images/destination-2.html">
-                                        <img src="assets/images/gallery-276x255-7.jpg" class="img-responsive" alt="">
-                                    </a>
-                                    <div class="gallery-hover">
-                                        <a class="plus-link dfd-top-right" href="#">
-                                            <span class="plus-link-container">
-                                                <span class="plus-link-out"></span>
-                                                <span class="plus-link-come"></span>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-3 col-xs-12 gallery-padding">
-                                <div class="img-thumb">
-                                    <a href="assets/images/gallery-1920x1280.jpg" data-source="assets/images/destination-2.html">
-                                        <img src="assets/images/gallery-276x255-8.jpg" class="img-responsive" alt="">
-                                    </a>
-                                    <div class="gallery-hover">
-                                        <a class="plus-link dfd-top-right" href="#">
-                                            <span class="plus-link-container">
-                                                <span class="plus-link-out"></span>
-                                                <span class="plus-link-come"></span>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-3 col-xs-12 gallery-padding">
-                                <div class="img-thumb">
-                                    <a href="assets/images/gallery-1920x1280.jpg" data-source="assets/images/destination-2.html">
-                                        <img src="assets/images/gallery-276x255-9.jpg" class="img-responsive" alt="">
-                                    </a>
-                                    <div class="gallery-hover">
-                                        <a class="plus-link dfd-top-right" href="#">
-                                            <span class="plus-link-container">
-                                                <span class="plus-link-out"></span>
-                                                <span class="plus-link-come"></span>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-3 col-xs-12 gallery-padding">
-                                <div class="img-thumb">
-                                    <a href="assets/images/gallery-1920x1280.jpg" data-source="assets/images/destination-2.html">
-                                        <img src="assets/images/gallery-276x255-6.jpg" class="img-responsive" alt="">
-                                    </a>
-                                    <div class="gallery-hover">
-                                        <a class="plus-link dfd-top-right" href="#">
-                                            <span class="plus-link-container">
-                                                <span class="plus-link-out"></span>
-                                                <span class="plus-link-come"></span>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-3 col-xs-12 gallery-padding">
-                                <div class="img-thumb">
-                                    <a href="assets/images/gallery-1920x1280.jpg" data-source="assets/images/destination-2.html">
-                                        <img src="assets/images/gallery-276x255-7.jpg" class="img-responsive" alt="">
-                                    </a>
-                                    <div class="gallery-hover">
-                                        <a class="plus-link dfd-top-right" href="#">
-                                            <span class="plus-link-container">
-                                                <span class="plus-link-out"></span>
-                                                <span class="plus-link-come"></span>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-3 col-xs-12 gallery-padding">
-                                <div class="img-thumb">
-                                    <a href="assets/images/gallery-1920x1280.jpg" data-source="assets/images/destination-2.html">
-                                        <img src="assets/images/gallery-276x255-8.jpg" class="img-responsive" alt="">
-                                    </a>
-                                    <div class="gallery-hover">
-                                        <a class="plus-link dfd-top-right" href="#">
-                                            <span class="plus-link-container">
-                                                <span class="plus-link-out"></span>
-                                                <span class="plus-link-come"></span>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-3 col-xs-12 gallery-padding">
-                                <div class="img-thumb">
-                                    <a href="assets/images/gallery-1920x1280.jpg" data-source="assets/images/destination-2.html">
-                                        <img src="assets/images/gallery-276x255-9.jpg" class="img-responsive" alt="">
-                                    </a>
-                                    <div class="gallery-hover">
-                                        <a class="plus-link dfd-top-right" href="#">
-                                            <span class="plus-link-container">
-                                                <span class="plus-link-out"></span>
-                                                <span class="plus-link-come"></span>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-3 col-xs-12 gallery-padding">
-                                <div class="img-thumb">
-                                    <a href="assets/images/gallery-1920x1280.jpg" data-source="assets/images/destination-2.html">
-                                        <img src="assets/images/gallery-276x255-6.jpg" class="img-responsive" alt="">
-                                    </a>
-                                    <div class="gallery-hover">
-                                        <a class="plus-link dfd-top-right" href="#">
-                                            <span class="plus-link-container">
-                                                <span class="plus-link-out"></span>
-                                                <span class="plus-link-come"></span>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-3 col-xs-12 gallery-padding">
-                                <div class="img-thumb">
-                                    <a href="assets/images/gallery-1920x1280.jpg" data-source="assets/images/destination-2.html">
-                                        <img src="assets/images/gallery-276x255-7.jpg" class="img-responsive" alt="">
-                                    </a>
-                                    <div class="gallery-hover">
-                                        <a class="plus-link dfd-top-right" href="#">
-                                            <span class="plus-link-container">
-                                                <span class="plus-link-out"></span>
-                                                <span class="plus-link-come"></span>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-3 col-xs-12 gallery-padding">
-                                <div class="img-thumb">
-                                    <a href="assets/images/gallery-1920x1280.jpg" data-source="assets/images/destination-2.html">
-                                        <img src="assets/images/gallery-276x255-8.jpg" class="img-responsive" alt="">
-                                    </a>
-                                    <div class="gallery-hover">
-                                        <a class="plus-link dfd-top-right" href="#">
-                                            <span class="plus-link-container">
-                                                <span class="plus-link-out"></span>
-                                                <span class="plus-link-come"></span>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-3 col-xs-12 gallery-padding">
-                                <div class="img-thumb">
-                                    <a href="assets/images/gallery-1920x1280.jpg" data-source="assets/images/destination-2.html">
-                                        <img src="assets/images/gallery-276x255-9.jpg" class="img-responsive" alt="">
-                                    </a>
-                                    <div class="gallery-hover">
-                                        <a class="plus-link dfd-top-right" href="#">
-                                            <span class="plus-link-container">
-                                                <span class="plus-link-out"></span>
-                                                <span class="plus-link-come"></span>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- sizer -->
-                            <div class="col-md-3 col-sm-3 col-xs-12 shuffle_sizer"></div>
+
+
                         </div>
-                    </div>
-                </div> 
+                    </div> 
+                </div>
             </div>
 
             <!-- Newsletter -->
-       
+
         </div>
         <!-- Footer Section -->
         <?php include './footer.php'; ?>

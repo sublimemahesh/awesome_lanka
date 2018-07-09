@@ -34,6 +34,8 @@
                                         <div class="row">
                                             <div class="col-xs-12 col-sm-9 col-md-10">
                                                 <div class="row panel-margin">
+                                                    
+                                                    
                                                     <div class="col-xs-6 col-sm-4 col-md-2 panel-padding">
                                                         <label>Checking</label>
                                                         <div class="icon-addon">
@@ -41,6 +43,10 @@
                                                             <label class="glyphicon fa fa-calendar"  title="email"></label>
                                                         </div>
                                                     </div>
+                                                    
+                                                    
+                                                    
+                                                    
                                                     <div class="col-xs-6 col-sm-4 col-md-2 panel-padding">
                                                         <label>Checkout</label>
                                                         <div class="icon-addon">
@@ -187,7 +193,7 @@
             <section class="popular-inner">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-5">
+<!--                        <div class="col-md-5">
                             <div class="title">
                                 <?php $PAGES = new Page(1); ?>
                                 <h2> <?php echo $PAGES->title ?></h2>
@@ -196,7 +202,7 @@
                             <div class="cws_divider mb-25 mt-5"></div>
                             <p><?php echo $PAGES->description ?></p> 
 
-                        </div>
+                        </div>-->
                         <div class="col-md-7">
                             <div class="container" style="padding-left: 95px;">
                                 <div class="row">
