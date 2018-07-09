@@ -452,34 +452,35 @@
                     </div>
                     <div class="row thm-margin" style="padding-bottom: 50px;">
                         <div class="tour-container">
-                            <?php 
-                            foreach (Attraction::all() as $key=>$attraction){
-                                if ($key <8){
-                            ?>
-                            <div class="col-md-3 col-sm-4 thm-padding">
-                                <div class="destination-grid">
-                                    <a href="#"><img src="upload/attraction/<?php echo $attraction['image_name']?>" class="img-responsive" alt=""></a>
-                                    <div class="mask">
-                                        <h2><?php echo $attraction['title']?></h2>
-                                        <p><?php echo $attraction['short_description']?></p>
-                                        <a href="view-attraction.php" class="thm-btn">Read More</a>
-                                    </div>
-                                    <div class="dest-name">
-                                       
-                                        <h4><?php echo $attraction['title']?></h4>
-                                    </div>
-                                    <div class="dest-icon">
-                                        <i class="flaticon-earth-globe" data-toggle="tooltip" data-placement="top" title="15 Tours"></i>
-                                        <i class="flaticon-ship" data-toggle="tooltip" data-placement="top" title="9 Criuses"></i>
-                                        <i class="flaticon-transport" data-toggle="tooltip" data-placement="top" title="31 Flights"></i>
-                                        <i class="flaticon-front" data-toggle="tooltip" data-placement="top" title="83 Hotels"></i>
-                                    </div>
-                                </div>
-                            </div>
                             <?php
+                            foreach (Attraction::all() as $key => $attraction) {
+                                if ($key < 8) {
+                                    ?>
+                                    <div class="col-md-3 col-sm-4 thm-padding">
+                                        <div class="destination-grid">
+                                            <a href="#"><img src="upload/attraction/<?php echo $attraction['image_name'] ?>" class="img-responsive" alt=""></a>
+                                            <div class="mask">
+                                                <h2><?php echo $attraction['title'] ?></h2>
+                                                <p><?php echo $attraction['short_description'] ?></p>
+                                                <a href="view-attraction.php" class="thm-btn">Read More</a>
+                                            </div>
+                                            <div class="dest-name">
+
+                                                <h4><?php echo $attraction['title'] ?></h4>
+                                            </div>
+                                            <div class="dest-icon">
+                                                <i class="flaticon-earth-globe" data-toggle="tooltip" data-placement="top" title="15 Tours"></i>
+                                                <i class="flaticon-ship" data-toggle="tooltip" data-placement="top" title="9 Criuses"></i>
+                                                <i class="flaticon-transport" data-toggle="tooltip" data-placement="top" title="31 Flights"></i>
+                                                <i class="flaticon-front" data-toggle="tooltip" data-placement="top" title="83 Hotels"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <?php
                                 }
-                            }?>
-                            
+                            }
+                            ?>
+
                         </div>
                     </div>
                 </div>
@@ -498,159 +499,115 @@
 
                     <div class="row thm-margin">
                         <div id="blog-slide" class="owl-carousel">
-                            <div class="item">
-                                <div class="activities-color"
-                                     <div class="blog-content">
-                                        <div class="blog-img image-hover">
-                                            <a href="#"><img src="assets/images/blog-800x250-1.jpg" class="img-responsive" alt=""></a>
-    <!--                                        <span class="post-date">14 November 2016</span>-->
-                                        </div>
-                                        <h4><a href="#">It is a long established fact that</a></h4>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                        <a class="thm-btn" href="view-activities.php" style="margin-left: 50px;">Read More...</a>
-                                    </div>
-                                </div>
+                            <?php foreach (Activities::all() as $key => $activity) { ?>
                                 <div class="item">
                                     <div class="activities-color"
                                          <div class="blog-content">
                                             <div class="blog-img image-hover">
-                                                <a href="#"><img src="assets/images/blog-800x250-1.jpg" class="img-responsive" alt=""></a>
-        <!--                                        <span class="post-date">14 November 2016</span>-->
+                                                <a href="view-activities.php?id=<?php echo  $activity['id']?>"><img src="upload/activity/<?php echo $activity['image_name']?>" class="img-responsive" alt=""></a>
+
                                             </div>
-                                            <h4><a href="#">It is a long established fact that</a></h4>
-                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                            <a class="thm-btn" href="#" style="margin-left: 50px;">Read More...</a>
+                                            <h4><a href="view-activities.php?id=<?php echo  $activity['id']?>"><?php echo $activity['title']?></a></h4>
+                                            <p><?php echo $activity['short_description']?></p>
+                                            <a class="thm-btn" href="view-activities.php?id=<?php echo  $activity['id']?>" style="margin-left: 50px;">Read More...</a>
                                         </div>
                                     </div>
-                                    <div class="item">
-                                        <div class="activities-color"
-                                             <div class="blog-content">
-                                                <div class="blog-img image-hover">
-                                                    <a href="#"><img src="assets/images/blog-800x250-1.jpg" class="img-responsive" alt=""></a>
-            <!--                                        <span class="post-date">14 November 2016</span>-->
-                                                </div>
-                                                <h4><a href="#">It is a long established fact that</a></h4>
-                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                                <a class="thm-btn" href="#" style="margin-left: 50px;">Read More...</a>
-                                            </div>
-                                        </div>
-                                        <div class="item">
-                                            <div class="activities-color"
-                                                 <div class="blog-content">
-                                                    <div class="blog-img image-hover">
-                                                        <a href="#"><img src="assets/images/blog-800x250-1.jpg" class="img-responsive" alt=""></a>
-                <!--                                        <span class="post-date">14 November 2016</span>-->
-                                                    </div>
-                                                    <h4><a href="#">It is a long established fact that</a></h4>
-                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                                    <a class="thm-btn" href="#" style="margin-left: 50px;">Read More...</a>
-                                                </div>
-                                            </div>
-                                            <div class="item">
-                                                <div class="activities-color"
-                                                     <div class="blog-content">
-                                                        <div class="blog-img image-hover">
-                                                            <a href="#"><img src="assets/images/blog-800x250-1.jpg" class="img-responsive" alt=""></a>
-                    <!--                                        <span class="post-date">14 November 2016</span>-->
-                                                        </div>
-                                                        <h4><a href="#">It is a long established fact that</a></h4>
-                                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                                        <a class="thm-btn" href="#" style="margin-left: 50px;">Read More...</a>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <!-- package section -->
-
-                                <!-- Counter -->
-
-                                <!-- blog section -->
-
-                                <section class="reference">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-md-6 col-md-offset-3">
-                                                <div class="title">
-                                                    <h2>References</h2>
-                                                    <p>A great Collection of our Tour Packages</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="testimonials">
-                                                <div class="carousel" data-ride="carousel" id="quote-carousel">
-                                                    <div class="carousel-inner">
-                                                        <!-- Quote 1 -->  
-                                                        <div class="item col-sm-10 col-sm-offset-1">
-                                                            <blockquote>
-                                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium
-                                                                aliquam architecto beatae dolorem, enim error eveniet harum iste molestias
-                                                                neque nisi placeat possimus quaerat quam repudiandae sint soluta unde vero.
-                                                                <span class="author">- Andrew Adams, Google Inc</span>
-                                                            </blockquote>
-                                                        </div>
-                                                        <!-- Quote 2 -->  
-                                                        <div class="item col-sm-10 col-sm-offset-1">
-                                                            <blockquote>
-                                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium
-                                                                aliquam architecto beatae doloremaliquam architecto beatae dolorem, enim error
-                                                                eveniet harum iste molestias neque nisi placeat.
-                                                                <span class="author">- Jhon Smith, Facebook Inc</span>
-                                                            </blockquote>
-                                                        </div>
-                                                        <!-- Quote 3 -->
-                                                        <div class="item col-sm-10 col-sm-offset-1 active">
-                                                            <blockquote>
-                                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium
-                                                                aliquam architecto beatae dolorem, enim error eveniet harum iste molestias
-                                                                neque nisi placeat possimus quaerat quam repudiandae sint.
-                                                                <span class="author">- Bob Smith, Fitbit</span>
-                                                            </blockquote>
-                                                        </div>
-                                                    </div>
-                                                    <!-- Bottom Carousel Indicators -->
-                                                    <ol class="carousel-indicators">
-                                                        <li data-target="#quote-carousel" data-slide-to="0" class=""><img class="img-responsive " src="assets/images/avtar-1.jpg" alt=""></li>
-                                                        <li data-target="#quote-carousel" data-slide-to="1" class=""><img class="img-responsive" src="assets/images/avtar-2.jpg" alt=""></li>
-                                                        <li data-target="#quote-carousel" data-slide-to="2" class="active"><img class="img-responsive" src="assets/images/avtar-3.jpg" alt=""></li>
-                                                    </ol>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-                                <!-- Newsletter -->
+                                    <?php
+                                }
+                                ?>
 
                             </div>
-                            <!-- Footer Section -->
-                            <?php include './footer.php'; ?>
-                            <!-- jQuery -->
-                            <script data-cfasync="false" src="../cdn-cgi/scripts/f2bf09f8/cloudflare-static/email-decode.min.js"></script><script src="assets/js/jquery.min.js" type="text/javascript"></script>
-                            <!-- jquery ui js -->
-                            <script src="assets/js/jquery-ui.min.js" type="text/javascript"></script>
-                            <!-- bootstrap js -->
-                            <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
-                            <!-- fraction slider js -->
-                            <script src="assets/js/jquery.fractionslider.js" type="text/javascript"></script>
-                            <!-- owl carousel js --> 
-                            <script src="assets/owl-carousel/owl.carousel.min.js" type="text/javascript"></script>
-                            <!-- counter -->
-                            <script src="assets/js/jquery.counterup.min.js" type="text/javascript"></script>
-                            <script src="assets/js/waypoints.js" type="text/javascript"></script>
-                            <!-- filter portfolio -->
-                            <script src="assets/js/jquery.shuffle.min.js" type="text/javascript"></script>
-                            <script src="assets/js/portfolio.js" type="text/javascript"></script>
-                            <!-- magnific popup -->
-                            <script src="assets/js/jquery.magnific-popup.min.js" type="text/javascript"></script>
-                            <!-- range slider -->
-                            <script src="assets/js/ion.rangeSlider.min.js" type="text/javascript"></script>
-                            <script src="assets/js/jquery.easing.min.js" type="text/javascript"></script>
-                            <!-- custom -->
-                            <script src="assets/js/custom.js" type="text/javascript"></script>
-                            </body>
+                        </div>
 
-                            </html>
+                    </div>
+                </div>
+                <!-- package section -->
+
+                <!-- Counter -->
+
+                <!-- blog section -->
+
+                <section class="reference">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 col-md-offset-3">
+                                <div class="title">
+                                    <h2>References</h2>
+                                    <p>A great Collection of our Tour Packages</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="testimonials">
+                                <div class="carousel" data-ride="carousel" id="quote-carousel">
+                                    <div class="carousel-inner">
+                                        <!-- Quote 1 -->  
+                                        <div class="item col-sm-10 col-sm-offset-1">
+                                            <blockquote>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium
+                                                aliquam architecto beatae dolorem, enim error eveniet harum iste molestias
+                                                neque nisi placeat possimus quaerat quam repudiandae sint soluta unde vero.
+                                                <span class="author">- Andrew Adams, Google Inc</span>
+                                            </blockquote>
+                                        </div>
+                                        <!-- Quote 2 -->  
+                                        <div class="item col-sm-10 col-sm-offset-1">
+                                            <blockquote>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium
+                                                aliquam architecto beatae doloremaliquam architecto beatae dolorem, enim error
+                                                eveniet harum iste molestias neque nisi placeat.
+                                                <span class="author">- Jhon Smith, Facebook Inc</span>
+                                            </blockquote>
+                                        </div>
+                                        <!-- Quote 3 -->
+                                        <div class="item col-sm-10 col-sm-offset-1 active">
+                                            <blockquote>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium
+                                                aliquam architecto beatae dolorem, enim error eveniet harum iste molestias
+                                                neque nisi placeat possimus quaerat quam repudiandae sint.
+                                                <span class="author">- Bob Smith, Fitbit</span>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                    <!-- Bottom Carousel Indicators -->
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#quote-carousel" data-slide-to="0" class=""><img class="img-responsive " src="assets/images/avtar-1.jpg" alt=""></li>
+                                        <li data-target="#quote-carousel" data-slide-to="1" class=""><img class="img-responsive" src="assets/images/avtar-2.jpg" alt=""></li>
+                                        <li data-target="#quote-carousel" data-slide-to="2" class="active"><img class="img-responsive" src="assets/images/avtar-3.jpg" alt=""></li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Newsletter -->
+
+            </div>
+            <!-- Footer Section -->
+            <?php include './footer.php'; ?>
+            <!-- jQuery -->
+            <script data-cfasync="false" src="../cdn-cgi/scripts/f2bf09f8/cloudflare-static/email-decode.min.js"></script><script src="assets/js/jquery.min.js" type="text/javascript"></script>
+            <!-- jquery ui js -->
+            <script src="assets/js/jquery-ui.min.js" type="text/javascript"></script>
+            <!-- bootstrap js -->
+            <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+            <!-- fraction slider js -->
+            <script src="assets/js/jquery.fractionslider.js" type="text/javascript"></script>
+            <!-- owl carousel js --> 
+            <script src="assets/owl-carousel/owl.carousel.min.js" type="text/javascript"></script>
+            <!-- counter -->
+            <script src="assets/js/jquery.counterup.min.js" type="text/javascript"></script>
+            <script src="assets/js/waypoints.js" type="text/javascript"></script>
+            <!-- filter portfolio -->
+            <script src="assets/js/jquery.shuffle.min.js" type="text/javascript"></script>
+            <script src="assets/js/portfolio.js" type="text/javascript"></script>
+            <!-- magnific popup -->
+            <script src="assets/js/jquery.magnific-popup.min.js" type="text/javascript"></script>
+            <!-- range slider -->
+            <script src="assets/js/ion.rangeSlider.min.js" type="text/javascript"></script>
+            <script src="assets/js/jquery.easing.min.js" type="text/javascript"></script>
+            <!-- custom -->
+            <script src="assets/js/custom.js" type="text/javascript"></script>
+    </body>
+
+</html>
