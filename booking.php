@@ -5,7 +5,6 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <title>Travel</title>
         <!-- Favicons -->
         <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
@@ -16,6 +15,7 @@
         <link href="assets/css/base.css" rel="stylesheet" type="text/css"/>
         <link href="assets/css/datepicker.css" rel="stylesheet" type="text/css"/>
         <link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
+        <link href="booking-form/style.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
         <!-- page loader -->
@@ -76,7 +76,6 @@
             <section class="contact-inner">
                 <div class="container">
                     <div class="row">
-
                         <div class="contact-form" style="margin-top: 60px;">
                             <div class="row form-group">
                                 <div class="col-xs-12 col-sm-6">
@@ -127,14 +126,14 @@
                                     <label>Number of Adults</label>
                                     <span id="star">*</span>
 
-                                    <input type="number" name="txtAdult" id="txtAdult" class="form-control">
+                                    <input type="number" name="txtAdult" id="txtAdult" class="form-control" min="0">
 
                                     <span id="spanAdult" ></span>
                                 </div>
                                 <div class="col-xs-12 col-sm-6">
                                     <label>Number of Children</label>
                                     <span id="star">*</span>
-                                    <input type="number" name="txtChildren" id="txtChildren" class="form-control">   
+                                    <input type="number" name="txtChildren" id="txtChildren" class="form-control" min="0">   
                                     <span id="spanChildren" ></span>
                                 </div>
                             </div>
@@ -156,145 +155,145 @@
                                 <textarea name="txtMessage"  id="txtMessage" rows="6" class="form-control" placeholder="write message here" required></textarea>
                                 <span id="spanMessage" ></span>
                             </div>
-                            <div class="row form-group">
-                                <div class="col-xs-12 col-sm-6 row">
-                                    <div class="col-sm-6">
-                                        <label for="comment">Security Code:</label>
-                                        <span id="star">*</span> 
-                                        <input type="text" name="captchacode" id="captchacode" class="form-control input-validater" placeholder="Enter the security code >> ">
-                                        <span id="capspan" ></span> 
-                                    </div>
-                                    <div class="col-sm-6"> 
-
-                                    </div>  
+                            <div class="col-xs-12 col-sm-6 col-md-4">
+                                <div class="col-sm-6 ">
+                                    <label for="comment">Security Code:</label>
+                                    <input style="margin-left: -30px;" type="text" name="captchacode" id="captchacode" class="form-control input-validater" placeholder="Enter the code ">
+                                    <span id="capspan" ></span>
                                 </div>
-                                <div class="col-xs-12 col-sm-6">
-                                    <!--                                            <div class="col-sm-4">
-                                                                                    <div class="div-check" style="margin-top: 25px;">
-                                                                                        <img src="booking-form/img/checking.gif" id="checking"/>
-                                                                                    </div>
-                                                                                </div>-->
-                                    <div class="col-sm-8 text-right">
-                                     <a href="#" class="thm-btn">Send Your Message</a>
+                                <div style="margin-top: 12px; margin-left: -15px;" class="col-sm-6 col-md-4">
+                                    <?php include("./booking-form/captchacode-widget.php"); ?>
+                                </div> 
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-4">
+                                <div class="col-sm-4">
+                                    <div style="" class="div-check" >
+                                        <img src="booking-form/img/checking.gif" id="checking"/>
                                     </div>
-                                    <!--                                    <ul class="nav navbar-nav navbar-right hidden-sm">
-                                                                            <li><a class="nav-btn" href="#"><div class="thm-btn">Booking</div></a></li>
-                                                                        </ul>-->
                                 </div>
                             </div>
-                            <div id="dismessage" align="center"></div>
-                        </div>
 
+
+                            <div class="col-sm-8 col-md-4 pull-right">
+
+                                <button type="submit" class="thm-btn" id="btnSubmit" name="btnSubmit" >Send Your Message</button>
+                            </div>
+
+                        </div>
+                        <div id="dismessage" align="center"></div>
                     </div>
                 </div>
-            </section>
-            <!-- Newsletter -->
-    
         </div>
-        <!-- Footer Section -->
-        <?php include './footer.php'; ?>
-        <!-- jQuery -->
-        <script data-cfasync="false" src="../cdn-cgi/scripts/f2bf09f8/cloudflare-static/email-decode.min.js"></script><script src="assets/js/jquery.min.js" type="text/javascript"></script>
-        <!-- jquery ui js -->
-        <script src="assets/js/jquery-ui.min.js" type="text/javascript"></script>
-        <!-- bootstrap js -->
-        <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
-        <script src="assets/js/bootstrap-datepicker.js" type="text/javascript"></script>
-        <!-- fraction slider js -->
-        <script src="assets/js/jquery.fractionslider.js" type="text/javascript"></script>
-        <!-- owl carousel js --> 
-        <script src="assets/owl-carousel/owl.carousel.min.js" type="text/javascript"></script>
-        <!-- counter -->
-        <script src="assets/js/jquery.counterup.min.js" type="text/javascript"></script>
-        <script src="assets/js/waypoints.js" type="text/javascript"></script>
-        <!-- filter portfolio -->
-        <script src="assets/js/jquery.shuffle.min.js" type="text/javascript"></script>
-        <script src="assets/js/portfolio.js" type="text/javascript"></script>
-        <!-- magnific popup -->
-        <script src="assets/js/jquery.magnific-popup.min.js" type="text/javascript"></script>
-        <!-- range slider -->
-        <script src="assets/js/ion.rangeSlider.min.js" type="text/javascript"></script>
-        <script src="assets/js/jquery.easing.min.js" type="text/javascript"></script>
-        <!-- custom -->
-        <script src="assets/js/custom.js" type="text/javascript"></script>
-        <!-- google map -->
-        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=%20AIzaSyDcMXKkIZSG1Ev3nNkDE5vZpfT_KG9zBT8"></script>
-        <script type="text/javascript">
-            // When the window has finished loading create our google map below
-            google.maps.event.addDomListener(window, 'load', init);
+    </section>
+    <!-- Newsletter -->
 
-            function init() {
-                // Basic options for a simple Google Map
-                // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-                var mapOptions = {
-                    // How zoomed in you want the map to start at (always required)
-                    zoom: 10, scrollwheel: false,
-                    // The latitude and longitude to center the map (always required)
-                    center: new google.maps.LatLng(23.8103968, 90.41256666), //Dhaka
+</div>
+<!-- Footer Section -->
+<?php include './footer.php'; ?>
+<!-- jQuery -->
+<script data-cfasync="false" src="../cdn-cgi/scripts/f2bf09f8/cloudflare-static/email-decode.min.js"></script><script src="assets/js/jquery.min.js" type="text/javascript"></script>
+<!-- jquery ui js -->
+<script src="assets/js/jquery-ui.min.js" type="text/javascript"></script>
+<!-- bootstrap js -->
+<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="assets/js/bootstrap-datepicker.js" type="text/javascript"></script>
+<!-- fraction slider js -->
+<script src="assets/js/jquery.fractionslider.js" type="text/javascript"></script>
+<!-- owl carousel js --> 
+<script src="assets/owl-carousel/owl.carousel.min.js" type="text/javascript"></script>
+<!-- counter -->
+<script src="assets/js/jquery.counterup.min.js" type="text/javascript"></script>
+<script src="assets/js/waypoints.js" type="text/javascript"></script>
+<!-- filter portfolio -->
+<script src="assets/js/jquery.shuffle.min.js" type="text/javascript"></script>
+<script src="assets/js/portfolio.js" type="text/javascript"></script>
+<!-- magnific popup -->
+<script src="assets/js/jquery.magnific-popup.min.js" type="text/javascript"></script>
+<!-- range slider -->
+<script src="assets/js/ion.rangeSlider.min.js" type="text/javascript"></script>
+<script src="assets/js/jquery.easing.min.js" type="text/javascript"></script>
+<!-- custom -->
+<script src="assets/js/custom.js" type="text/javascript"></script>
+<!-- google map -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=%20AIzaSyDcMXKkIZSG1Ev3nNkDE5vZpfT_KG9zBT8"></script>
+<script type="text/javascript">
+    // When the window has finished loading create our google map below
+    google.maps.event.addDomListener(window, 'load', init);
 
-                    // How you would like to style the map. 
-                    // This is where you would paste any style found on Snazzy Maps.
-                    styles: [{"featureType": "administrative", "elementType": "labels.text.fill", "stylers": [{"color": "#444444"}]}, {"featureType": "administrative.locality", "elementType": "labels.text.stroke", "stylers": [{"visibility": "on"}]}, {"featureType": "administrative.locality", "elementType": "labels.icon", "stylers": [{"visibility": "on"}, {"color": "#f1c40f"}]}, {"featureType": "landscape", "elementType": "all", "stylers": [{"color": "#f2f2f2"}]}, {"featureType": "poi", "elementType": "all", "stylers": [{"visibility": "off"}]}, {"featureType": "road", "elementType": "all", "stylers": [{"saturation": -100}, {"lightness": 45}]}, {"featureType": "road.highway", "elementType": "all", "stylers": [{"visibility": "simplified"}]}, {"featureType": "road.arterial", "elementType": "labels.icon", "stylers": [{"visibility": "off"}]}, {"featureType": "transit", "elementType": "all", "stylers": [{"visibility": "off"}]}, {"featureType": "water", "elementType": "all", "stylers": [{"color": "#fec107"}, {"visibility": "on"}]}]
-                };
+    function init() {
+        // Basic options for a simple Google Map
+        // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+        var mapOptions = {
+            // How zoomed in you want the map to start at (always required)
+            zoom: 10, scrollwheel: false,
+            // The latitude and longitude to center the map (always required)
+            center: new google.maps.LatLng(23.8103968, 90.41256666), //Dhaka
 
-                // image from external URL
+            // How you would like to style the map. 
+            // This is where you would paste any style found on Snazzy Maps.
+            styles: [{"featureType": "administrative", "elementType": "labels.text.fill", "stylers": [{"color": "#444444"}]}, {"featureType": "administrative.locality", "elementType": "labels.text.stroke", "stylers": [{"visibility": "on"}]}, {"featureType": "administrative.locality", "elementType": "labels.icon", "stylers": [{"visibility": "on"}, {"color": "#f1c40f"}]}, {"featureType": "landscape", "elementType": "all", "stylers": [{"color": "#f2f2f2"}]}, {"featureType": "poi", "elementType": "all", "stylers": [{"visibility": "off"}]}, {"featureType": "road", "elementType": "all", "stylers": [{"saturation": -100}, {"lightness": 45}]}, {"featureType": "road.highway", "elementType": "all", "stylers": [{"visibility": "simplified"}]}, {"featureType": "road.arterial", "elementType": "labels.icon", "stylers": [{"visibility": "off"}]}, {"featureType": "transit", "elementType": "all", "stylers": [{"visibility": "off"}]}, {"featureType": "water", "elementType": "all", "stylers": [{"color": "#fec107"}, {"visibility": "on"}]}]
+        };
 
-                var myIcon = 'assets/images/marker.png';
+        // image from external URL
 
-                //preparing the image so it can be used as a marker
-                //https://developers.google.com/maps/documentation/javascript/reference#Icon
-                //includes hacky fix "size" to allow for wobble
-                var catIcon = {
-                    url: myIcon,
-                };
+        var myIcon = 'assets/images/marker.png';
 
-                // Get the HTML DOM element that will contain your map 
-                // We are using a div with id="map" seen below in the <body>
-                var mapElement = document.getElementById('map');
+        //preparing the image so it can be used as a marker
+        //https://developers.google.com/maps/documentation/javascript/reference#Icon
+        //includes hacky fix "size" to allow for wobble
+        var catIcon = {
+            url: myIcon,
+        };
 
-                // Create the Google Map using our element and options defined above
-                var map = new google.maps.Map(mapElement, mapOptions);
+        // Get the HTML DOM element that will contain your map 
+        // We are using a div with id="map" seen below in the <body>
+        var mapElement = document.getElementById('map');
 
-                // Let's also add a marker while we're at it
-                var marker = new google.maps.Marker({
-                    position: new google.maps.LatLng(23.8103968, 90.41256666), //Dhaka
-                    map: map,
-                    icon: catIcon,
-                    title: 'Snazzy!',
-                    animation: google.maps.Animation.DROP,
-                });
-            }
-        </script>
-        <script type="text/javascript">
+        // Create the Google Map using our element and options defined above
+        var map = new google.maps.Map(mapElement, mapOptions);
 
-            $(function () {
+        // Let's also add a marker while we're at it
+        var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(23.8103968, 90.41256666), //Dhaka
+            map: map,
+            icon: catIcon,
+            title: 'Snazzy!',
+            animation: google.maps.Animation.DROP,
+        });
+    }
+</script>
+<script type="text/javascript">
 
-                /* global setting */
-                var datepickersOpt = {
-                    dateFormat: 'yy-mm-dd',
-                    minDate: 0
-                }
+    $(function () {
 
-                $("#txtAdate").datepicker($.extend({
-                    onSelect: function () {
-                        var minDate = $(this).datepicker('getDate');
-                        minDate.setDate(minDate.getDate() + 1); //add two days
-                        $("#txtDdate").datepicker("option", "minDate", minDate);
-                    },
-                    dateFormat: 'yyyy-mm-dd'
-                }, datepickersOpt));
+        /* global setting */
+        var datepickersOpt = {
+            dateFormat: 'yy-mm-dd',
+            minDate: 0
+        }
 
-                $("#txtDdate").datepicker($.extend({
-                    onSelect: function () {
-                        var maxDate = $(this).datepicker('getDate');
-                        maxDate.setDate(maxDate.getDate() - 1);
-                        $("#txtAdate").datepicker("option", "maxDate", maxDate);
-                    },
-                    dateFormat: 'yyyy-mm-dd'
-                }, datepickersOpt));
-            });
+        $("#txtAdate").datepicker($.extend({
+            onSelect: function () {
+                var minDate = $(this).datepicker('getDate');
+                minDate.setDate(minDate.getDate() + 1); //add two days
+                $("#txtDdate").datepicker("option", "minDate", minDate);
+            },
+            dateFormat: 'yyyy-mm-dd'
+        }, datepickersOpt));
 
-        </script>
-    </body>
+        $("#txtDdate").datepicker($.extend({
+            onSelect: function () {
+                var maxDate = $(this).datepicker('getDate');
+                maxDate.setDate(maxDate.getDate() - 1);
+                $("#txtAdate").datepicker("option", "maxDate", maxDate);
+            },
+            dateFormat: 'yyyy-mm-dd'
+        }, datepickersOpt));
+    });
+
+</script>
+<script src="booking-form/scripts.js" type="text/javascript"></script>
+</body>
+
 
 </html>

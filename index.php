@@ -187,66 +187,68 @@
             <section class="popular-inner">
                 <div class="container">
                     <div class="row">
+                        <div class="col-md-5">
+                            <div class="title">
+                                <?php $PAGES = new Page(1); ?>
+                                <h2><?php echo $PAGES->title?></h2>
+                                <p>This is Amazing Travel Agency !</p>
+                            </div>
+                            <div class="cws_divider mb-25 mt-5"></div>
+                            <p><?php echo $PAGES->description?></p> 
+
+                        </div>
                         <div class="col-md-7">
-                            <div class="container" style="padding-left: 95px;">
-                                <div class="row">
-                                    <div class="col-md-7 col-md-offset-3" style="margin-left: -40px;">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <div class="col-sm-3 inner-box article-color" style="margin-bottom: 20px;">
-                                            <article>
-                                                <img src="assets/images/car-key.png" style="width: 40%;">
-                                                <div class="content-text">
-                                                    <h5>Rent A Car</h5>
-                                                    <p>Lorem Ipsum is simply dummy text of the printing.</p>
-                                                </div>
-                                            </article>
+                            <div class="col-md-6">
+                                <div class="inner-box article-color">
+                                    <article>
+                                        <img src="assets/images/car-key.png" style="width: 40%;">
+                                        <div class="content-text">
+                                            <h5>Rent A Car</h5>
+                                            <p>Lorem Ipsum is simply dummy text of the printing.</p>
                                         </div>
-                                        <div class="col-sm-3 inner-box article-color" style="margin-left: 20px;">
-                                            <article>
-                                                <img src="assets/images/cart.png" style="width: 40%;">
-                                                <div class="content-text">
-                                                    <h5>Fast Booking</h5>
-                                                    <p>Lorem Ipsum is simply dummy text of the printing.</p>
-                                                </div>
-                                            </article>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <div class="col-sm-3 inner-box article-color" style="margin-right: 20px;">
-                                            <article>
-                                                <img src="assets/images/credit-card.png" style="width: 40%;">
-                                                <div class="content-text">
-                                                    <h5>Visa Card Accepted</h5>
-                                                    <p>Lorem Ipsum is simply dummy text of the printing.</p>
-                                                </div>
-                                            </article>
-                                        </div>
-                                        <div class="col-sm-3 inner-box article-color">
-                                            <article>
-                                                <img src="assets/images/airplane.png" style="width: 40%;" >
-                                                <div class="content-text">
-                                                    <h5>Airport Drop</h5>
-                                                    <p>Lorem Ipsum is simply dummy text of the printing.</p>
-                                                </div>
-                                            </article>
-                                        </div>
-                                    </div>
+                                    </article>
                                 </div>
 
                             </div>
+                            <div class="col-md-6">
+                                <div class="inner-box article-color">
+                                    <article>
+                                        <img src="assets/images/car-key.png" style="width: 40%;">
+                                        <div class="content-text">
+                                            <h5>Rent A Car</h5>
+                                            <p>Lorem Ipsum is simply dummy text of the printing.</p>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="inner-box article-color">
+                                    <article>
+                                        <img src="assets/images/car-key.png" style="width: 40%;">
+                                        <div class="content-text">
+                                            <h5>Rent A Car</h5>
+                                            <p>Lorem Ipsum is simply dummy text of the printing.</p>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="inner-box article-color">
+                                    <article>
+                                        <img src="assets/images/car-key.png" style="width: 40%;">
+                                        <div class="content-text">
+                                            <h5>Rent A Car</h5>
+                                            <p>Lorem Ipsum is simply dummy text of the printing.</p>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                    </div> 
                 </div>
             </section>
             <!-- destination -->
-            <!-- popular tour -->
-            <section class="service-inner" style="margin-bottom: 50px; padding-top: 0px;">
-            </section>
+
             <section class="package">
                 <div class="reference home-ref">
                     <div class="container">
@@ -260,33 +262,167 @@
                         </div>
                         <div class="row thm-margin">
                             <div id="popular-slide" class="owl-carousel">
-                                <?php foreach (TourPackage::all() as $key=>$tours) { ?>
-                                    <div class="col-xs-12 col-sm-4 col-md-12">
-                                        <div class="package-wiget">
-                                            <div class="grid">
-                                                <figure class="effect-milo">
-                                                    <img src="upload/tour-package/<?php echo $tours['image_name'];?>" class="img-responsive" alt="">
-                                                    <figcaption>
-                                                        <div class="effect-block">
-                                                            <h3><?php echo $tours['title'];?></h3>
-                                                            
-                                                            <a href="view-tourpackage.php?id=<?php echo $tours['id'];?>"> <button type="button" class="thm-btn">Read More.</button></a>
+                                <div class="col-xs-12 col-sm-4 col-md-12">
+                                    <div class="package-wiget">
+                                        <div class="grid">
+                                            <figure class="effect-milo">
+                                                <img src="assets/images/Package-800x500-1.jpg" class="img-responsive" alt="">
+                                                <figcaption>
+                                                    <div class="effect-block">
+                                                        <h3>Hilton Molino Stucky</h3>
+                                                        <div class="package-ratting">
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star-half-o"></i>
+                                                            <i class="fa fa-star-o"></i>
                                                         </div>
-                                                    </figcaption>
-                                                </figure>
-                                            </div>
-                                            <div class="package-content">
-                                                <a href="view-tourpackage.php?id=<?php echo $tours['id'];?>"><h5><?php echo $tours['title'];?></h5></a>
-                                                <div class="package-price">
-                                                  
-                                                    <p><?php echo $tours['short_description'];?></p>
-                                                </div>
+                                                        <button type="button" class="thm-btn">Explore Now</button>
+                                                    </div>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="package-content">
+                                            <h5>Hilton Molino Stucky</h5>
+                                            <div class="package-price">from
+                                                <span class="price">
+                                                    <span class="amount">$200.00</span>
+                                                </span>
+                                                /night
+                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
                                             </div>
                                         </div>
                                     </div>
-                                    <?php
-                                }
-                                ?>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 col-md-12">
+                                    <div class="package-wiget">
+                                        <div class="grid">
+                                            <figure class="effect-milo">
+                                                <img src="assets/images/Package-800x500-1.jpg" class="img-responsive" alt="">
+                                                <figcaption>
+                                                    <div class="effect-block">
+                                                        <h3>Hilton Molino Stucky</h3>
+                                                        <div class="package-ratting">
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star-half-o"></i>
+                                                            <i class="fa fa-star-o"></i>
+                                                        </div>
+                                                        <button type="button" class="thm-btn">Explore Now</button>
+                                                    </div>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="package-content">
+                                            <h5>Hilton Molino Stucky</h5>
+                                            <div class="package-price">from
+                                                <span class="price">
+                                                    <span class="amount">$200.00</span>
+                                                </span>
+                                                /night
+                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 col-md-12">
+                                    <div class="package-wiget">
+                                        <div class="grid">
+                                            <figure class="effect-milo">
+                                                <img src="assets/images/Package-800x500-2.jpg" class="img-responsive" alt="">
+                                                <figcaption>
+                                                    <div class="effect-block">
+                                                        <h3>Palolem, India</h3>
+                                                        <div class="package-ratting">
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star-half-o"></i>
+                                                            <i class="fa fa-star-o"></i>
+                                                        </div>
+                                                        <button type="button" class="thm-btn">Explore Now</button>
+                                                    </div>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="package-content">
+                                            <h5>Hilton Molino Stucky</h5>
+                                            <div class="package-price">from
+                                                <span class="price">
+                                                    <span class="amount">$200.00</span>
+                                                </span>
+                                                /night
+                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 col-md-12">
+                                    <div class="package-wiget">
+                                        <div class="grid">
+                                            <figure class="effect-milo">
+                                                <img src="assets/images/Package-800x500-2.jpg" class="img-responsive" alt="">
+                                                <figcaption>
+                                                    <div class="effect-block">
+                                                        <h3>Palolem, India</h3>
+                                                        <div class="package-ratting">
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star-half-o"></i>
+                                                            <i class="fa fa-star-o"></i>
+                                                        </div>
+                                                        <button type="button" class="thm-btn">Explore Now</button>
+                                                    </div>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="package-content">
+                                            <h5>Hilton Molino Stucky</h5>
+                                            <div class="package-price">from
+                                                <span class="price">
+                                                    <span class="amount">$200.00</span>
+                                                </span>
+                                                /night
+                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 col-md-12">
+                                    <div class="package-wiget">
+                                        <div class="grid">
+                                            <figure class="effect-milo">
+                                                <div class="ribbon"><span>Popular</span></div>
+                                                <img src="assets/images/Package-800x500-3.jpg" class="img-responsive" alt="">
+                                                <figcaption>
+                                                    <div class="effect-block">
+                                                        <h3>IEiffel Tower, Paris</h3>
+                                                        <div class="package-ratting">
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star-half-o"></i>
+                                                            <i class="fa fa-star-o"></i>
+                                                        </div>
+                                                        <button type="button" class="thm-btn">Explore Now</button>
+                                                    </div>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="package-content">
+                                            <h5>Hilton Molino Stucky</h5>
+                                            <div class="package-price">from
+                                                <span class="price">
+                                                    <span class="amount">$200.00</span>
+                                                </span>
+                                                /night
+                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -375,6 +511,12 @@
 
                     </div>
                 </div>
+                <!-- package section -->
+
+                <!-- Counter -->
+
+                <!-- blog section -->
+
                 <section class="reference">
                     <div class="container">
                         <div class="row">
@@ -388,34 +530,34 @@
                         <div class="row">
                             <div class="testimonials">
                                 <div class="carousel" data-ride="carousel" id="quote-carousel">
-                                    <div class="carousel-inner">
-                                        <!-- Quote 1 -->  
-                                        <div class="item col-sm-10 col-sm-offset-1">
-                                            <blockquote>
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium
-                                                aliquam architecto beatae dolorem, enim error eveniet harum iste molestias
-                                                neque nisi placeat possimus quaerat quam repudiandae sint soluta unde vero.
-                                                <span class="author">- Andrew Adams, Google Inc</span>
-                                            </blockquote>
+                                    <?php
+                                    foreach (Comments::activeComments() as $key => $comment) {
+                                        ?>
+
+                                        <div class="carousel-inner">
+                                            <!-- Quote 1 -->  
+                                            <div class="item col-sm-10 col-sm-offset-1">
+                                                <blockquote>
+                                                    <?php echo $comment['comment'] ?>
+                                                    <span class="author"><?php echo $comment['name'] ?></span>
+                                                </blockquote>
+                                            </div>
+
                                         </div>
-                                        <div class="item col-sm-10 col-sm-offset-1 active">
-                                            <blockquote>
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium
-                                                aliquam architecto beatae dolorem, enim error eveniet harum iste molestias
-                                                neque nisi placeat possimus quaerat quam repudiandae sint.
-                                                <span class="author">- Bob Smith, Fitbit</span>
-                                            </blockquote>
-                                        </div>
-                                    </div>
+                                    <?php }
+                                    ?>
+                                    <!-- Bottom Carousel Indicators -->
                                     <ol class="carousel-indicators">
-                                        <li data-target="#quote-carousel" data-slide-to="1" class=""><img class="img-responsive" src="assets/images/avtar-2.jpg" alt=""></li>
-                                        <li data-target="#quote-carousel" data-slide-to="2" class="active"><img class="img-responsive" src="assets/images/avtar-3.jpg" alt=""></li>
+
                                     </ol>
+
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
+                <!-- Newsletter -->
+
             </div>
             <!-- Footer Section -->
             <?php include './footer.php'; ?>
