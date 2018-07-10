@@ -88,7 +88,7 @@
                         </div>
                         <div class="col-sm-8">
                             <div class="contact-form">
-                                <form>
+                        
                                     <h2>Let's Talk!</h2>
                                     <div class="row">
                                         <div class="col-sm-6">
@@ -137,20 +137,20 @@
                                     </div>
                                     <div class="col-xs-12 col-sm-12 col-md-4">
                                         <div class="col-sm-4">
-                                            <div style="margin-top: 52px;" class="div-check" >
+                                            <div style="" class="div-check" >
                                                 <img src="contact-form/img/checking.gif" id="checking"/>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-12 col-sm-12 col-xs-12">
-                                        <div class="col-sm-4">
-                                            <button type="submit" id="btnSubmit" name="btnSubmit" class="thm-btn" style="margin-bottom: 100px; margin-left: -30px;">Submit</button>
+                                        <div class="cf-input-box" style="padding-bottom: 70px;">
+                                            <button type="submit" id="btnSubmit" name="btnSubmit" class="thm-btn" style="margin-left: -15px;">SEND MESSAGE</button>
                                         </div>
                                     </div>
-                                    <div id="dismessage" align="center"></div>
-                                </form>
                             </div>
+                             
                         </div>
+                      
                         <div class="col-sm-4">
                             <div class="contact-details">
                                 <h2>Contact Details</h2>
@@ -178,6 +178,9 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="row">
+                        <div id="dismessage" align="center" style="margin-top: -29px;"></div>
                     </div>
                 </div>
             </section>

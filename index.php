@@ -34,8 +34,6 @@
                                         <div class="row">
                                             <div class="col-xs-12 col-sm-9 col-md-10">
                                                 <div class="row panel-margin">
-
-
                                                     <div class="col-xs-6 col-sm-4 col-md-2 panel-padding">
                                                         <label>Checking</label>
                                                         <div class="icon-addon">
@@ -43,10 +41,6 @@
                                                             <label class="glyphicon fa fa-calendar"  title="email"></label>
                                                         </div>
                                                     </div>
-
-
-
-
                                                     <div class="col-xs-6 col-sm-4 col-md-2 panel-padding">
                                                         <label>Checkout</label>
                                                         <div class="icon-addon">
@@ -192,19 +186,7 @@
             <!-- service -->
             <section class="popular-inner">
                 <div class="container">
-
                     <div class="row">
-                        <!--                           <?php $PAGES = new Page(1); ?>
-                                                <div class="col-md-5">
-                                                    <div class="title">
-                        
-                                                        <h2> <?php echo $PAGES->title ?></h2>
-                                                        <p>This is Amazing Travel Agency !</p>
-                                                    </div>
-                                                    <div class="cws_divider mb-25 mt-5"></div>
-                                                    <p><?php echo $PAGES->description ?></p> 
-                        
-                                                </div>-->
                         <div class="col-md-7">
                             <div class="container" style="padding-left: 95px;">
                                 <div class="row">
@@ -264,9 +246,7 @@
             <!-- destination -->
             <!-- popular tour -->
             <section class="service-inner" style="margin-bottom: 50px; padding-top: 0px;">
-
             </section>
-
             <section class="package">
                 <div class="reference home-ref">
                     <div class="container">
@@ -395,12 +375,6 @@
 
                     </div>
                 </div>
-                <!-- package section -->
-
-                <!-- Counter -->
-
-                <!-- blog section -->
-
                 <section class="reference">
                     <div class="container">
                         <div class="row">
@@ -424,9 +398,6 @@
                                                 <span class="author">- Andrew Adams, Google Inc</span>
                                             </blockquote>
                                         </div>
-                                        <!-- Quote 2 -->  
-
-                                        <!-- Quote 3 -->
                                         <div class="item col-sm-10 col-sm-offset-1 active">
                                             <blockquote>
                                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium
@@ -436,9 +407,7 @@
                                             </blockquote>
                                         </div>
                                     </div>
-                                    <!-- Bottom Carousel Indicators -->
                                     <ol class="carousel-indicators">
-
                                         <li data-target="#quote-carousel" data-slide-to="1" class=""><img class="img-responsive" src="assets/images/avtar-2.jpg" alt=""></li>
                                         <li data-target="#quote-carousel" data-slide-to="2" class="active"><img class="img-responsive" src="assets/images/avtar-3.jpg" alt=""></li>
                                     </ol>
@@ -447,8 +416,6 @@
                         </div>
                     </div>
                 </section>
-                <!-- Newsletter -->
-
             </div>
             <!-- Footer Section -->
             <?php include './footer.php'; ?>

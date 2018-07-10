@@ -21,8 +21,12 @@
                 <li><a href="services.php">Services</a></li>
                 <li><a href="gallery.php">Gallery</a></li>
                 <li><a href="contact.php">Contact Us</a></li>
+
             </ul>
-                    </div> <!-- /.navbar-collapse --> 
+            <ul class="nav navbar-nav navbar-right hidden-sm">
+                <li><a class="nav-btn" href="booking.php" style="margin-top: -69px; margin-right: -20px;"><div class="thm-btn">Booking</div></a></li>
+            </ul>
+        </div> <!-- /.navbar-collapse --> 
     </div> <!-- /.container --> 
 </nav> 
 <!-- /.nav end -->
