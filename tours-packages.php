@@ -53,8 +53,6 @@ include './class/include.php';
                     <div class="row" style="margin-top: 60px;">
                         <?php foreach (TourPackage::all() as $key => $tourse){ ?>
                         <div class="col-sm-12 col-md-6">
-
-
                             <div class="hotel-item">
                                 <!-- hotel Image -->
                                 <div class="hotel-image">
@@ -78,7 +76,6 @@ include './class/include.php';
                                         <a href="view-tourpackage.php?id=<?php echo $tourse['id']?>" class="thm-btn" style="margin-bottom: -27px;">Read More</a>
                                     </div>
                                 </div>
-
                             </div>
 
                         </div>

@@ -10,7 +10,6 @@ if (isset($_POST['create'])) {
     $ATTRACTION_PHOTO->attraction = $_POST['id'];
     $ATTRACTION_PHOTO->caption = mysql_real_escape_string($_POST['caption']);
 
-
     $dir_dest = '../../upload/attraction/gallery/';
     $dir_dest_thumb = '../../upload/attraction/gallery/thumb/';
 
