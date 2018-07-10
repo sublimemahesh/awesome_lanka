@@ -91,7 +91,7 @@ function validate() {
 
 function sendForm() {
     jQuery.ajax({
-        url: "contact-form/send-email.php",
+        url: "booking-form/send-email.php",
         cache: false,
         dataType: "json",
         type: "POST",
