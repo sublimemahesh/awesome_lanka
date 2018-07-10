@@ -80,7 +80,7 @@
                             <div class="col-sm-12" style="padding-bottom: 30px;">
                                 <div class="col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
                                     <div class="find-location-map">
-                                        <div class="gmap">
+                                        <div class="gmap" style="padding-top: 35px;">
                                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.716723132564!2d80.21369891476817!3d6.033559295630301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae173bb5c8067f1%3A0x4768397502edf93!2sSublime+Holdings!5e0!3m2!1sen!2slk!4v1528086188084" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>                                    </div>
                                     </div>
                                 </div>

@@ -51,7 +51,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="row gallery-margin">
-                            <div class="portfolio-items list-unstyled zoom-gallery" id="grid">
+                            <div class="portfolio-items list-unstyled zoom-gallery" id="grid" style="margin-bottom: 50px;">
                                 <?php
                                 $ALBUMPHOTO = new AlbumPhoto(NULL);
                                 $IMAGES = $ALBUMPHOTO->getAlbumPhotosById(1);
