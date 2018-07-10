@@ -1066,6 +1066,7 @@ html .ui-button.ui-state-disabled:active {
     -moz-transition-duration: .2s;
     -webkit-transition-duration: .2s;
     -o-transition-duration: .2s;
+    margin-bottom: 20px;
 }
 
 .inner-box:hover {
