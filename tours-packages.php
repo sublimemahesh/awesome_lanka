@@ -67,13 +67,11 @@ include './class/include.php';
                                     <a href="view-tourpackage.php?id=<?php echo $tourse['id']?>"> <h3><?php echo $tourse['title']?></h3></a>
                                     <!-- Text Intro -->
                                     <p><?php echo $tourse['short_description']?></p>
-                                    <div class="free-service">
-                                        <i class="flaticon-television" data-toggle="tooltip" data-placement="top" title="" data-original-title="Plasma TV with cable chanels"></i>
-                                        <i class="flaticon-swimmer" data-toggle="tooltip" data-placement="top" title="" data-original-title="Swimming pool"></i>
-                                        <i class="flaticon-wifi" data-toggle="tooltip" data-placement="top" title="" data-original-title="Free wifi"></i>
-                                        <i class="flaticon-weightlifting" data-toggle="tooltip" data-placement="top" title="" data-original-title="Fitness center"></i>
-                                        <i class="flaticon-lemonade" data-toggle="tooltip" data-placement="top" title="" data-original-title="Restaurant"></i>
-                                        <a href="view-tourpackage.php?id=<?php echo $tourse['id']?>" class="thm-btn" style="margin-bottom: -27px;">Read More</a>
+                                    <div class="free-service pull-left" style="">
+                                        <a href=booking.php?id=<?php echo $tourse['id']?>" class="thm-btn" style="margin-bottom: -20px;">Book Now</a>
+                                    </div>
+                                    <div class="free-service pull-right">
+                                        <a href="view-tourpackage.php?id=<?php echo $tourse['id']?>" class="thm-btn" style="margin-bottom: -20px;">Read More</a>
                                     </div>
                                 </div>
                             </div>
