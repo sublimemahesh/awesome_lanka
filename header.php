@@ -7,7 +7,7 @@
                 <span class="sr-only">Toggle navigation</span><i class="fa fa-bars"></i>
             </button>
             <a class="navbar-brand" href="index.php">
-                <img src="assets/images/logo.png" class="img-resposive" alt="">
+                <img src="assets/images/logo.png" class="img-resposive" alt="" style="margin-left: -18px;">
             </a>
         </div>
         <!--Collect the nav links, forms, and other content for toggling--> 
@@ -21,10 +21,9 @@
                 <li><a href="services.php">Services</a></li>
                 <li><a href="gallery.php">Gallery</a></li>
                 <li><a href="contact.php">Contact Us</a></li>
-
             </ul>
             <ul class="nav navbar-nav navbar-right hidden-sm">
-                <li><a class="nav-btn" href="booking.php" style="margin-top: -69px; margin-right: -20px;"><div class="thm-btn">Booking</div></a></li>
+                <li><a class="nav-btn" href="booking.php"><div class="thm-btn">Booking</div></a></li>
             </ul>
         </div> <!-- /.navbar-collapse --> 
     </div> <!-- /.container --> 

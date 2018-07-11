@@ -172,10 +172,7 @@
                                     </div>
                                 </div>
                             </div>
-
-
-                            <div class="col-sm-8 col-md-4 pull-right">
-
+                            <div class="col-sm-8 col-md-12 pull-right">
                                 <button type="submit" class="thm-btn" id="btnSubmit" name="btnSubmit" >Send Your Message</button>
                             </div>
 

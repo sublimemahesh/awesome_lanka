@@ -391,6 +391,8 @@ blockquote .author,
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px transparent;
     position: relative;
+    margin-left: -16px;
+    margin-bottom: 60px;
 }
 
 .thm-btn:before {
