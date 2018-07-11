@@ -27,7 +27,7 @@ include './class/include.php';
             <?php include './header.php'; ?>
             <!-- /.nav end -->
             <!-- page header -->
-            <section class="header" style="background-image: url(assets/images/header-1920x1135-1.jpg);">
+            <section class="header" style="background-image: url(assets/images/slide3.jpg);">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">

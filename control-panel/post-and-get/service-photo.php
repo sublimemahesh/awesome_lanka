@@ -8,7 +8,7 @@ if (isset($_POST['create'])) {
     $VALID = new Validator();
 
     $SERVICE_PHOTO->service = $_POST['id'];
-    $SERVICE_PHOTO->caption = mysql_real_escape_string($_POST['caption']);
+    $SERVICE_PHOTO->caption = $_POST['caption'];
 
     $dir_dest = '../../upload/service/gallery/';
     $dir_dest_thumb = '../../upload/service/gallery/thumb/';
@@ -129,7 +129,7 @@ if (isset($_POST['update'])) {
     $SERVICE_PHOTO = new ServicePhoto($_POST['id']);
 
     $SERVICE_PHOTO->image_name = $_POST['oldImageName'];
-    $SERVICE_PHOTO->caption = mysql_real_escape_string($_POST['caption']);
+    $SERVICE_PHOTO->caption = $_POST['caption'];
 
     $VALID = new Validator();
     $VALID->check($SERVICE_PHOTO, [

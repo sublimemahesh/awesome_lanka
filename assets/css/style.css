@@ -767,7 +767,10 @@ blockquote .author,
 }
 
 .header-bg-10 {
-    background-image: url(../images/header-1920x1135-10.jpg);
+    background-image: url(../images/banner/news2.jpg);
+}
+.header-bg-11 {
+    background-image: url(../images/banner/news6.jpg);
 }
 
 .header:before {

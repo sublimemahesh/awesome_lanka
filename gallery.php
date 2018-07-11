@@ -26,7 +26,7 @@
             <?php include './header.php'; ?>
             <!-- /.nav end -->
             <!-- page header -->
-            <section class="header" style="background-image: url(assets/images/header-1920x1135-10.jpg);margin-bottom: 60px;">
+            <section class="header" style="background-image: url(assets/images/banner/news7.jpg);margin-bottom: 60px;">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
@@ -63,15 +63,12 @@
                                             <a href="upload/photo-album/gallery/<?php echo $image['image_name']; ?>">
                                                 <img src="upload/photo-album/gallery/thumb/<?php echo $image['image_name']; ?>" class="img-responsive" alt="">
                                             </a>
-                                            <div class="gallery-hover">
-
-                                            </div>
                                         </div>
 
                                     </div>
                                 <?php }
                                 ?>
-                            
+
                                 <div class="col-md-3 col-sm-3 col-xs-12 shuffle_sizer"></div>
 
                             </div>

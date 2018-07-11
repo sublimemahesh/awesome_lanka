@@ -283,7 +283,8 @@
                                                 <h5><?php echo $tours['title']; ?></h5>
                                                 <div class="package-price">
 
-                                                    <p><?php echo $tours['short_description']; ?></p>
+                                                    <p><?php echo substr($tours['short_description'],0,200). '...'; ?></p>
+                                                    
                                                 </div>
                                             </div>
                                         </div>
