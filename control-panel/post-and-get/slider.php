@@ -7,9 +7,9 @@ if (isset($_POST['create'])) {
     $SLIDER = new Slider(NULL);
     $VALID = new Validator();
 
-    $SLIDER->title = mysql_real_escape_string($_POST['title']);
-    $SLIDER->description = mysql_real_escape_string($_POST['description']);
-    $SLIDER->url =  mysql_real_escape_string($_POST['url']);
+    $SLIDER->title = $_POST['title'];
+    $SLIDER->description = $_POST['description'];
+    $SLIDER->url = $_POST['url'];
 
     $dir_dest = '../../upload/slider/';
 
@@ -37,8 +37,6 @@ if (isset($_POST['create'])) {
 
     $VALID->check($SLIDER, [
         'title' => ['required' => TRUE],
-        'description' => ['required' => TRUE],
-        'url' => ['required' => TRUE],
         'image_name' => ['required' => TRUE]
     ]);
 
@@ -93,8 +91,8 @@ if (isset($_POST['update'])) {
 
     $SLIDER->image_name = $_POST['oldImageName'];
     $SLIDER->title = mysql_real_escape_string($_POST['title']);
-    $SLIDER->description = mysql_real_escape_string($_POST['description']);
-    $SLIDER->url = mysql_real_escape_string($_POST['url']);
+    $SLIDER->description = $_POST['description'];
+    $SLIDER->url = $_POST['url'];
 
 
     $VALID = new Validator();
@@ -132,9 +130,9 @@ if (isset($_POST['save-date'])) {
 
     foreach ($_POST['sort'] as $key => $img) {
         $key = $key + 1;
-        
+
         $SLIDER = Slider::arrange($key, $img);
-        
+
         header('Location: ' . $_SERVER['HTTP_REFERER']);
     }
 }

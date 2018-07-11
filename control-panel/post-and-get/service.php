@@ -7,9 +7,9 @@ if (isset($_POST['create'])) {
     $SERVICE = new Service(NULL);
     $VALID = new Validator();
 
-    $SERVICE->title = mysql_real_escape_string($_POST['title']);
-    $SERVICE->short_description = mysql_real_escape_string($_POST['short_description']);
-    $SERVICE->description = mysql_real_escape_string($_POST['description']);
+    $SERVICE->title = $_POST['title'];
+    $SERVICE->short_description = $_POST['short_description'];
+    $SERVICE->description = $_POST['description'];
 
     $dir_dest = '../../upload/service/';
 
@@ -99,9 +99,9 @@ if (isset($_POST['update'])) {
     $SERVICE = new Service($_POST['id']);
 
     $SERVICE->image_name = $_POST['oldImageName'];
-    $SERVICE->title = mysql_real_escape_string($_POST['title']);
-    $SERVICE->short_description = mysql_real_escape_string($_POST['short_description']);
-    $SERVICE->description = mysql_real_escape_string($_POST['description']);
+    $SERVICE->title = $_POST['title'];
+    $SERVICE->short_description = $_POST['short_description'];
+    $SERVICE->description = $_POST['description'];
 
     $VALID = new Validator();
 

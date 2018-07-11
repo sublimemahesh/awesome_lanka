@@ -29,7 +29,7 @@ $id=$_GET['id'];
             <?php include './header.php'; ?>
             <!-- /.nav end -->
             <!-- page header -->
-            <section class="header header-bg-10">
+            <section class="header header-bg-11">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
