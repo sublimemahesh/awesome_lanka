@@ -88,69 +88,69 @@
                         </div>
                         <div class="col-sm-8">
                             <div class="contact-form">
-                        
-                                    <h2>Let's Talk!</h2>
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label>Name</label>
-                                                <input type="text" class="form-control" id="txtFullName" name="txtFullName" placeholder="Enter your Name">
-                                                <span id="spanFullName"></span>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label>Email</label>
-                                                <input type="text" class="form-control" id="txtEmail" name="txtEmail" placeholder="Enter Your Email">
-                                                <span id="spanEmail"></span>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label>Phone</label>
-                                                <input type="text" class="form-control" id="txtPhone" name="txtPhone" placeholder="Phone Number">
-                                                <span id="spanPhone"></span>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label>Subject</label>
-                                                <input type="text" class="form-control" id="txtSubject" name="txtSubject" placeholder="Enter Your Subject">
-                                                <span id="spanSubject"></span>
-                                            </div>
+
+                                <h2>Let's Talk!</h2>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label>Name</label>
+                                            <input type="text" class="form-control" id="txtFullName" name="txtFullName" placeholder="Enter your Name">
+                                            <span id="spanFullName"></span>
                                         </div>
                                     </div>
-                                    <div class="form-group">
-                                        <label></label>
-                                        <textarea class="form-control" id="txtMessage" name="txtMessage" placeholder="Your Comment" rows="5"></textarea>
-                                        <span id="spanMessage"></span>
-                                    </div>
-                                    <div class="col-xs-12 col-sm-6 col-md-8">
-                                        <div class="col-sm-6 ">
-                                            <label for="comment">Security Code:</label>
-                                            <input style="margin-left: -30px;" type="text" name="captchacode" id="captchacode" class="form-control input-validater" placeholder="Enter the code ">
-                                            <span id="capspan" ></span>
-                                        </div>
-                                        <div style="margin-top: 12px; margin-left: -15px;" class="col-sm-6 col-md-4">
-                                            <?php include("./contact-form/captchacode-widget.php"); ?>
-                                        </div> 
-                                    </div>
-                                    <div class="col-xs-12 col-sm-12 col-md-4">
-                                        <div class="col-sm-4">
-                                            <div style="" class="div-check" >
-                                                <img src="contact-form/img/checking.gif" id="checking"/>
-                                            </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label>Email</label>
+                                            <input type="text" class="form-control" id="txtEmail" name="txtEmail" placeholder="Enter Your Email">
+                                            <span id="spanEmail"></span>
                                         </div>
                                     </div>
-                                    <div class="col-md-12 col-sm-12 col-xs-12">
-                                        <div class="cf-input-box" style="padding-bottom: 70px;">
-                                            <button type="submit" id="btnSubmit" name="btnSubmit" class="thm-btn" style="margin-left: -15px;">SEND MESSAGE</button>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label>Phone</label>
+                                            <input type="text" class="form-control" id="txtPhone" name="txtPhone" placeholder="Phone Number">
+                                            <span id="spanPhone"></span>
                                         </div>
                                     </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label>Subject</label>
+                                            <input type="text" class="form-control" id="txtSubject" name="txtSubject" placeholder="Enter Your Subject">
+                                            <span id="spanSubject"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label></label>
+                                    <textarea class="form-control" id="txtMessage" name="txtMessage" placeholder="Your Comment" rows="5"></textarea>
+                                    <span id="spanMessage"></span>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-8">
+                                    <div class="col-sm-6 ">
+                                        <label for="comment">Security Code:</label>
+                                        <input style="margin-left: -30px;" type="text" name="captchacode" id="captchacode" class="form-control input-validater" placeholder="Enter the code ">
+                                        <span id="capspan" ></span>
+                                    </div>
+                                    <div style="margin-top: 12px; margin-left: -15px;" class="col-sm-6 col-md-4">
+                                        <?php include("./contact-form/captchacode-widget.php"); ?>
+                                    </div> 
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-4">
+                                    <div class="col-sm-4">
+                                        <div style="" class="div-check" >
+                                            <img src="contact-form/img/checking.gif" id="checking"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <div class="cf-input-box" style="padding-bottom: 70px;">
+                                        <button type="submit" id="btnSubmit" name="btnSubmit" class="thm-btn" style="margin-left: -15px;">SEND MESSAGE</button>
+                                    </div>
+                                </div>
                             </div>
-                             
+
                         </div>
-                      
+
                         <div class="col-sm-4">
                             <div class="contact-details">
                                 <h2>Contact Details</h2>
@@ -180,7 +180,9 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div id="dismessage" align="center" style="margin-top: -29px;"></div>
+                        <div class="col-md-12">
+                            <div id="dismessage" align="center" style="margin-top: -70px;"></div>
+                        </div>
                     </div>
                 </div>
             </section>
