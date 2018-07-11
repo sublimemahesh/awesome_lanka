@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<?php
+include './class/include.php';
+$id='';
+$id=$_GET['id'];
+?>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -141,11 +145,22 @@
                                 <label>Tour Package</label>
                                 <span id="star">*</span>
                                 <select name="txtPackage" id="txtPackage" class="form-control">
-                                    <option> -- Please Select a Package -- </option>
-                                    <option value="Cycling One Day Rides "> Cycling One Day Rides </option>
-                                    <option value="Cycling One Day Rides "> Cycling One Day Rides </option>
-                                    <option value="Cycling One Day Rides "> Cycling One Day Rides </option>
-                                    <option value="Cycling One Day Rides "> Cycling One Day Rides </option>
+                                    <option> -- Please Select Tour package -- </option>
+                                    <?php
+                                    foreach (TourPackage::all() as $key => $tour) {
+                                        if ($id == $tour['id']) {
+                                            ?>
+                                            <option value="<?php echo $tour['title']; ?>"    selected="true"><?php echo $tour['title']; ?></option>
+                                                    <?php
+                                                } else {
+                                                    ?>
+                                            <option value="<?php echo $tour['title'];?>"><?php echo $tour['title']; ?>             </option>
+                                            <?php
+                                        }
+                                    }
+                                    ?>
+
+
                                 </select>
                                 <span id="spanPackage" ></span>
                             </div>
