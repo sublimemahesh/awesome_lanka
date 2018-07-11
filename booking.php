@@ -76,7 +76,7 @@
             <section class="contact-inner">
                 <div class="container">
                     <div class="row">
-                        <div class="contact-form" style="margin-top: 60px;">
+                        <div class="" style="margin-top: 60px;">
                             <div class="row form-group">
                                 <div class="col-xs-12 col-sm-6">
                                     <label>Your Name</label>

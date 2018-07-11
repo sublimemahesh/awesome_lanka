@@ -33,7 +33,7 @@ $Departure_date = $_POST['Departure_date'];
 $tourpackage = $_POST['tourpackage'];
 $numbersadults = $_POST['numbersadults'];
 $numberschildren = $_POST['numberschildren'];
-$subject = 'New Website Enquiry - ' . $_POST['subject'];
+$subject = 'New Booking- ' . $_POST['subject'];
 $message = $_POST['message'];
 
 

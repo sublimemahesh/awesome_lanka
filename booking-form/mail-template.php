@@ -1,3 +1,5 @@
+
+
 <?php
 
 $visitor_message = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -58,7 +60,7 @@ $visitor_message = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//E
                                         <td width="2%">&nbsp;</td>
                                         <td width="96%" align="center" style="border-bottom:1px solid #000000" height="50">
                                             <font style="font-family: Verdana, Geneva, sans-serif; color:#1400FF; font-size:18px; " >
-                                                   <h4>Website Enquiry - ' . $comany_name . '</h4>
+                                                   <h4>Booking Form - ' . $comany_name . '</h4>
                                             </font>
                                         </td>
                                         <td width="2%">&nbsp;</td>
@@ -276,7 +278,7 @@ $company_message = '
                                         <td width="2%">&nbsp;</td>
                                         <td width="96%" align="center" style="border-bottom:1px solid #000000" height="50">
                                             <font style="font-family: Verdana, Geneva, sans-serif; color:#1400FF; font-size:18px; " >
-                                                   <h4>Website Enquiry - ' . $comany_name . '</h4>
+                                                   <h4>Booking Form - ' . $comany_name . '</h4>
                                             </font>
                                         </td>
                                         <td width="2%">&nbsp;</td>
@@ -327,7 +329,7 @@ $company_message = '
                                             <font style="font-family: Verdana, Geneva, sans-serif; color:#1400FF; font-size:14px; " >
                                                    <h4>&nbsp;&nbsp;&nbsp;Inquiry Detail</h4>
                                             </font>
-                                             <ul>
+                                               <ul>
                                                 <li>
                                                     <font style="font-family: Verdana, Geneva, sans-serif; color:#68696a; font-size:14px; " >
                                                          Name : ' . $visitor_name . '
@@ -351,22 +353,22 @@ $company_message = '
                                                 </li>
                                                 <li>
                                                     <font style="font-family: Verdana, Geneva, sans-serif; color:#68696a; font-size:14px; " >
-                                                         Arival_Date : ' . $Arrival_date . '
+                                                          From : ' . $Arrival_date . '
                                                     </font>
                                                 </li>
                                                 <li>
                                                     <font style="font-family: Verdana, Geneva, sans-serif; color:#68696a; font-size:14px; " >
-                                                         Departure_Date : ' . Departure_date . '
+                                                         Departure_Date : ' . $Departure_date . '
                                                     </font>
                                                 </li>
                                                 <li>
                                                     <font style="font-family: Verdana, Geneva, sans-serif; color:#68696a; font-size:14px; " >
-                                                         Tour_package : ' . tourpackage . '
+                                                         Tour Package : ' . $tourpackage . '
                                                     </font>
                                                 </li>
                                                 <li>
                                                     <font style="font-family: Verdana, Geneva, sans-serif; color:#68696a; font-size:14px; " >
-                                                         Number Of Adults : ' . numbersadults . '
+                                                          No Of Adults : ' . $numbersadults . '
                                                     </font>
                                                 </li>
                                                 <li>
