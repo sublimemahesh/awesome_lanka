@@ -4,6 +4,18 @@
 include './class/include.php';
 $id='';
 $id=$_GET['id'];
+
+$Arrival_date='';
+$Arrival_date=$_GET['Arrival_date'];
+$Departure_date='';
+$Departure_date=$_GET['Departure_date'];
+$children='';
+$children=$_GET['children'];
+$adult='';
+$adult=$_GET['adult'];
+$tour_package='';
+$tour_package=$_GET['tour_package'];
+
 ?>
     <head>
         <meta charset="utf-8">
@@ -91,7 +103,7 @@ $id=$_GET['id'];
                                 <div class="col-xs-12 col-sm-6">
                                     <label>Your Email</label>
                                     <span id="star">*</span>
-                                    <input type="text" name="txtEmail" id="txtEmail" class="form-control input-validater">
+                                    <input type="text" name="txtEmail" id="txtEmail" class="form-control input-validater" >
                                     <span id="spanEmail" ></span>
                                 </div>
                             </div>
@@ -113,7 +125,7 @@ $id=$_GET['id'];
                                 <div class="col-xs-12 col-sm-6">
                                     <label>Arrival Date</label>
                                     <span id="star">*</span>
-                                    <input value="" type="text" name="txtAdate" id="txtAdate" class="form-control input-validater"><i class="fa fa-calendar"></i>
+                                    <input value="" type="text" name="txtAdate" id="txtAdate" class="form-control input-validater" value="<?php echo $Arrival_date['Arrival_date']?>"><i class="fa fa-calendar"></i>
                                     <span id="spanAdate"></span>
                                 </div>
 

@@ -9,7 +9,11 @@ if (isset($_POST['create'])) {
 
     $TOUR_DATE->tour = $_POST['id'];
     $TOUR_DATE->title = $_POST['title'];
+
     $TOUR_DATE->description = $_POST['description'];
+
+    $TOUR_DATE->description =$_POST['description'];
+
 
     $dir_dest = '../../upload/tour-package/date/';
     $dir_dest_thumb = '../../upload/tour-package/date/thumb/';
@@ -57,9 +61,7 @@ if (isset($_POST['create'])) {
     $TOUR_DATE->image_name = $imgName;
 
     $VALID->check($TOUR_DATE, [
-        'title' => ['required' => TRUE],
-        'image_name' => ['required' => TRUE],
-        'description' => ['required' => TRUE]
+       
     ]);
 
     if ($VALID->passed()) {
@@ -136,9 +138,7 @@ if (isset($_POST['update'])) {
 
     $VALID = new Validator();
     $VALID->check($TOUR_DATE, [
-        'title' => ['required' => TRUE],
-        'image_name' => ['required' => TRUE],
-        'description' => ['required' => TRUE],
+        
     ]);
 
     if ($VALID->passed()) {
