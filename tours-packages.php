@@ -68,7 +68,7 @@ include './class/include.php';
                                     <!-- Text Intro -->
                                     <p><?php echo $tourse['short_description']?></p>
                                     <div class="free-service pull-left" style="">
-                                        <a href=booking.php?id=<?php echo $tourse['id']?>" class="thm-btn" style="margin-bottom: -20px;">Book Now</a>
+                                        <a href="booking.php?id=<?php echo $tourse['id']?>" class="thm-btn" style="margin-bottom: -20px; margin-left:5px;">Book Now</a>
                                     </div>
                                     <div class="free-service pull-right">
                                         <a href="view-tourpackage.php?id=<?php echo $tourse['id']?>" class="thm-btn" style="margin-bottom: -20px;">Read More</a>

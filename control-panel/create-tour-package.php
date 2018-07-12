@@ -57,10 +57,10 @@ include_once(dirname(__FILE__) . '/auth.php');
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-12">
+                                    <div class="col-md-12 hidden">
                                         <div class="form-group form-float">
                                             <div class="form-line">
-                                                <input type="text" id="price" class="form-control" autocomplete="off" name="price" required="true">
+                                                <input type="text" id="price" class="form-control" autocomplete="off" name="price" required="true" value="1">
                                                 <label class="form-label">Price</label>
                                             </div>
                                         </div>
