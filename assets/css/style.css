@@ -395,6 +395,28 @@ blockquote .author,
     margin-bottom: 60px;
 }
 
+.thm-btn-a {
+    padding: 12px 30px;
+    color: #333;
+    font-weight: 700;
+    font-size: 13px;
+    border: 0;
+    text-align: center;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    position: relative;
+    margin-left: 0px;
+    margin-bottom: 60px;
+    background-color: #fec107 !important;
+}
+
+
+
 .thm-btn:before {
     content: '';
     position: absolute;
@@ -1546,6 +1568,14 @@ figure.effect-milo:hover .effect-block,
     padding: 100px -1px 80px;
     position: relative;
     background-image: url(../images/header-1920x1135-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.reference.home-refr {
+    padding: 100px -1px 80px;
+    position: relative;
+  
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
