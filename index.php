@@ -28,7 +28,7 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="panel">
-                            <div class="panel-body">
+                            <div class="panel-body" style="padding-bottom: 1px;">
                                 <div class="tab-content">
                                     <div class="tab-pane fade in active" id="tab1default">
                                         <div class="row">
@@ -177,51 +177,20 @@
 
                         </div>
                         <div class="col-md-7">
-                            <div class="col-md-6">
-                                <div class="inner-box article-color">
-                                    <article>
-                                        <img src="assets/images/car-key.png" style="width: 40%;">
-                                        <div class="content-text">
-                                            <h5>Rent A Car</h5>
-                                            <p>Lorem Ipsum is simply dummy text of the printing.</p>
-                                        </div>
-                                    </article>
+                            <?php foreach (Service::all() as $key => $service) { ?>
+                                <div class="col-md-6">
+                                    <div class="inner-box article-color">
+                                        <article>
+                                            <img src="upload/service/<?php echo $service['image_name']; ?>" style="width: 40%;">
+                                            <div class="content-text">
+                                                <h5><?php echo $service['title'] ?></h5>
+                                                <p><?php echo $service['short_description'] ?></p>
+                                            </div>
+                                        </article>
+                                    </div>
                                 </div>
-
-                            </div>
-                            <div class="col-md-6">
-                                <div class="inner-box article-color">
-                                    <article>
-                                        <img src="assets/images/car-key.png" style="width: 40%;">
-                                        <div class="content-text">
-                                            <h5>Rent A Car</h5>
-                                            <p>Lorem Ipsum is simply dummy text of the printing.</p>
-                                        </div>
-                                    </article>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="inner-box article-color">
-                                    <article>
-                                        <img src="assets/images/car-key.png" style="width: 40%;">
-                                        <div class="content-text">
-                                            <h5>Rent A Car</h5>
-                                            <p>Lorem Ipsum is simply dummy text of the printing.</p>
-                                        </div>
-                                    </article>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="inner-box article-color">
-                                    <article>
-                                        <img src="assets/images/car-key.png" style="width: 40%;">
-                                        <div class="content-text">
-                                            <h5>Rent A Car</h5>
-                                            <p>Lorem Ipsum is simply dummy text of the printing.</p>
-                                        </div>
-                                    </article>
-                                </div>
-                            </div>
+                            <?php }
+                            ?>
                         </div>
                     </div> 
                 </div>
@@ -262,8 +231,8 @@
                                                 <h5><?php echo $tours['title']; ?></h5>
                                                 <div class="package-price">
 
-                                                    <p><?php echo substr($tours['short_description'],0,200). '...'; ?></p>
-                                                    
+                                                    <p><?php echo substr($tours['short_description'], 0, 200) . '...'; ?></p>
+
                                                 </div>
                                             </div>
                                         </div>
