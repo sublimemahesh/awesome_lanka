@@ -62,13 +62,16 @@ include './class/include.php';
                                 </div>
                                 <!-- hotel body -->
                                 <div class="hotel-body">
-                                  
                                     <!-- title -->
                                     <a href="view-tourpackage.php?id=<?php echo $tourse['id']?>"> <h3><?php echo $tourse['title']?></h3></a>
                                     <!-- Text Intro -->
                                     <p><?php echo $tourse['short_description']?></p>
                                     <div class="free-service pull-left" style="">
+<<<<<<< Updated upstream
                                         <a href="booking.php?id=<?php echo $tourse['id']?>" class="thm-btn" style="margin-bottom: -20px; margin-left:5px;">Book Now</a>
+=======
+                                        <a href=booking.php?id=<?php echo $tourse['id']?>" class="thm-btn" style="margin-bottom: -20px; margin-left: 10px;">Book Now</a>
+>>>>>>> Stashed changes
                                     </div>
                                     <div class="free-service pull-right">
                                         <a href="view-tourpackage.php?id=<?php echo $tourse['id']?>" class="thm-btn" style="margin-bottom: -20px;">Read More</a>

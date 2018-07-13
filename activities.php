@@ -62,7 +62,7 @@
                                             </div>
                                             <h4><a href="view-activities.php?id=<?php echo $activity['id'];?>"><?php echo $activity['title'] ?></a></h4>
                                             <p><?php echo $activity['short_description'] ?></p>
-                                            <a class="thm-btn btn-act" href="view-activities.php?id=<?php echo $activity['id'];?>">Details</a>
+                                            <a class="thm-btn-a btn-act" href="view-activities.php?id=<?php echo $activity['id'];?>">Details</a>
                                         </div>
                                     </div>
                                     <?php
