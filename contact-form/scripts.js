@@ -13,7 +13,7 @@ jQuery(document).ready(function () {
     jQuery("#txtPhone").blur(function () {
         validateEmpty("txtPhone", "spanPhone");
     });
-    
+
     jQuery("#txtSubject").blur(function () {
         validateEmpty("txtSubject", "spanSubject");
     });
@@ -26,7 +26,7 @@ jQuery(document).ready(function () {
         validateEmpty("captchacode", "capspan");
     });
 
-    jQuery("#btnSubmit").click(function () {
+    jQuery("#btnSubmit").bind('click', function () {
 
         if (!validate()) {
             return;
@@ -83,10 +83,9 @@ function sendForm() {
         data: {
             captchacode: jQuery('#captchacode').val(),
             visitor_name: jQuery('#txtFullName').val(),
-            visitor_email: jQuery('#txtEmail').val(),
             visitor_phone: jQuery('#txtPhone').val(),
             subject: jQuery('#txtSubject').val(),
-
+            visitor_email: jQuery('#txtEmail').val(),
             message: jQuery('#txtMessage').val()
 
         },
@@ -110,8 +109,9 @@ function sendForm() {
                 jQuery('#txtEmail').val("");
                 jQuery('#txtPhone').val("");
                 jQuery('#txtSubject').val("");
-
                 jQuery('#txtMessage').val("");
+                
+                
             }
 
 

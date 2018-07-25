@@ -35,7 +35,7 @@ $ACTIVITY_PHOTO = $ACTIVITY_P->getActivitiesPhotosById($id);
             <?php include './header.php'; ?>
             <!-- /.nav end -->
             <!-- page header -->
-            <section class="header" style="background-image: url(assets/images/header-1920x1135-10.jpg);margin-bottom: 60px;">
+            <section class="header" style="background-image: url(assets/images/banner/news1.jpg);margin-bottom: 60px;">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
@@ -134,7 +134,7 @@ $ACTIVITY_PHOTO = $ACTIVITY_P->getActivitiesPhotosById($id);
                                                                     <a href="view-activities.php?id=<?php echo $activity['id'];?>"><h5><b><?php echo $activity['title'] ?></b></h5></a>
                                                                     <a href="view-activities.php?id=<?php echo $activity['id'];?>"><img src="upload/activity/<?php echo $activity['image_name'] ?>" height="80" alt="Olive Ridley Turtles"></a>
                                                                 </div>
-                                                                <h8><?php echo $activity['short_description'] ?></h8>
+                                                                <h8><?php echo substr($activity['short_description'], 0, 75) . '...'; ?></h8>
                                                             </div>
                                                             <?php
                                                         }

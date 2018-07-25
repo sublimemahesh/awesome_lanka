@@ -17,7 +17,7 @@ $visitor_message = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//E
                                         <td width="40"></td>
                                         <td width="144">
                                             <a href= "' . $site_link . '" target="_blank"> '
-        . '<img src="' . $site_link . '/contact-form/img/logo.jpg" border="0" alt=""/>
+        . '<img src="' . $site_link . '/contact-form/img/logo.png" border="0" alt=""/>
                                             </a>
                                         </td>
                                         <td width="393">
@@ -120,7 +120,7 @@ $visitor_message = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//E
                                                          Email : ' . $visitor_email . '
                                                     </font>
                                                 </li>
-                                                
+                                               
                                                 <li>
                                                     <font style="font-family: Verdana, Geneva, sans-serif; color:#68696a; font-size:14px; " >
                                                          Telephone No : ' . $visitor_phone . '
@@ -209,7 +209,7 @@ $visitor_message = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//E
                                         <td width="3%" align="center"></td> 
                                         <td width="30%" align="right">
                                         <font style="font-family: Verdana, Geneva, sans-serif; color:#1400FF; font-size:9px; " > 
-                                        <a href="http://thirdeyevision.net/">
+                                        <a href="http://www.sublime.lk/">
                                         web solution by: Sublime Holdings</a>
                                         </font>
                                         </td>

@@ -61,7 +61,8 @@
                                                 <a href="view-activities.php?id=<?php echo $activity['id'];?>"><img src="upload/activity/<?php echo $activity['image_name'] ?>" class="img-responsive" alt=""></a>
                                             </div>
                                             <h4><a href="view-activities.php?id=<?php echo $activity['id'];?>"><?php echo $activity['title'] ?></a></h4>
-                                            <p><?php echo $activity['short_description'] ?></p>
+                                            <p><?php echo substr($activity['short_description'], 0,100) . '...' ?></p>
+                                        
                                             <a class="thm-btn-a btn-act" href="view-activities.php?id=<?php echo $activity['id'];?>">Details</a>
                                         </div>
                                     </div>
