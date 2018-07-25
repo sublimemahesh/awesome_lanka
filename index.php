@@ -5,7 +5,6 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <title>Travel</title>
         <!-- Favicons -->
         <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
@@ -15,7 +14,7 @@
         <!-- Base Css -->
         <link href="assets/css/base.css" rel="stylesheet" type="text/css"/>
         <link href="assets/css/custom.css" rel="stylesheet" type="text/css"/>
-        <!--        <link href="assets/css/style.css" rel="stylesheet" type="text/css"/>-->
+
     </head>
     <body>
         <!-- page loader -->
@@ -24,148 +23,7 @@
             <?php include './header.php'; ?>
             <?php include './slider.php'; ?>
             <!-- booking -->
-            <div class="container boking-inner">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="panel">
-<<<<<<< Updated upstream
-                            <div class="panel-body" style="padding-bottom: 1px;">
-=======
-                            <div class="panel-body" style="padding-bottom: 0px;">
->>>>>>> Stashed changes
-                                <div class="tab-content">
-                                    <div class="tab-pane fade in active" id="tab1default">
-                                        <div class="row">
-                                            <div class="col-xs-12 col-sm-9 col-md-10">
-                                                <div class="row panel-margin">
-                                                    <div class="col-xs-6 col-sm-4 col-md-2 panel-padding">
-                                                        <label>Arrival Date</label>
-                                                        <div class="icon-addon">
-                                                            <input type="text" placeholder="Date" class="form-control" id="datepicker1" name="Arrival_date"/>
-                                                            <label class="glyphicon fa fa-calendar"  title="email"></label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-xs-6 col-sm-4 col-md-2 panel-padding">
-                                                        <label>Departure Date</label>
-                                                        <div class="icon-addon">
-                                                            <input type="text" placeholder="Date" class="form-control" id="datepicker2" name="Departure_date"/>
-                                                            <label class="glyphicon fa fa-calendar"  title="email"></label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-xs-6 col-sm-4 col-md-2 hidden-sm panel-padding">
-                                                        <label>NO Children</label>
-                                                        <input type="number" name="txtChildren" id="txtChildren" class="form-control" min="0" name="children">   
-                                                    </div>
-                                                    <div class="col-xs-6 col-sm-4 col-md-2 hidden-sm panel-padding">
-                                                        <label>NO Adults</label>
-                                                        <input type="number" name="txtChildren" id="txtChildren" class="form-control" min="0" name="adult">   
-                                                    </div>
 
-
-                                                    <div class="col-xs-6 col-sm-4 col-md-4 hidden-sm panel-padding">
-                                                        <label>Tour Package</label>
-
-                                                        <div class="select-filters">
-                                                            <select name="tour_package" id="child" >
-
-                                                                <option value="" selected="">-- Please  Select The Tour -- </option>
-                                                                <?php foreach (TourPackage::all() as $tourpackage) { ?>
-                                                                    <option value="2"><?php echo $tourpackage['title'] ?></option>
-                                                                    <?php
-                                                                }
-                                                                ?>
-
-                                                            </select>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-12 col-sm-3 col-md-2">
-                                                <a href="booking.php?Arrival_date"><button type="button" class="thm-btn">Book Now</button></a>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane fade" id="tab2default">
-                                        <div class="row">
-                                            <div class="col-xs-12 col-sm-9 col-md-10">
-                                                <div class="row panel-margin">
-                                                    <div class="col-xs-6 col-sm-4 col-md-2 panel-padding">
-                                                        <label>Arrival</label>
-                                                        <div class="icon-addon">
-                                                            <input type="text" placeholder="Date" class="form-control" id="datepicker3"/>
-                                                            <label class="glyphicon fa fa-calendar"  title="email"></label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-xs-6 col-sm-4 col-md-2 panel-padding">
-                                                        <label>Going</label>
-                                                        <div class="icon-addon">
-                                                            <input type="text" placeholder="Date" class="form-control" id="datepicker4"/>
-                                                            <label class="glyphicon fa fa-calendar"  title="email"></label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-xs-6 col-sm-4 col-md-2 hidden-sm panel-padding">
-                                                        <label>Room</label>
-                                                        filters select 
-                                                        <div class="select-filters">
-                                                            <select name="room" id="room2">
-                                                                <option value="" selected="">1</option>
-                                                                <option value="2">2</option>
-                                                                <option value="3">3</option>
-                                                                <option value="4">4</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-xs-6 col-sm-4 col-md-2 hidden-sm panel-padding">
-                                                        <label>Person</label>
-                                                        filters select 
-                                                        <div class="select-filters">
-                                                            <select name="person" id="person2">
-                                                                <option value="" selected="">1</option>
-                                                                <option value="2">2</option>
-                                                                <option value="3">3</option>
-                                                                <option value="4">4</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-xs-6 col-sm-4 col-md-2 hidden-sm panel-padding">
-                                                        <label>Child</label>
-                                                        filters select 
-                                                        <div class="select-filters">
-                                                            <select name="child" id="child2">
-                                                                <option value="" selected="">1</option>
-                                                                <option value="2">2</option>
-                                                                <option value="3">3</option>
-                                                                <option value="4">4</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-xs-6 col-sm-4 col-md-2 panel-padding">
-                                                        <label>Day</label>
-                                                        filters select 
-                                                        <div class="select-filters">
-                                                            <select name="day" id="day2">
-                                                                <option value="" selected="">1 days</option>
-                                                                <option value="2">2 days</option>
-                                                                <option value="3">3 days</option>
-                                                                <option value="4">4 days</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-12 col-sm-3 col-md-2">
-                                                <button type="button" class="thm-btn">Search book</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <!-- service -->
             <section class="popular-inner">
                 <div class="container">
@@ -185,10 +43,11 @@
                                 <div class="col-md-6">
                                     <div class="inner-box article-color">
                                         <article>
-                                            <img src="upload/service/<?php echo $service['image_name']; ?>" style="width: 40%;">
+                                            <a href="services.php"><img src="upload/service/<?php echo $service['image_name']; ?>" style="width: 25%;"></a>
                                             <div class="content-text">
-                                                <h5><?php echo $service['title'] ?></h5>
-                                                <p><?php echo $service['short_description'] ?></p>
+                                                <h5> <a href="services.php"><?php echo $service['title'] ?></a></h5>
+                                                <a href="services.php"> <p style="text-align: justify;"><?php echo substr($service['short_description'], 0, 150) . '...'; ?></p></a>
+
                                             </div>
                                         </article>
                                     </div>
@@ -207,8 +66,8 @@
                         <div class="row">
                             <div class="col-md-6 col-md-offset-4">
                                 <div class="title">
-                                    <h2>Popular Tours</h2>
-                                    <p>A great Collection of our Tour Packages</p>
+                                    <h2 style="margin-left: -172px;">Tour Package</h2>
+                                    <p style="margin-left: -177px;">A great Collection of our Tour Packages</p>
                                 </div>
                             </div>
                         </div>
@@ -226,18 +85,16 @@
                                                         <div class="effect-block">
                                                             <h3><?php echo $tours['title']; ?></h3>
 
-                                                            <a href="view-tourpackage.php?id=<?php echo $tours['id']; ?>" <button type="button" class="thm-btn">Read More..</button></a>
+                                                            <button type="button" class="thm-btn">Read More..</button>
                                                         </div>
                                                     </figcaption>
                                                 </figure>
                                             </div>
-                                            <div class="package-content" style="height: 156px;">
-                                                <h5><?php echo $tours['title']; ?></h5>
+                                            <div class="package-content">
+                                                <h5><?php echo substr($tours['title'], 0, 30) . '...'; ?></h5>
                                                 <div class="package-price">
-
-                                                    <p><?php echo substr($tours['short_description'], 0, 200) . '...'; ?></p>
-
-                                                </div>
+                                                    <p><?php echo substr($tours['short_description'], 0, 150) . '...'; ?></p>
+  </div>
                                             </div>
                                         </div>
                                     </div>
@@ -250,224 +107,136 @@
                 </div>
             </section>
 
-            <!-- hotel -->
-            <section class="hotel-inner" style="padding-bottom: 10px;">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 col-md-offset-3">
-                            <div class="title" style="padding-top: 60px;">
-                                <h2>Attractions</h2>
-                                <p>This is Amazing hotel in Paris !</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row thm-margin" style="padding-bottom: 50px;">
-                        <div class="tour-container">
-                            <?php
-                            foreach (Attraction::all() as $key => $attraction) {
-                                if ($key < 8) {
-                                    ?>
-                                    <div class="col-md-3 col-sm-4 thm-padding">
-                                        <div class="destination-grid">
-                                            <a href="#"><img src="upload/attraction/<?php echo $attraction['image_name'] ?>" class="img-responsive" alt=""></a>
-                                            <div class="mask">
-                                                <h2><?php echo $attraction['title'] ?></h2>
-                                                <p><?php echo $attraction['short_description'] ?></p>
-                                                <a href="view-attraction.php" class="thm-btn">Read More</a>
-                                            </div>
-                                            <div class="dest-name">
-
-                                                <h4><?php echo $attraction['title'] ?></h4>
-                                            </div>
-                                            <div class="dest-icon">
-                                                <i class="flaticon-earth-globe" data-toggle="tooltip" data-placement="top" title="15 Tours"></i>
-                                                <i class="flaticon-ship" data-toggle="tooltip" data-placement="top" title="9 Criuses"></i>
-                                                <i class="flaticon-transport" data-toggle="tooltip" data-placement="top" title="31 Flights"></i>
-                                                <i class="flaticon-front" data-toggle="tooltip" data-placement="top" title="83 Hotels"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <?php
-                                }
-                            }
-                            ?>
-
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Testimonial section -->
-            <div class="reference home-ref">
+            <div class="reference">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 col-md-offset-3">
                             <div class="title">
                                 <h2>Activities</h2>
-                                <p>Checkout our Latest Blogs and News</p>
                             </div>
                         </div>
                     </div>
-
                     <div class="row thm-margin">
                         <div id="blog-slide" class="owl-carousel">
                             <?php foreach (Activities::all() as $key => $activity) { ?>
                                 <div class="item">
-                                    <div class="activities-color" style="height: 350px;">
-                                        <div class="blog-content">
+                                    <div class="activities-color"
+                                         <div class="blog-content">
                                             <div class="blog-img image-hover">
                                                 <a href="view-activities.php?id=<?php echo $activity['id'] ?>"><img src="upload/activity/<?php echo $activity['image_name'] ?>" class="img-responsive" alt=""></a>
 
                                             </div>
                                             <h4><a href="view-activities.php?id=<?php echo $activity['id'] ?>"><?php echo $activity['title'] ?></a></h4>
-                                            <p><?php echo $activity['short_description'] ?></p>
+                                            <p><?php echo substr($activity['short_description'], 0, 100) . '...'; ?></p>
                                             <a class="thm-btn" href="view-activities.php?id=<?php echo $activity['id'] ?>" style="margin-left: 50px;">Read More...</a>
                                         </div>
                                     </div>
-                                </div>
-                                <?php
-                            }
-                            ?>
+                                    <?php
+                                }
+                                ?>
 
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <!-- package section -->
-
-            <!-- Counter -->
-
-            <!-- blog section -->
-
-<<<<<<< Updated upstream
-            <div class="reference home-ref">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 col-md-offset-3">
-                            <div class="title">
-                                <h2>References</h2>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="testimonials">
-                            <div class="carousel" data-ride="carousel" id="quote-carousel">
-                                <div class="carousel-inner">
-                                    <!-- Quote 1 -->  
-                                    <div class="item col-sm-10 col-sm-offset-1">
-                                        <blockquote>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium
-                                            aliquam architecto beatae dolorem, enim error eveniet harum iste molestias
-                                            neque nisi placeat possimus quaerat quam repudiandae sint soluta unde vero.
-                                            <span class="author">- Andrew Adams, Google Inc</span>
-                                        </blockquote>
-                                    </div>
-                                    <!-- Quote 2 -->  
-                                    <div class="item col-sm-10 col-sm-offset-1">
-                                        <blockquote>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium
-                                            aliquam architecto beatae doloremaliquam architecto beatae dolorem, enim error
-                                            eveniet harum iste molestias neque nisi placeat.
-                                            <span class="author">- Jhon Smith, Facebook Inc</span>
-                                        </blockquote>
-                                    </div>
-                                    <!-- Quote 3 -->
-                                    <div class="item col-sm-10 col-sm-offset-1 active">
-                                        <blockquote>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium
-                                            aliquam architecto beatae dolorem, enim error eveniet harum iste molestias
-                                            neque nisi placeat possimus quaerat quam repudiandae sint.
-                                            <span class="author">- Bob Smith, Fitbit</span>
-                                        </blockquote>
-=======
-
-                <div class="reference home-refr">
+                </div>
+                <section class="reference home-refn" style="padding-bottom: 10px;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 col-md-offset-3">
+                                <div class="title" style="padding-top: 60px;">
+                                    <h2>Attractions</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row thm-margin" style="padding-bottom: 50px;">
+                            <div class="tour-container">
+                                <?php
+                                foreach (Attraction::all() as $key => $attraction) {
+                                    if ($key < 8) {
+                                        ?>
+                                        <div class="col-md-3 col-sm-4 thm-padding">
+                                            <div class="destination-grid">
+                                                <a href="#"><img src="upload/attraction/<?php echo $attraction['image_name'] ?>" class="img-responsive" alt=""></a>
+                                                <div class="mask">
+                                                    <h2><?php echo $attraction['title'] ?></h2>
+                                                    <p><?php echo substr($attraction['short_description'], 0, 50) . '...'; ?></p>
+                                                    <a class="thm-btn" href="view-attraction.php?id=<?php echo $attraction['id'] ?>" style="margin-left: -15px;">Read More...</a>
+                                                </div>
+                                                <div class="dest-name">
+                                                    <h4><?php echo $attraction['title'] ?></h4>                                               </div>
+                                            </div>
+                                        </div>
+                                        <?php
+                                    }
+                                }
+                                ?>
+</div>
+                        </div>
+                    </div>
+                </section>
+                <div class="reference">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-6 col-md-offset-3">
                                 <div class="title">
-                                    <h2>References</h2>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                                    <h2>Feedback</h2>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="testimonials">
                                 <div class="carousel" data-ride="carousel" id="quote-carousel">
-                                    <?php
-                                    foreach (Comments::activeComments() as $key => $comment) {
-                                        ?>
-                                        <div class="carousel-inner">
-                                            <!-- Quote 1 -->  
-                                            <div class="item col-sm-10 col-sm-offset-1">
-                                                <blockquote>
-                                                  <?php echo $comment['comment'] ?>
-                                                        <span class="author"><?php echo $comment['name'] ?></span>
-                                                </blockquote>
-                                            </div>
-                                            <!-- Quote 2 -->  
+                                    <div class="carousel-inner">
+                                        <?php
+                                        $li = '';
+                                        foreach (Comments::activeComments() as $key => $comment) {
+                                            if ($key === 0) {
+                                                $li .= '<li data-target="#quote-carousel" data-slide-to="' . $key . ' " class="active">'
+                                                        . '<img class="img-responsive " src="upload/comments/' . $comment['image_name'] . '" alt=""> '
+                                                        . '</li>';
+                                                ?>  
+                                                <!-- Quote 3 -->
+                                                <div class="item col-sm-10 col-sm-offset-1 active">
+                                                    <blockquote>
+                                                       <?php echo $comment['comment']; ?>
+                                                        <span class="author"><?php echo $comment['name']; ?></span>
+                                                    </blockquote>
+                                                </div> 
+                                                <?php
+                                            } else {
+                                                $li .= '<li data-target="#quote-carousel" data-slide-to="' . $key . ' "><img class="img-responsive " src="upload/comments/' . $comment['image_name'] . '" alt=""> </li>';
+                                                ?>
+                                                <!-- Quote 2 -->  
+                                                <div class="item col-sm-10 col-sm-offset-1">
+                                                    <blockquote>
+                                                       <?php echo $comment['comment']; ?>
+                                                        <span class="author"><?php echo $comment['name']; ?></span>
 
-                                            <!-- Quote 3 -->
+                                                    </blockquote>
 
-                                        </div>
-                                        <!-- Bottom Carousel Indicators -->
-                                        <ol class="carousel-indicators">
-                                            <li data-target="#quote-carousel" data-slide-to="0" class=""><img class="img-responsive " src="assets/images/avtar-1.jpg" alt=""></li>
-                                            <li data-target="#quote-carousel" data-slide-to="1" class=""><img class="img-responsive" src="assets/images/avtar-2.jpg" alt=""></li>
-                                            <li data-target="#quote-carousel" data-slide-to="2" class="active"><img class="img-responsive" src="assets/images/avtar-3.jpg" alt=""></li>
-                                        </ol>
-                                    <?php }
+                                                </div>
+                                                <?php
+                                            }
+                                        }
                                         ?>
->>>>>>> Stashed changes
                                     </div>
+                                    <!-- Bottom Carousel Indicators -->
+                                    <ol class="carousel-indicators">
+                                        <?php echo $li; ?>
+
+                                    </ol>
                                 </div>
-                                <!-- Bottom Carousel Indicators -->
-                                <ol class="carousel-indicators">
-                                    <li data-target="#quote-carousel" data-slide-to="0" class=""><img class="img-responsive " src="assets/images/avtar-1.jpg" alt=""></li>
-                                    <li data-target="#quote-carousel" data-slide-to="1" class=""><img class="img-responsive" src="assets/images/avtar-2.jpg" alt=""></li>
-                                    <li data-target="#quote-carousel" data-slide-to="2" class="active"><img class="img-responsive" src="assets/images/avtar-3.jpg" alt=""></li>
-                                </ol>
                             </div>
                         </div>
                     </div>
-<<<<<<< Updated upstream
                 </div>
+
+
+
+
             </div>
-            <!-- Newsletter -->
-
-        </div>
-        <!-- Footer Section -->
-        <?php include './footer.php'; ?>
-        <!-- jQuery -->
-        <script data-cfasync="false" src="../cdn-cgi/scripts/f2bf09f8/cloudflare-static/email-decode.min.js"></script><script src="assets/js/jquery.min.js" type="text/javascript"></script>
-        <!-- jquery ui js -->
-        <script src="assets/js/jquery-ui.min.js" type="text/javascript"></script>
-        <!-- bootstrap js -->
-        <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
-        <!-- fraction slider js -->
-        <script src="assets/js/jquery.fractionslider.js" type="text/javascript"></script>
-        <!-- owl carousel js --> 
-        <script src="assets/owl-carousel/owl.carousel.min.js" type="text/javascript"></script>
-        <!-- counter -->
-        <script src="assets/js/jquery.counterup.min.js" type="text/javascript"></script>
-        <script src="assets/js/waypoints.js" type="text/javascript"></script>
-        <!-- filter portfolio -->
-        <script src="assets/js/jquery.shuffle.min.js" type="text/javascript"></script>
-        <script src="assets/js/portfolio.js" type="text/javascript"></script>
-        <!-- magnific popup -->
-        <script src="assets/js/jquery.magnific-popup.min.js" type="text/javascript"></script>
-        <!-- range slider -->
-        <script src="assets/js/ion.rangeSlider.min.js" type="text/javascript"></script>
-        <script src="assets/js/jquery.easing.min.js" type="text/javascript"></script>
-        <!-- custom -->
-        <script src="assets/js/custom.js" type="text/javascript"></script>
-=======
-                    <!-- Newsletter -->
-
-                </div>
-                <!-- Footer Section -->
-                <?php include './footer.php'; ?>
+            <!-- Footer Section -->
+            <?php include './footer.php'; ?>
             <!-- jQuery -->
             <script data-cfasync="false" src="../cdn-cgi/scripts/f2bf09f8/cloudflare-static/email-decode.min.js"></script><script src="assets/js/jquery.min.js" type="text/javascript"></script>
             <!-- jquery ui js -->
@@ -491,7 +260,5 @@
             <script src="assets/js/jquery.easing.min.js" type="text/javascript"></script>
             <!-- custom -->
             <script src="assets/js/custom.js" type="text/javascript"></script>
->>>>>>> Stashed changes
     </body>
-
 </html>

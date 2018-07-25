@@ -1,5 +1,7 @@
 <!DOCTYPE html>
+<?php include './class/include.php'; ?>
 <html lang="en">
+
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,7 +17,6 @@
         <link href="assets/css/base.css" rel="stylesheet" type="text/css"/>
         <link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
         <link href="contact-form/style.css" rel="stylesheet" type="text/css"/>
-        <script src="contact-form/scripts.js" type="text/javascript"></script>
     </head>
     <body>
         <!-- page loader -->
@@ -62,7 +63,7 @@
                                     </div>
 
                                     <div class="ui breadcrumb">
-                                        <a href="index-2.html" class="section">Home</a>
+                                        <a href="index.php" class="section">Home</a>
                                         <div class="divider"> / </div>
                                         <div class="active section">Contact</div>
                                     </div>
@@ -148,9 +149,7 @@
                                     </div>
                                 </div>
                             </div>
-
                         </div>
-
                         <div class="col-sm-4">
                             <div class="contact-details">
                                 <h2>Contact Details</h2>
@@ -163,17 +162,16 @@
                                 <div class="contact-content">
                                     <h4>General Inquiries</h4>
                                     <p>
-                                        Phone 718 369 0016 <br>
+                                        Phone +94 71 565 5553 | +94 75 582 5734 <br>
                                         <a href="http://travel.bdtask.com/cdn-cgi/l/email-protection#8ce4e9e0e0e3ccebe1ede5e0a2efe3e1"><span class="__cf_email__" data-cfemail="c9a1aca5a5a689aea4a8a0a5e7aaa6a4">[email&#160;protected]</span></a>
                                     </p>
                                 </div>
                                 <div class="contact-content">
                                     <h4>Address</h4>
                                     <p>
-                                        67 35th St. <br>
-                                        Unit 22 / Suite B528 <br>
-                                        Brooklyn, NY <br>
-                                        11232
+                                        Awesome Lanka Travels,<br>
+                                        Temple Road,<br>
+                                        Boossa.<br>
                                     </p>
                                 </div>
                             </div>

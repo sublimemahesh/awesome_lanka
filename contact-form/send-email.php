@@ -2,12 +2,12 @@
 
 //----------------------Company Information---------------------
 
-$comany_name = "Awesome Lanka";
-$website_name = "www.awesomelanka.com";
-$comConNumber = "+ (94) 71 721 5035, + (94) 77 280 4873";
-$comEmail = "mganisansala@gmail.com";
-$from = 'mganisansala@gmail.com';
-$replay = 'mganisansala@gmail.com';
+$comany_name = "Awesome Lanka Travels";
+$website_name = "www.awesomelankatravels.com" ;
+$comConNumber = " +94 71 565 5553 | +94 75 582 5734 ";
+//$comEmail = "info@bouldersbay.com";
+$comEmail = "mganisansala@gmailcom";
+$from = "mganisansala@gmailcom";
 
 //----------------------CAPTCHACODE---------------------
 session_start();
@@ -30,8 +30,6 @@ $visitor_phone = $_POST['visitor_phone'];
 $subject = 'New Website Enquiry - ' . $_POST['subject'];
 $message = $_POST['message'];
 
-
-
 date_default_timezone_set('Asia/Colombo');
 
 $todayis = date("l, F j, Y, g:i a");
@@ -42,13 +40,18 @@ include("mail-template.php");
 
 // mandatory headers for email message, change if you need something different in your setting.
 $headers = "From: " . $from . "\r\n";
-$headers .= "Reply-To: " . $replay . "\r\n";
+$headers .= "Reply-To: " . $visitor_email . "\r\n";
 $headers .= "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
-// Sending mail
+$headers1 = "From: " . $from . "\r\n";
+$headers1 .= "Reply-To: " . $comEmail . "\r\n";
+$headers1 .= "MIME-Version: 1.0\r\n";
+$headers1 .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
-if (mail($visitor_email, $subject, $visitor_message, $headers) && mail($replay, $subject, $company_message, $headers)) {
+// Sending mail
+ 
+if (mail($visitor_email, $subject, $visitor_message, $headers1) && mail($comEmail, $subject, $company_message, $headers)) {
     $response['status'] = 'correct';
     $response['msg'] = "Your message has been sent successfully";
 //"Your message has been sent successfully"

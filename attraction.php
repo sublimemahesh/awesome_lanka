@@ -56,19 +56,14 @@
                                         <a href="view-attraction.php?id=<?php echo $attraction['id']?>"><img src="upload/attraction/<?php echo $attraction['image_name'] ?>" class="img-responsive" alt=""></a>
                                         <div class="mask">
                                             <h2><?php echo $attraction['title'] ?></h2>
-                                            <p><?php echo $attraction['short_description'] ?></p>
-                                            <a href="view-attraction.php?id=<?php echo $attraction['id']?>" class="thm-btn">Read More</a>
+                                            <p><?php echo substr($attraction['short_description'], 0, 50) . '...'; ?></p>
+                                          <a href="view-attraction.php?id=<?php echo $attraction['id']?>" class="thm-btn">Read More</a>
                                         </div>
                                         <div class="dest-name">
 
                                             <h4><?php echo $attraction['title'] ?></h4>
                                         </div>
-                                        <div class="dest-icon">
-                                            <i class="flaticon-earth-globe" data-toggle="tooltip" data-placement="top" title="15 Tours"></i>
-                                            <i class="flaticon-ship" data-toggle="tooltip" data-placement="top" title="9 Criuses"></i>
-                                            <i class="flaticon-transport" data-toggle="tooltip" data-placement="top" title="31 Flights"></i>
-                                            <i class="flaticon-front" data-toggle="tooltip" data-placement="top" title="83 Hotels"></i>
-                                        </div>
+                                       
                                     </div>
                                 </div>
                                 <?php

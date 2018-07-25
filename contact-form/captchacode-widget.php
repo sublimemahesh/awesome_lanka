@@ -4,7 +4,7 @@ $captchacode = rand();
 
 <img src="contact-form/Generate_Captcha_Code.php?rand=<?php echo $captchacode; ?>" id='captchaimg'  style=" margin-top: 17px;">  
 
-<a href='javascript: refreshCaptcha();' class="contact-detail">
+<a href='javascript: refreshCaptcha();' class="contact-details">
     <div class="refreshbox">
         <div class="refresh-img">        
             <img style="border:none;" src="contact-form/img/refresh.png" title="Click to change the code"/>

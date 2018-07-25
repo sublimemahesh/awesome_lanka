@@ -35,7 +35,7 @@ $ATTRACTION_PHOTO = $ATTRACTIONPHOTEOS->getAttractionPhotosById($id);
             <?php include './header.php'; ?>
             <!-- /.nav end -->
             <!-- page header -->
-            <section class="header" style="background-image: url(assets/images/header-1920x1135-10.jpg);margin-bottom: 60px;">
+            <section class="header" style="background-image: url(assets/images/banner/news6.jpg);margin-bottom: 60px;">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
@@ -134,7 +134,8 @@ $ATTRACTION_PHOTO = $ATTRACTIONPHOTEOS->getAttractionPhotosById($id);
                                                                         <a href="view-attraction.php?id=<?php echo $attration['id']?>"> <h5><b><?php echo $attration['title'] ?></b></h5></a>
                                                                         <a href="view-attraction.php?id=<?php echo $attration['id']?>"> <img src="upload/attraction/<?php echo $attration['image_name'] ?>" height="80" alt="Olive Ridley Turtles"></a>
                                                                     </div>
-                                                                    <h8><?php echo $attration['short_description'] ?></h8>
+                                                                    <h8><?php echo substr($attration['short_description'], 0, 50) . '...'; ?></h8>
+                                                                  
                                                                 </div>
                                                             <?php
                                                             }

@@ -134,7 +134,7 @@ if (isset($_POST['update'])) {
 
     $TOUR_DATE->image_name = $_POST['oldImageName'];
     $TOUR_DATE->title = $_POST['title'];
-    $TOUR_DATE->description = $_POST['description']
+    $TOUR_DATE->description = $_POST['description'];
 
     $VALID = new Validator();
     $VALID->check($TOUR_DATE, [
