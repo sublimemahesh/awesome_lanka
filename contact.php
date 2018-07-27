@@ -25,7 +25,7 @@
             <!-- navber -->
             <?php include './header.php'; ?>
             <!-- /.nav end -->
-            <!-- page header -->
+            
             <section class="header header-bg-10">
                 <div class="container">
                     <div class="row">
@@ -33,8 +33,7 @@
                             <div class="header-content">
                                 <div class="header-content-inner">
                                     <h1>LET'S TALK !</h1>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                                        standard dummy text ever since </p>
+
                                     <div class="row">
                                         <div class="col-xs-6 col-sm-4">
                                             <div class="contact-icon">
@@ -48,7 +47,7 @@
                                             <div class="contact-icon">
                                                 <a href="#">
                                                     <i class="flaticon-smartphone"></i>
-                                                    <h5>001620214460</h5>
+                                                    <h5>+94 71 565 5553</h5>
                                                 </a>
                                             </div>
                                         </div>
@@ -56,7 +55,7 @@
                                             <div class="contact-icon">
                                                 <a href="#">
                                                     <i class="flaticon-mail"></i>
-                                                    <h5><span class="__cf_email__" data-cfemail="a3c2c7cecacde3cbccd7cec2cacf8dc0ccce">[email&#160;protected]</span></h5>
+                                                    <h5>info@awesomelankatravels.com</h5>
                                                 </a>
                                             </div>
                                         </div>
@@ -70,6 +69,8 @@
                                 </div>
                             </div>
                         </div>
+
+
                     </div>
                 </div>
             </section>
@@ -77,16 +78,21 @@
             <section class="contact-inner">
                 <div class="container">
                     <div class="row">
+
                         <div class="col-sm-12">
                             <div class="col-sm-12" style="padding-bottom: 30px;">
                                 <div class="col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
                                     <div class="find-location-map">
                                         <div class="gmap" style="padding-top: 35px;">
-                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.716723132564!2d80.21369891476817!3d6.033559295630301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae173bb5c8067f1%3A0x4768397502edf93!2sSublime+Holdings!5e0!3m2!1sen!2slk!4v1528086188084" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>                                    </div>
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.716723132564!2d80.21369891476817!3d6.033559295630301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae173bb5c8067f1%3A0x4768397502edf93!2sSublime+Holdings!5e0!3m2!1sen!2slk!4v1528086188084" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>  
+                                        </div>
                                     </div>
                                 </div>
                             </div><br>
                         </div>
+                    </div>
+                    <div class="row">
+
                         <div class="col-sm-8">
                             <div class="contact-form">
 
@@ -126,13 +132,13 @@
                                     <textarea class="form-control" id="txtMessage" name="txtMessage" placeholder="Your Comment" rows="5"></textarea>
                                     <span id="spanMessage"></span>
                                 </div>
-                                <div class="col-xs-12 col-sm-6 col-md-8">
+                                <div class="col-xs-12 col-md-8 ">
                                     <div class="col-sm-6 ">
                                         <label for="comment">Security Code:</label>
                                         <input style="margin-left: -30px;" type="text" name="captchacode" id="captchacode" class="form-control input-validater" placeholder="Enter the code ">
                                         <span id="capspan" ></span>
                                     </div>
-                                    <div style="margin-top: 12px; margin-left: -15px;" class="col-sm-6 col-md-4">
+                                    <div style="margin-top: 12px; margin-left: -15px;" class="col-sm-6 col-md-4 capcha-mob">
                                         <?php include("./contact-form/captchacode-widget.php"); ?>
                                     </div> 
                                 </div>
@@ -143,27 +149,22 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-12 col-sm-12 col-xs-12">
-                                    <div class="cf-input-box" style="padding-bottom: 70px;">
-                                        <button type="submit" id="btnSubmit" name="btnSubmit" class="thm-btn" style="margin-left: -15px;">SEND MESSAGE</button>
+                                <div class="">
+                                    <div class="cf-input-box contact" id="contact-dtl">
+                                        <button type="submit" id="btnSubmit" name="btnSubmit" class="thm-btn btn-mob">SEND MESSAGE</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-4">
+                       <div class="col-sm-4">
                             <div class="contact-details">
                                 <h2>Contact Details</h2>
-                                <div class="contact-content">
-                                    <h4>Hours of Operation</h4>
-                                    <p>
-                                        We’re in the studio brainstorming, designing, and working away to create the best product we can from 9-5pm EST.
-                                    </p>
-                                </div>
+
                                 <div class="contact-content">
                                     <h4>General Inquiries</h4>
                                     <p>
                                         Phone +94 71 565 5553 | +94 75 582 5734 <br>
-                                        <a href="http://travel.bdtask.com/cdn-cgi/l/email-protection#8ce4e9e0e0e3ccebe1ede5e0a2efe3e1"><span class="__cf_email__" data-cfemail="c9a1aca5a5a689aea4a8a0a5e7aaa6a4">[email&#160;protected]</span></a>
+                                        Email info@awesomelankatravels.com
                                     </p>
                                 </div>
                                 <div class="contact-content">
@@ -175,14 +176,17 @@
                                     </p>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div id="dismessage" align="center" style="margin-top: -70px;"></div>
+
                         </div>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="dismessage" align="center" style="margin-top: -70px;"></div>
+                    </div>
+                </div>
+
+
             </section>
 
 
@@ -190,7 +194,7 @@
         <!-- Footer Section -->
         <?php include './footer.php'; ?>
         <!-- jQuery -->
-        <script data-cfasync="false" src="../cdn-cgi/scripts/f2bf09f8/cloudflare-static/email-decode.min.js"></script><script src="assets/js/jquery.min.js" type="text/javascript"></script>
+        <script src="assets/js/jquery.min.js" type="text/javascript"></script>
         <!-- jquery ui js -->
         <script src="assets/js/jquery-ui.min.js" type="text/javascript"></script>
         <!-- bootstrap js -->

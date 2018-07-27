@@ -11,7 +11,7 @@ jQuery(document).ready(function () {
     });
 
     jQuery("#txtPhone").blur(function () {
-        validateEmpty("txtPhone", "spanPhone");
+        ValidateEmail("txtPhoneNumber", "spanPhone");
     });
 
     jQuery("#txtSubject").blur(function () {
@@ -84,8 +84,8 @@ function sendForm() {
             captchacode: jQuery('#captchacode').val(),
             visitor_name: jQuery('#txtFullName').val(),
             visitor_phone: jQuery('#txtPhone').val(),
-            subject: jQuery('#txtSubject').val(),
             visitor_email: jQuery('#txtEmail').val(),
+            subject: jQuery('#txtSubject').val(),
             message: jQuery('#txtMessage').val()
 
         },
@@ -110,8 +110,6 @@ function sendForm() {
                 jQuery('#txtPhone').val("");
                 jQuery('#txtSubject').val("");
                 jQuery('#txtMessage').val("");
-                
-                
             }
 
 
