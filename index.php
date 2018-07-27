@@ -64,7 +64,7 @@
                 <div class="reference home-ref">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-6 col-md-offset-4">
+                            <div class="col-md-6 col-md-offset-4 tour-res">
                                 <div class="title">
                                     <h2 style="margin-left: -172px;">Tour Package</h2>
                                     <p style="margin-left: -177px;">A great Collection of our Tour Packages</p>
@@ -139,11 +139,11 @@
                         </div>
                     </div>
                 </div>
-                <section class="reference home-refn" style="padding-bottom: 10px;">
+                <section class="reference home-refn">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-6 col-md-offset-3">
-                                <div class="title" style="padding-top: 60px;">
+                                <div class="title attraction-mob" id="attraction">
                                     <h2>Attractions</h2>
                                 </div>
                             </div>

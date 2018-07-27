@@ -1,0 +1,19 @@
+[25-Jul-2018 05:31:37 America/New_York] PHP Notice:  Undefined index: visitor_email in /home/gallnwxt/sites/awesomelankatravel/contact-form/send-email.php on line 28
+[25-Jul-2018 05:31:37 America/New_York] PHP Notice:  Undefined index: subject in /home/gallnwxt/sites/awesomelankatravel/contact-form/send-email.php on line 30
+[25-Jul-2018 05:33:44 America/New_York] PHP Notice:  Undefined index: visitor_email in /home/gallnwxt/sites/awesomelankatravel/contact-form/send-email.php on line 28
+[25-Jul-2018 05:33:44 America/New_York] PHP Notice:  Undefined index: subject in /home/gallnwxt/sites/awesomelankatravel/contact-form/send-email.php on line 30
+[25-Jul-2018 05:33:58 America/New_York] PHP Notice:  Undefined index: visitor_email in /home/gallnwxt/sites/awesomelankatravel/contact-form/send-email.php on line 28
+[25-Jul-2018 05:33:58 America/New_York] PHP Notice:  Undefined index: subject in /home/gallnwxt/sites/awesomelankatravel/contact-form/send-email.php on line 30
+[25-Jul-2018 05:34:04 America/New_York] PHP Notice:  Undefined index: visitor_email in /home/gallnwxt/sites/awesomelankatravel/contact-form/send-email.php on line 28
+[25-Jul-2018 05:34:04 America/New_York] PHP Notice:  Undefined index: subject in /home/gallnwxt/sites/awesomelankatravel/contact-form/send-email.php on line 30
+[25-Jul-2018 05:34:21 America/New_York] PHP Notice:  Undefined index: visitor_email in /home/gallnwxt/sites/awesomelankatravel/contact-form/send-email.php on line 28
+[25-Jul-2018 05:34:21 America/New_York] PHP Notice:  Undefined index: subject in /home/gallnwxt/sites/awesomelankatravel/contact-form/send-email.php on line 30
+[25-Jul-2018 05:35:24 America/New_York] PHP Notice:  Undefined index: visitor_email in /home/gallnwxt/sites/awesomelankatravel/contact-form/send-email.php on line 28
+[25-Jul-2018 05:35:24 America/New_York] PHP Notice:  Undefined index: subject in /home/gallnwxt/sites/awesomelankatravel/contact-form/send-email.php on line 30
+[25-Jul-2018 05:38:03 America/New_York] PHP Notice:  Undefined index: visitor_email in /home/gallnwxt/sites/awesomelankatravel/contact-form/send-email.php on line 28
+[25-Jul-2018 05:38:03 America/New_York] PHP Notice:  Undefined index: subject in /home/gallnwxt/sites/awesomelankatravel/contact-form/send-email.php on line 30
+[25-Jul-2018 06:25:49 America/New_York] PHP Notice:  Undefined index: subject in /home/gallnwxt/sites/awesomelankatravel/contact-form/send-email.php on line 30
+[25-Jul-2018 06:40:08 America/New_York] PHP Notice:  Undefined index: subject in /home/gallnwxt/sites/awesomelankatravel/contact-form/send-email.php on line 30
+[25-Jul-2018 06:41:19 America/New_York] PHP Notice:  Undefined index: subject in /home/gallnwxt/sites/awesomelankatravel/contact-form/send-email.php on line 30
+[26-Jul-2018 09:19:03 Asia/Colombo] PHP Fatal error:  Call to undefined function dd() in /home/gallnwxt/sites/awesomelankatravel/contact-form/send-email.php on line 56
+[26-Jul-2018 09:19:16 Asia/Colombo] PHP Fatal error:  Call to undefined function dd() in /home/gallnwxt/sites/awesomelankatravel/contact-form/send-email.php on line 56

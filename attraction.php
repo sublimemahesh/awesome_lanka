@@ -32,8 +32,7 @@
                             <div class="header-content">
                                 <div class="header-content-inner">
                                     <h1>Attraction</h1>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                                        standard dummy text ever since </p>
+                                  
                                     <div class="ui breadcrumb">
                                         <a href="index.php" class="section">Home</a>
                                         <div class="divider"> / </div>

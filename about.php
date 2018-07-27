@@ -33,8 +33,7 @@
                             <div class="header-content">
                                 <div class="header-content-inner">
                                     <h1>About Us</h1>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                                        standard dummy text ever since </p>
+                                 
                                     <div class="ui breadcrumb">
                                         <a href="index.php" class="section">Home</a>
                                         <div class="divider"> / </div>
@@ -62,8 +61,6 @@
                                             <div class="content-left">
                                                 <div class="about-title">
                                                     <h2>Our Story</h2>
-                                                    <h3> One day, one jump and two years of passion</h3>
-                                                    <p class="mission-description">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit au <br>ctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit cons <br>equat ipsum, nec sagittis sem . </p>
                                                     <div class="row">
                                                         <div class="col-sm-12">
                                                             <?php $PAGES = new Page(2);?>

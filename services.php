@@ -34,8 +34,7 @@ include './class/include.php';
                             <div class="header-content">
                                 <div class="header-content-inner">
                                     <h1>Services</h1>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                                        standard dummy text ever since </p>
+                                    
                                     <div class="ui breadcrumb">
                                         <a href="index.php" class="section">Home</a>
                                         <div class="divider"> / </div>
@@ -56,7 +55,7 @@ include './class/include.php';
                             <div class="col-sm-6">
                                 <div class="ac-items">
                                     <a class="image" href="#">
-                                        <img src="upload/service/<?php echo $service['image_name'];?>" class="img-responsive" alt="">
+                                        <img src="upload/service/<?php echo $service['image_name'];?>" class="img-responsive " id="service-mob" alt="">
                                     </a>
                                     <div class="content">
                                         <h4><?php echo $service['title']?></h4>

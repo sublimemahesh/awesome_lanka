@@ -755,7 +755,7 @@ blockquote .author,
 }
 
 .header-bg-2 {
-    background-image: url(../images/header-1920x1135-2.jpg);
+    background-image: url(../images/banner/9-1.jpg);
 }
 
 .header-bg-3 {
@@ -3986,4 +3986,42 @@ footer .footer-title {
     float: left;
     font-size: 24px;
     line-height: 44px;
+}
+@media(min-width:360px) and (max-width:640px) {
+    .tour-res {
+        padding-left: 194px;
+    }
+}
+@media(min-width:360px) and (max-width:640px) {
+    .capcha-mob {
+        width: 50%;
+    }
+}
+@media(min-width:360px) and (max-width:640px) {
+    #service-mob {
+        width: 44%;
+        margin-left: 95px;
+      
+    }
+}
+@media(min-width:360px) and (max-width:640px) {
+    .btn-mob {
+        margin-left: 2px;
+    }
+}
+@media(min-width:360px) and (max-width:640px) {
+    #contact-dtl {
+       padding-bottom: -1px;
+    }
+}
+.contact{
+    padding-bottom: 70px;
+}
+@media(min-width:360px) and (max-width:640px) {
+    .attraction-mob {
+      padding-top: 0px;
+    }
+}
+#attraction{
+    padding-bottom: 10px;
 }

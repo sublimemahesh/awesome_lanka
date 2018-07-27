@@ -92,7 +92,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-5">
-                    <p>Copyright Â© 2018. Sublime Holdings</p>
+                    <p>Copyright AwesomelankaTravels© 2018. site by Sublime Holdings</p>
                 </div>
                 <div class="col-sm-7">
 
