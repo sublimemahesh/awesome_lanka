@@ -6,7 +6,8 @@ if (isset($_POST['create'])) {
 
     $TOUR_PACKAGE = new TourPackage(NULL);
     $VALID = new Validator();
-
+ 
+    $TOUR_PACKAGE->tourtype = $_POST['tourtype'];
     $TOUR_PACKAGE->title = $_POST['title'];
     $TOUR_PACKAGE->price = $_POST['price'];
     $TOUR_PACKAGE->short_description = $_POST['short_description'];

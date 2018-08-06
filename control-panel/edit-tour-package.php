@@ -56,7 +56,32 @@ $TOUR_PACKAGE = new TourPackage($id);
                             </div>
                             <div class="body">
                                 <form class="form-horizontal" method="post" action="post-and-get/tour-package.php" enctype="multipart/form-data"> 
-
+                                    
+                                    <div class="col-md-12">
+                                        <div class="form-group form-float">
+                                            <div class="form-line">
+                                                <select class="form-control place-select1 show-tick" autocomplete="off" type="text" id="tourtype" name="tourtype" required="TRUE">
+                                                    <option value=""> -- Please Select Tour Type -- </option>
+                                                    <?php
+                                                    $types = TourType::all();
+                                                    foreach ($types as $type) {
+                                                        ?>
+                                                        <option value="<?php echo $type['id']; ?>" <?php
+                                                        if ($TOUR_PACKAGE->tourtype === $type['id']) {
+                                                            echo 'selected';
+                                                        }
+                                                        ?>>
+                                                                    <?php echo $type['name']; ?>
+                                                        </option>
+                                                        <?php
+                                                    }
+                                                    ?>
+                                                </select>
+                                                <label class="form-label">Tour Type</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
                                     <div class="col-md-12">
                                         <div class="form-group form-float">
                                             <div class="form-line">
