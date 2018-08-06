@@ -2,12 +2,12 @@
 
 //----------------------Company Information---------------------
 
-$comany_name = "Awesome Lanka";
-$website_name = "www.awesomelanka.com";
-$comConNumber = "+ (94) 71 721 5035, + (94) 77 280 4873";
-$comEmail = "mganisansala@gmail.com";
-$from = 'mganisansala@gmail.com';
-$replay = 'mganisansala@gmail.com';
+$comany_name = "Awesome Lanka Travels";
+$website_name = "www.awesomelankatravels.com";
+$comConNumber = "+ +94 71 565 5553 | +94 75 582 5734 ";
+//$comEmail = "mganisansala@gmail.com";
+$from = 'nilan@awesomelankatravels.com';
+$replay = 'nilan@awesomelankatravels.com';
 
 //----------------------CAPTCHACODE---------------------
 session_start();

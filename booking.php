@@ -47,9 +47,7 @@ $tour_package=$_GET['tour_package'];
                         <div class="col-md-8 col-md-offset-2">
                             <div class="header-content">
                                 <div class="header-content-inner">
-                                    <h1>LET'S TALK !</h1>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                                        standard dummy text ever since </p>
+                                    <h1>Book Now</h1>
                                     <div class="row">
                                         <div class="col-xs-6 col-sm-4">
                                             <div class="contact-icon">
@@ -63,15 +61,15 @@ $tour_package=$_GET['tour_package'];
                                             <div class="contact-icon">
                                                 <a href="#">
                                                     <i class="flaticon-smartphone"></i>
-                                                    <h5>001620214460</h5>
+                                                    <h5>+94 71 565 5553</h5>
                                                 </a>
                                             </div>
                                         </div>
-                                        <div class="col-xs-12 col-sm-4">
+                                      <div class="col-xs-12 col-sm-4">
                                             <div class="contact-icon">
                                                 <a href="#">
                                                     <i class="flaticon-mail"></i>
-                                                    <h5><span class="__cf_email__" data-cfemail="a3c2c7cecacde3cbccd7cec2cacf8dc0ccce">[email&#160;protected]</span></h5>
+                                                    <h5>nilan@awesomelankatravels.com</h5>
                                                 </a>
                                             </div>
                                         </div>

@@ -51,6 +51,8 @@ class Comments {
                 . $this->comment . "', '"
                 . $this->is_active . "', '"
                 . $this->queue . "')";
+        
+
 
         $db = new Database();
 

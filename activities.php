@@ -34,7 +34,6 @@
                             <div class="header-content">
                                 <div class="header-content-inner">
                                     <h1>Activities</h1>
-                                   
                                     <div class="ui breadcrumb">
                                         <a href="index.php" class="section">Home</a>
                                         <div class="divider"> / </div>

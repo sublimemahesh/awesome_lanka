@@ -14,14 +14,14 @@
         <div class="hidden-xs hidden-sm" style="color: #fff; margin-top: 20px">
             <div class="">
                 <div class="number-box"> 
-                        <i class="fa fa-envelope"></i>
-                        <div class="number-text"><span>Email us for any Query</span> <br><small>info@awesomelankatravels.com</small> </div>
-                 </div>
+                    <i class="fa fa-envelope"></i>
+                    <div class="number-text"><span>Email us for any Query</span> <br><small>nilan@awesomelankatravels.com</small> </div>
+                </div>
             </div>
             <div class="">
                 <div class="number-box"> 
-                        <i class="fa fa-phone"></i>
-                        <div class="number-text"><span>Call us for any Query</span> <br><small>+94 71 565 5553</small></div>
+                    <i class="fa fa-phone"></i>
+                    <div class="number-text"><span>Call us for any Query</span> <br><small>+94 71 565 5553</small></div>
                 </div>
             </div>
         </div>
@@ -41,7 +41,9 @@
                 <li><a href="services.php">Services</a></li>
                 <li><a href="gallery.php">Gallery</a></li>
                 <li><a href="contact.php">Contact Us</a></li>
+                <li><a class="nav-btn" href="booking.php"><div class="thm-btn">Book Now</div></a></li>
             </ul> 
+           
         </div> <!-- /.navbar-collapse --> 
     </div> <!-- /.container --> 
 </nav> 

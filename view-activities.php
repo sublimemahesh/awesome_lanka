@@ -41,7 +41,7 @@ $ACTIVITY_PHOTO = $ACTIVITY_P->getActivitiesPhotosById($id);
                         <div class="col-md-8 col-md-offset-2">
                             <div class="header-content">
                                 <div class="header-content-inner">
-                                    <h1>One Day Tour</h1>
+                                    <h1><?php echo $ACTIVITY->title ?></h1>
                                     <div class="ui breadcrumb">
                                         <a href="index.php" class="section">Home</a>
                                         <div class="divider"> / </div>
@@ -104,7 +104,7 @@ $ACTIVITY_PHOTO = $ACTIVITY_P->getActivitiesPhotosById($id);
                                     </div><br><br>
 
                                     <div class="col-sm-12" style="margin-left: -15px;">
-                                        <p class="text-justify"><?php echo $ACTIVITY->description ?></p>
+                                        <p class="text-justify" id="activity-mob"><?php echo $ACTIVITY->description ?></p>
                                     </div>
                                 </div>
                                 <div class="detail-info-cont text-justify">

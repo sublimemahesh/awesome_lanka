@@ -17,7 +17,7 @@
                     </div>
                     <div class="address">
                         <i class="flaticon-mail"></i>
-                        <p> <a class="text-color" href="mailto:info@awesomelankatravels.com"><strong></strong>info@awesomelankatravels.com</a></p>
+                        <p> <a class="text-color" href="mailto:nilan@awesomelankatravels.com"><strong></strong>nilan@awesomelankatravels.com</a></p>
                     </div>
                 </div>
             </div>
