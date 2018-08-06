@@ -19,7 +19,7 @@ $visitor_message = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//E
                                         <td width="40"></td>
                                         <td width="144">
                                             <a href= "' . $site_link . '" target="_blank"> '
-        . '<img src="' . $site_link . '/booking-form/img/logo.jpg" border="0" alt=""/>
+        . '<img src="' . $site_link . '/booking-form/img/new-logo.jpg" border="0" alt=""/>
                                             </a>
                                         </td>
                                         <td width="393">
@@ -50,7 +50,7 @@ $visitor_message = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//E
                         </tr>
                         <tr>
                             <td align="center">
-                                <img src="' . $site_link . '/booking-form/img/PROMO-GREEN2_02.jpg" alt="" width="598" height="323" border="0"/>
+                                <img src="' . $site_link . '/booking-form/img/PROMO-GREE.jpg" alt="" width="598" height="323" border="0"/>
                             </td>
                         </tr>
                         <tr>
@@ -140,17 +140,17 @@ $visitor_message = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//E
                                                 </li>
                                                 <li>
                                                     <font style="font-family: Verdana, Geneva, sans-serif; color:#68696a; font-size:14px; " >
-                                                         Departure_Date : ' . Departure_date . '
+                                                         Departure_Date : ' . $Departure_date . '
                                                     </font>
                                                 </li>
                                                 <li>
                                                     <font style="font-family: Verdana, Geneva, sans-serif; color:#68696a; font-size:14px; " >
-                                                         Tour_package : ' . tourpackage . '
+                                                         Tour_package : ' . $tourpackage . '
                                                     </font>
                                                 </li>
                                                 <li>
                                                     <font style="font-family: Verdana, Geneva, sans-serif; color:#68696a; font-size:14px; " >
-                                                         Number Of Adults : ' . numbersadults . '
+                                                         Number Of Adults : ' . $numbersadults . '
                                                     </font>
                                                 </li>
                                                 <li>

@@ -33,7 +33,7 @@
                             <div class="header-content">
                                 <div class="header-content-inner">
                                     <h1>About Us</h1>
-                                 
+
                                     <div class="ui breadcrumb">
                                         <a href="index.php" class="section">Home</a>
                                         <div class="divider"> / </div>
@@ -63,8 +63,8 @@
                                                     <h2>Our Story</h2>
                                                     <div class="row">
                                                         <div class="col-sm-12">
-                                                            <?php $PAGES = new Page(2);?>
-                                                            <p class="text-justify"><?php echo $PAGES->description;?></p>
+                                                            <?php $PAGES = new Page(2); ?>
+                                                            <p class="text-justify"><?php echo $PAGES->description; ?></p>
                                                         </div>
 
                                                     </div>
@@ -90,8 +90,9 @@
                                                         <div class="icon"><span class="flaticon-placeholder"></span></div>
                                                         <div class="content-text">
                                                             <h5 style="margin-left: -17px;">Vision</h5>
-                                                            <p>Lorem Ipsum is simply dummy text of the printing. Proin gravida nibh vel velit au
-                                                                ctor aliquet.</p>
+                                                            <p>Have provide luxury tour service
+                                                                for reasonable price to our customers.  
+                                                                Travel with your heart touching places.</p>
                                                         </div>
                                                     </article>
                                                 </div>
@@ -100,8 +101,8 @@
                                                         <div class="icon"><span class="flaticon-map"></span></div>
                                                         <div class="content-text">
                                                             <h5 style="margin-left: -17px;">Mission</h5>
-                                                            <p>Lorem Ipsum is simply dummy text of the printing.  Proin gravida nibh vel velit au
-                                                                ctor aliquet.</p>
+                                                            <p>Our mission is number one tour planner  in Galle.
+                                                                Provide to memorable experience to your wonderful life.</p>
                                                         </div>
                                                     </article>
                                                 </div>
@@ -110,8 +111,10 @@
                                                         <div class="icon"><span class="flaticon-lemonade"></span></div>
                                                         <div class="content-text">
                                                             <h5 style="margin-left: -17px;">Values</h5>
-                                                            <p>Lorem Ipsum is simply dummy text of the printing.  Proin gravida nibh vel velit au
-                                                                ctor aliquet.</p>
+                                                            <p><li>Luxury Vehicles</li>
+                                                            <li>Reasonable Tour Packages</li>
+                                                            <li>Best Travel Guides</li>
+                                                            <li>Safety First</li></p>
                                                         </div>
                                                     </article>
                                                 </div>

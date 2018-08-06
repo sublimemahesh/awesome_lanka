@@ -6,8 +6,8 @@ $comany_name = "Awesome Lanka Travels";
 $website_name = "www.awesomelankatravels.com" ;
 $comConNumber = " +94 71 565 5553 | +94 75 582 5734 ";
 //$comEmail = "info@bouldersbay.com";
-$comEmail = "info@awesomelankatravels.com";
-$from = "info@awesomelankatravels.com";
+$comEmail = "nilan@awesomelankatravels.com";
+$from = "nilan@awesomelankatravels.com";
 //$fromName = "mail@sublime.lk";
 
 

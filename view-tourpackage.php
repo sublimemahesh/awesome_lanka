@@ -37,7 +37,7 @@ $TOUR_DATES = $TOUR_DATE->getTourDatesById($id);
                         <div class="col-md-8 col-md-offset-2">
                             <div class="header-content">
                                 <div class="header-content-inner">
-                                    <h1>One Day Tour</h1>
+                                    <h1><?php echo $TOUR_PAKAGES->title ?></h1>
                                     <div class="ui breadcrumb">
                                         <a href="index.php" class="section">Home</a>
                                         <div class="divider"> / </div>

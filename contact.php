@@ -37,7 +37,7 @@
                                     <div class="row">
                                         <div class="col-xs-6 col-sm-4">
                                             <div class="contact-icon">
-                                                <a href="#">
+                                                <a href="https://www.facebook.com/awesomelankatravels/">
                                                     <i class="flaticon-facebook"></i>
                                                     <h5>Facebook</h5> 
                                                 </a>
@@ -55,7 +55,7 @@
                                             <div class="contact-icon">
                                                 <a href="#">
                                                     <i class="flaticon-mail"></i>
-                                                    <h5>info@awesomelankatravels.com</h5>
+                                                    <h5>nilan@awesomelankatravels.com</h5>
                                                 </a>
                                             </div>
                                         </div>
@@ -95,7 +95,6 @@
 
                         <div class="col-sm-8">
                             <div class="contact-form">
-
                                 <h2>Let's Talk!</h2>
                                 <div class="row">
                                     <div class="col-sm-6">
@@ -164,7 +163,7 @@
                                     <h4>General Inquiries</h4>
                                     <p>
                                         Phone +94 71 565 5553 | +94 75 582 5734 <br>
-                                        Email info@awesomelankatravels.com
+                                        Email nilan@awesomelankatravels.com
                                     </p>
                                 </div>
                                 <div class="contact-content">

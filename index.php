@@ -14,7 +14,18 @@
         <!-- Base Css -->
         <link href="assets/css/base.css" rel="stylesheet" type="text/css"/>
         <link href="assets/css/custom.css" rel="stylesheet" type="text/css"/>
+        <link href="sweetalert/sweetalert.css" rel="stylesheet" type="text/css"/>
+        <style>
+            .client-comment.owl-pagination{
+                bottom: 0px;
+            }
 
+            @media(max-width:744px){
+                .client-comment.owl-pagination{
+                    bottom: -50px;
+                }  
+            }
+        </style>
     </head>
     <body>
         <!-- page loader -->
@@ -32,7 +43,7 @@
                             <div class="title">
                                 <?php $PAGES = new Page(1); ?>
                                 <h2><?php echo $PAGES->title ?></h2>
-                                <p>This is Amazing Travel Agency !</p>
+                                <p>Your Remarkable Holiday Tour !</p>
                             </div>
                             <div class="cws_divider mb-25 mt-5"></div>
                             <p><?php echo $PAGES->description ?></p> 
@@ -94,7 +105,7 @@
                                                 <h5><?php echo substr($tours['title'], 0, 30) . '...'; ?></h5>
                                                 <div class="package-price">
                                                     <p><?php echo substr($tours['short_description'], 0, 150) . '...'; ?></p>
-  </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -170,7 +181,7 @@
                                     }
                                 }
                                 ?>
-</div>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -198,7 +209,7 @@
                                                 <!-- Quote 3 -->
                                                 <div class="item col-sm-10 col-sm-offset-1 active">
                                                     <blockquote>
-                                                       <?php echo $comment['comment']; ?>
+                                                        <?php echo $comment['comment']; ?>
                                                         <span class="author"><?php echo $comment['name']; ?></span>
                                                     </blockquote>
                                                 </div> 
@@ -209,7 +220,7 @@
                                                 <!-- Quote 2 -->  
                                                 <div class="item col-sm-10 col-sm-offset-1">
                                                     <blockquote>
-                                                       <?php echo $comment['comment']; ?>
+                                                        <?php echo $comment['comment']; ?>
                                                         <span class="author"><?php echo $comment['name']; ?></span>
 
                                                     </blockquote>
@@ -226,11 +237,19 @@
 
                                     </ol>
                                 </div>
+                                <div class="btn-container">
+                                    <button type="submit" id="btn-add-comment" class="btn" style="background-color: #5555; margin-top: 0px; margin-left: 1000px;">
+                                        <i class="fa fa-plus"></i>  Add Your Comment
+                                    </button>
+                                </div>
+                                <?php
+                                include './add-comment.php';
+                                ?> 
                             </div>
                         </div>
+
                     </div>
                 </div>
-
 
 
 
@@ -260,5 +279,9 @@
             <script src="assets/js/jquery.easing.min.js" type="text/javascript"></script>
             <!-- custom -->
             <script src="assets/js/custom.js" type="text/javascript"></script>
+
+            <script src="guest-comment/validate.js" type="text/javascript"></script>
+            <script src="sweetalert/sweetalert.min.js" type="text/javascript"></script>
+            <script src="assets/js/comment.js" type="text/javascript"></script>
     </body>
 </html>
