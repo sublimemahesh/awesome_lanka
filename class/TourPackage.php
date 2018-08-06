@@ -13,7 +13,8 @@
  */
 class TourPackage {
 
-    public $id;
+    public $id;    
+    public $tourtype;
     public $title;
     public $image_name;
     public $price;
@@ -24,13 +25,14 @@ class TourPackage {
     public function __construct($id) {
         if ($id) {
 
-            $query = "SELECT `id`,`title`,`image_name`,`price`,`short_description`,`description`,`queue` FROM `tour_package` WHERE `id`=" . $id;
+            $query = "SELECT `id`,`tourtype`,`title`,`image_name`,`price`,`short_description`,`description`,`queue` FROM `tour_package` WHERE `id`=" . $id;
 
             $db = new Database();
 
             $result = mysql_fetch_array($db->readQuery($query));
 
-            $this->id = $result['id'];
+            $this->id = $result['id'];            
+            $this->tourtype = $result['tourtype'];
             $this->title = $result['title'];
             $this->image_name = $result['image_name'];
             $this->price = $result['price'];
@@ -44,14 +46,15 @@ class TourPackage {
 
     public function create() {
 
-        $query = "INSERT INTO `tour_package` (`title`,`image_name`,`price`,`short_description`,`description`,`queue`) VALUES  ('"
+        $query = "INSERT INTO `tour_package` (`title`,`tourtype`,`image_name`,`price`,`short_description`,`description`,`queue`) VALUES  ('"
                 . $this->title . "', '"
+                . $this->tourtype . "', '"
                 . $this->image_name . "', '"
                 . $this->price . "', '"
                 . $this->short_description . "', '"
                 . $this->description . "', '"
                 . $this->queue . "')";
-
+     
         $db = new Database();
 
         $result = $db->readQuery($query);
@@ -83,6 +86,7 @@ class TourPackage {
 
         $query = "UPDATE  `tour_package` SET "
                 . "`title` ='" . $this->title . "', "
+                . "`tourtype` ='" . $this->tourtype . "', "
                 . "`image_name` ='" . $this->image_name . "', "
                 . "`price` ='" . $this->price . "', "
                 . "`short_description` ='" . $this->short_description . "', "

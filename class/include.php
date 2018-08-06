@@ -29,6 +29,7 @@ include_once(dirname(__FILE__) . '/Banner.php');
 include_once(dirname(__FILE__) . '/Product.php');
 include_once(dirname(__FILE__) . '/ProductType.php');
 include_once(dirname(__FILE__) . '/TourPackagePhotosNormal.php');
+include_once(dirname(__FILE__) . '/TourType.php');
 
 function dd($data) {
     var_dump($data);

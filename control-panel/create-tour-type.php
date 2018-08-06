@@ -37,48 +37,23 @@ include_once(dirname(__FILE__) . '/auth.php');
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="card">
                             <div class="header">
-                                <h2>Create Tour Package</h2>
+                                <h2>Create Tour Type</h2>
                                 <ul class="header-dropdown">
                                     <li class="">
-                                        <a href="manage-tour-package.php">
+                                        <a href="manage-tour-type.php">
                                             <i class="material-icons">list</i> 
                                         </a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="body">
-                                <form class="form-horizontal"  method="post" action="post-and-get/tour-package.php" enctype="multipart/form-data"> 
-                                    <div class="col-md-12">
-                                        <div class="form-group form-float">
-                                            <div class="form-line">
-                                                <select class="form-control place-select1 show-tick" autocomplete="off" type="text" id="tourtype" name="tourtype" required="TRUE">
-                                                    <option value=""> -- Please Select Tour Type -- </option>
-                                                    <?php
-                                                    $types = TourType::all();
-                                                    foreach ($types as $type) {
-                                                        ?>
-                                                        <option value="<?php echo $type['id']; ?>"><?php echo $type['name']; ?></option>
-                                                        <?php
-                                                    }
-                                                    ?>
-                                                </select>
-
-                                            </div>
-                                        </div>
-                                    </div>
+                                <form class="form-horizontal"  method="post" action="post-and-get/tour-type.php" enctype="multipart/form-data"> 
+                                 
                                     <div class="col-md-12">
                                         <div class="form-group form-float">
                                             <div class="form-line">
                                                 <input type="text" id="title" class="form-control"  autocomplete="off" name="title" required="true">
                                                 <label class="form-label">Title</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12 hidden">
-                                        <div class="form-group form-float">
-                                            <div class="form-line">
-                                                <input type="text" id="price" class="form-control" autocomplete="off" name="price" required="true" value="1">
-                                                <label class="form-label">Price</label>
                                             </div>
                                         </div>
                                     </div>
@@ -89,25 +64,14 @@ include_once(dirname(__FILE__) . '/auth.php');
                                             </div>
                                         </div>
                                     </div>
-
-                                    <div class="col-md-12">
-                                        <div class="form-group form-float">
-                                            <div class="form-line">
-                                                <input type="text" id="short_description" class="form-control" autocomplete="off" name="short_description" required="true">
-                                                <label class="form-label">Short Description</label>
-                                            </div>
-                                        </div>
-                                    </div>
-
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                        <label for="description">Description</label>
+                                        <label for="description">description</label>
                                         <div class="form-line">
                                             <textarea id="description" name="description" class="form-control" rows="5"></textarea> 
                                         </div>
 
                                     </div>
                                     <div class="col-md-12"> 
-                                            
                                         <input type="submit" name="create" class="btn btn-primary m-t-15 waves-effect" value="create"/>
                                     </div>
                                     <div class="row clearfix">  </div>
