@@ -98,7 +98,7 @@ class TourType {
 
     public function GetTourTypeById($id) {
 
-        $query = "SELECT * FROM `tour_type` WHERE `id` = '" . $id . "' ORDER BY `queue` ASC";
+        $query = "SELECT * FROM `tour_package` WHERE `tourtype` = '" . $id . "' ORDER BY `queue` ASC";
 
         $db = new Database();
 

@@ -46,7 +46,7 @@
                 </div>
             </section>
             <!-- about section -->
-            <section class="about-section">
+            <section class="about-section" style="padding-top: 10px;">
                 <!-- about section -->
                 <div class="about-inner">
                     <div class="container">

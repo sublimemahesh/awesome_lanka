@@ -67,7 +67,7 @@ $TOUR_PACKAGE = new TourPackage($id);
                                                     foreach ($types as $type) {
                                                         ?>
                                                         <option value="<?php echo $type['id']; ?>" <?php
-                                                        if ($TOUR_PACKAGE->tourtype === $type['id']) {
+                                                        if ($TOUR_PACKAGE->tourtype == $type['id']) {
                                                             echo 'selected';
                                                         }
                                                         ?>>

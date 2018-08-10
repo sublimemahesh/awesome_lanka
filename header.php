@@ -35,7 +35,7 @@
             <ul class="nav navbar-nav" style="margin: 0px">
                 <li class="active"><a href="index.php">Home</a></li>
                 <li><a href="about.php">About Us</a></li>
-                <li><a href="tours-packages.php">Tour Package</a></li>
+                <li><a href="tour-type view.php">Tour Package</a></li>
                 <li><a href="activities.php">Activities</a></li>
                 <li><a href="attraction.php">Attraction</a></li>
                 <li><a href="services.php">Services</a></li>
