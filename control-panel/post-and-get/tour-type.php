@@ -24,8 +24,8 @@ if (isset($_POST['create'])) {
         $handle->file_new_name_ext = 'jpg';
         $handle->image_ratio_crop = 'C';
         $handle->file_new_name_body = $img;
-        $handle->image_x = 400;
-        $handle->image_y = 225;
+        $handle->image_x = 700;
+        $handle->image_y = 800;
 
         $handle->Process($dir_dest);
 
@@ -96,8 +96,8 @@ if (isset($_POST['edit-tour-type'])) {
         $handle->file_new_name_ext = FALSE;
         $handle->image_ratio_crop = 'C';
         $handle->file_new_name_body = $_POST ["oldImageName"];
-        $handle->image_x = 400;
-        $handle->image_y = 225;
+        $handle->image_x = 700;
+        $handle->image_y = 800;
 
         $handle->Process($dir_dest);
 

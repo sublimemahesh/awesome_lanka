@@ -15,17 +15,7 @@
         <link href="assets/css/base.css" rel="stylesheet" type="text/css"/>
         <link href="assets/css/custom.css" rel="stylesheet" type="text/css"/>
         <link href="assets/css/style.css" rel="stylesheet" type="text/css">
-        <style>
-            .client-comment.owl-pagination{
-                bottom: 0px;
-            }
 
-            @media(max-width:744px){
-                .client-comment.owl-pagination{
-                    bottom: -50px;
-                }  
-            }
-        </style>
 
     </head>
     <body>
@@ -34,222 +24,54 @@
         <div id="page-content">
             <?php include './header.php'; ?>
             <?php include './slider.php'; ?>
-            <!-- booking -->
-            <!-- service -->
-            <section class="popular-inner">
+
+
+            <div class="image-blocks image-blocks-category">
+
                 <div class="container">
-                    <div class="row">
-                        <div class="col-md-5">
-                            <div class="title">
-                                <?php $PAGES = new Page(1); ?>
-                                <h2><?php echo $PAGES->title ?></h2>
-                                <p>Your Remarkable Holiday Tour</p>
-                            </div>
-                            <div class="cws_divider mb-25 mt-5"></div>
-                            <p><?php echo $PAGES->description ?></p> 
+                    <div class="about row">
 
-                        </div>
-                        <div class="col-md-7">
-                            <?php foreach (Service::all() as $key => $service) { ?>
-                                <div class="col-md-6">
-                                    <div class="inner-box article-color">
-                                        <article>
-                                            <a href="services.php"><img src="upload/service/<?php echo $service['image_name']; ?>" style="width: 25%;"></a>
-                                            <div class="content-text">
-                                                <h5> <a href="services.php"><?php echo $service['title'] ?></a></h5>
-                                                <a href="services.php"> <p style="text-align: justify;"><?php echo substr($service['short_description'], 0, 150) . '...'; ?></p></a>
 
-                                            </div>
-                                        </article>
-                                    </div>
-                                </div>
-                            <?php }
-                            ?>
-                        </div>
-                    </div> 
-                </div>
-            </section>
-            <section class="package">
-                <div class="reference home-ref">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-6 col-md-offset-4 tour-res">
-                                <div class="title">
-                                    <h2 style="margin-left: -172px;">Tour Package</h2>
-                                    <p style="margin-left: -177px;">A great Collection of our Tour Packages</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row thm-margin">
-                            <div id="popular-slide" class="owl-carousel">
-                                <?php
-                                foreach (TourPackage::all() as $tours) {
-                                    ?>
-                                    <div class="col-xs-12 col-sm-4 col-md-12">
-                                        <div class="package-wiget">
-                                            <div class="grid">
-                                                <figure class="effect-milo">
-                                                    <img src="upload/tour-package/thumb/<?php echo $tours['image_name']; ?>" class="img-responsive" alt="">
-                                                    <figcaption>
-                                                        <div class="effect-block">
-                                                            <h3><?php echo $tours['title']; ?></h3>
-                                                            <button type="button" class="thm-btn">Read More..</button>
-                                                        </div>
-                                                    </figcaption>
-                                                </figure>
-                                            </div>
-                                            <div class="package-content">
-                                                <h5><?php echo substr($tours['title'], 0, 30) . '...'; ?></h5>
-                                                <div class="package-price">
-                                                    <p><?php echo substr($tours['short_description'], 0, 150) . '...'; ?></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <?php
-                                }
-                                ?>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                        <div class="text-block">
 
-            <div class="reference">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 col-md-offset-3">
-                            <div class="title">
-                                <h2>Activities</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row thm-margin">
-                        <div id="blog-slide" class="owl-carousel">
-                            <?php foreach (Activities::all() as $key => $activity) { ?>
-                                <div class="item">
-                                    <div class="activities-color"
-                                         <div class="blog-content">
-                                            <div class="blog-img image-hover">
-                                                <a href="view-activities.php?id=<?php echo $activity['id'] ?>"><img src="upload/activity/<?php echo $activity['image_name'] ?>" class="img-responsive" alt=""></a>
+                            <section class="cards" style="padding: 0px;">
+
+                               
+
+
+                                <div class="container">
+                                    <div class="row">
+                                        <?Php
+                                        $PHOTO_ALBUM_OBJ = new PhotoAlbum(NULL);
+                                        $PHOTO_ALBUM = $PHOTO_ALBUM_OBJ->all();
+                                        foreach ($PHOTO_ALBUM as $photo_album) {
+                                            ?>
+                                            <div class="col-xs-12 col-md-4">
+                                                <a href="gallery.php?id=<?php echo $photo_album['id'] ?>">
+                                                    <figure class="">
+                                                        <figcaption style="background-image:url(upload/photo-album/<?php echo $photo_album['image_name']; ?>)">
+                                                            <img src="upload/photo-album/<?php echo $photo_album['image_name']; ?>" alt="">
+                                                        </figcaption>
+                                                        <div class="btn btn-clean"><?php echo $photo_album['title']; ?></div>
+                                                    </figure>
+                                                </a>
 
                                             </div>
-                                            <h4><a href="view-activities.php?id=<?php echo $activity['id'] ?>"><?php echo $activity['title'] ?></a></h4>
-                                            <p><?php echo substr($activity['short_description'], 0, 100) . '...'; ?></p>
-                                            <a class="thm-btn" href="view-activities.php?id=<?php echo $activity['id'] ?>" style="margin-left: 50px;">Read More...</a>
-                                        </div>
-                                    </div>
-                                    <?php
-                                }
-                                ?>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <section class="reference home-refn">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-6 col-md-offset-3">
-                                <div class="title attraction-mob" id="attraction">
-                                    <h2>Attractions</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row thm-margin" style="padding-bottom: 50px;">
-                            <div class="tour-container">
-                                <?php
-                                foreach (Attraction::all() as $key => $attraction) {
-                                    if ($key < 8) {
-                                        ?>
-                                        <div class="col-md-3 col-sm-4 thm-padding">
-                                            <div class="destination-grid">
-                                                <a href="#"><img src="upload/attraction/<?php echo $attraction['image_name'] ?>" class="img-responsive" alt=""></a>
-                                                <div class="mask">
-                                                    <h2><?php echo $attraction['title'] ?></h2>
-                                                    <p><?php echo substr($attraction['short_description'], 0, 50) . '...'; ?></p>
-                                                    <a class="thm-btn" href="view-attraction.php?id=<?php echo $attraction['id'] ?>" style="margin-left: -15px;">Read More...</a>
-                                                </div>
-                                                <div class="dest-name">
-                                                    <h4><?php echo $attraction['title'] ?></h4>                                               </div>
-                                            </div>
-                                        </div>
-                                        <?php
-                                    }
-                                }
-                                ?>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <div class="reference">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-6 col-md-offset-3">
-                                <div class="title">
-                                    <h2>Feedback</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="testimonials">
-                                <div class="carousel" data-ride="carousel" id="quote-carousel">
-                                    <div class="carousel-inner">
-                                        <?php
-                                        $li = '';
-                                        foreach (Comments::activeComments() as $key => $comment) {
-                                            if ($key === 0) {
-                                                $li .= '<li data-target="#quote-carousel" data-slide-to="' . $key . ' " class="active">'
-                                                        . '<img class="img-responsive " src="upload/comments/' . $comment['image_name'] . '" alt=""> '
-                                                        . '</li>';
-                                                ?>  
-                                                <!-- Quote 3 -->
-                                                <div class="item col-sm-10 col-sm-offset-1 active">
-                                                    <blockquote>
-                                                        <?php echo $comment['comment']; ?>
-                                                        <span class="author"><?php echo $comment['name']; ?></span>
-                                                    </blockquote>
-                                                </div> 
-                                                <?php
-                                            } else {
-                                                $li .= '<li data-target="#quote-carousel" data-slide-to="' . $key . ' "><img class="img-responsive " src="upload/comments/' . $comment['image_name'] . '" alt=""> </li>';
-                                                ?>
-                                                <!-- Quote 2 -->  
-                                                <div class="item col-sm-10 col-sm-offset-1">
-                                                    <blockquote>
-                                                        <?php echo $comment['comment']; ?>
-                                                        <span class="author"><?php echo $comment['name']; ?></span>
-                                                    </blockquote>
-                                                </div>
-                                                <?php
-                                            }
+                                            <?php
                                         }
                                         ?>
-                                    </div>
-                                    <!-- Bottom Carousel Indicators -->
-                                    <ol class="carousel-indicators">
-                                        <?php echo $li; ?>
-                                    </ol>
+                                    </div> <!--/row-->
 
-                                </div>
-                            </div>
+                                </div> <!--/container-->
+                            </section>
+
                         </div>
 
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="btn-container">
-                            <button type="submit" id="btn-add-comment" class="btn" style="background-color: #5555; margin-top: 0px; margin-left: 1000px;">
-                                <i class="fa fa-plus"></i>  Add Your Comment
-                            </button>
-                        </div>
+
                     </div>
                 </div>
             </div>
-            <?php
-            include './add-comment.php';
-            ?> 
+
             <!-- Footer Section -->
             <?php include './footer.php'; ?>
             <!-- jQuery -->
@@ -316,7 +138,7 @@
 
                             } else if (status == "correct") {
                                 jQuery('#client-comment').submit();
-                                
+
                             }
                         }
                     });

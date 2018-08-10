@@ -143,6 +143,8 @@ if (isset($_POST['update'])) {
 
     $TOUR_PACKAGE = new TourPackage($_POST['id']);
 
+    
+    $TOUR_PACKAGE->tourtype = $_POST['tourtype'];
     $TOUR_PACKAGE->image_name = $_POST['oldImageName'];
     $TOUR_PACKAGE->title = $_POST['title'];
     $TOUR_PACKAGE->price = mysql_real_escape_string($_POST['price']);
